@@ -1,49 +1,56 @@
 -----------------------------------------
 
 
-MSPchip IDE
+ MSPchip IDE 
 ===
-an IDE for MSP, based on Eclipse
+#####      based on Eclipse C++ 
 
 
-Chip Support Environment
+
+
+
+MSPchip Feature and Customizations
 -----------------------------------------
-ST  -  STM32 cortex family
-TI  -  STELLARIS cortex family
-NXP -  LPC cortex family
+### Chip Support Environment
+* ST  -  STM32 cortex family
+* TI  -  STELLARIS cortex family
+* NXP -  LPC cortex family
 
-Chip Support API 
+### Chip Support API 
+* ARM - CMSIS
+* NXP - custom CMSIS 
+* ST  - custom CMSIS
+* TI  - SPDL
+
+### Chip Support Stacks 
+* uIP
+
+
+MSPchip Tools Interface
 -----------------------------------------
-ARM - CMSIS
-NXP - custom CMSIS 
-ST  - custom CMSIS
-TI  - SPDL
+### Default Compiler Interface
+* CodeSourcery ARM G++ Toolchain (not included)
 
-Chip Support Stacks 
+### Program and Debug Tools
+* GDB server with OpenOCD(not included) 
+
+
+
+Eclipse Feature and Customizations
 -----------------------------------------
-uIP
 
-Default Plugins
------------------------------------------
-Zylin for OpenOCD
-GNU ARM C++
-InstaSearch
-EGit
+### Default Plugins
+* Zylin for OpenOCD
+* GNU ARM C++
+* InstaSearch
+* EGit
 
+### OS support
+* Linux
 
-OS full support
------------------------------------------
-Linux
+### Default Settings
+* -XX:MaxPermSize=512m
 
-
-OS eclipse support
------------------------------------------
-Linux
-Mac
-Window
-
-
-
-Default Settings
------------------------------------------
--XX:MaxPermSize=256m for LiveKEY
+### Active Eclipse Release
+* JUNO 
+ 
