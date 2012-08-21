@@ -1,0 +1,32 @@
+Manifest-Version: 1.0
+Build-Jdk: 1.6.0_21
+Built-By: hudsonBuild
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+
+Name: epl-v10.html
+SHA1-Digest: pTOyybcpEe+Y8lkSVUtarMleXqE=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: 09gN05tobgS/MdtqyTNQhOhB73M=
+
+Name: META-INF/maven/org.eclipse.cdt/org.eclipse.cdt.launch.remote/pom
+ .properties
+SHA1-Digest: 9UieueuwGoZldc8fLwNgT2nECc4=
+
+Name: eclipse_update_120.jpg
+SHA1-Digest: xstAqMgs/a5AsQXQZSdDQ79veOA=
+
+Name: META-INF/maven/org.eclipse.cdt/org.eclipse.cdt.launch.remote/pom
+ .xml
+SHA1-Digest: BxJCDlKSgRE0NZasl4q9Vv88kM4=
+
+Name: license.html
+SHA1-Digest: /vLZjlHkZSXMSfPrWwNqOUDqqbM=
+
+Name: feature.properties
+SHA1-Digest: Pz43Kpz2a+kcK717nQo7Kb75gmM=
+
+Name: feature.xml
+SHA1-Digest: EBToT7racS0cfvACutkTHKPwQ6g=
+

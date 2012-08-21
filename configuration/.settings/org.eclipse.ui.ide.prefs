@@ -1,6 +1,5 @@
-#Wed Feb 08 02:37:56 CET 2012
-RECENT_WORKSPACES_PROTOCOL=3
 MAX_RECENT_WORKSPACES=5
+RECENT_WORKSPACES=/home/bitehack/STM32/workspace\n/home/bitehack/workspace\n/home/bitehack/MSPchip
+RECENT_WORKSPACES_PROTOCOL=3
 SHOW_WORKSPACE_SELECTION_DIALOG=false
 eclipse.preferences.version=1
-RECENT_WORKSPACES=/home/bitehack/STM32/workspace\n/home/stefano/Desktop/workspace\n/home/stefano/Projects/workspace\n/home/stefano/Projects/GTS

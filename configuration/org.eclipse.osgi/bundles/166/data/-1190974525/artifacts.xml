@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<repository name='/home/bitehack/STM32/eclipse/.eclipseextension' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1.0.0'>
+  <properties size='3'>
+    <property name='p2.timestamp' value='1345558395265'/>
+    <property name='org.eclipse.update.site.policy' value='USER-EXCLUDE'/>
+    <property name='org.eclipse.update.site.list' value=''/>
+  </properties>
+  <mappings size='3'>
+    <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
+    <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
+  </mappings>
+  <artifacts size='3'>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.cdt.cross.arm.gnu' version='0.5.3.201010141144'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/home/bitehack/STM32/eclipse/features/org.eclipse.cdt.cross.arm.gnu_0.5.3.201010141144/'/>
+        <property name='file.name' value='/home/bitehack/STM32/eclipse/features/org.eclipse.cdt.cross.arm.gnu_0.5.3.201010141144'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.zylin.embeddedcdt' version='4.18.1'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/home/bitehack/STM32/eclipse/plugins/com.zylin.embeddedcdt_4.18.1/'/>
+        <property name='file.name' value='/home/bitehack/STM32/eclipse/plugins/com.zylin.embeddedcdt_4.18.1'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='com.zylin.cdt.feature' version='4.18.1'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/home/bitehack/STM32/eclipse/features/com.zylin.cdt.feature_4.18.1/'/>
+        <property name='file.name' value='/home/bitehack/STM32/eclipse/features/com.zylin.cdt.feature_4.18.1'/>
+      </repositoryProperties>
+    </artifact>
+  </artifacts>
+</repository>

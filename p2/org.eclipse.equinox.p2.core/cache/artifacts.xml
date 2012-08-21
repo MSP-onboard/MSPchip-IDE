@@ -3,32 +3,37 @@
 <repository name='download cache' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1.0.0'>
   <properties size='2'>
     <property name='p2.system' value='true'/>
-    <property name='p2.timestamp' value='1298021006247'/>
+    <property name='p2.timestamp' value='1339695347898'/>
   </properties>
   <mappings size='3'>
     <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
     <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
     <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
   </mappings>
-  <artifacts size='4'>
-    <artifact classifier='binary' id='org.eclipse.rcp_root' version='3.6.2.r362_v20101104-9SAxFMKFkSAqi8axkv1ZjegmiBLY'>
+  <artifacts size='5'>
+    <artifact classifier='binary' id='org.eclipse.rcp_root' version='4.2.0.v20120528-1648-7IAPA7BrHQicRpNdOz-Obz-rlRCA'>
       <properties size='1'>
-        <property name='download.size' value='47850'/>
+        <property name='download.size' value='38125'/>
       </properties>
     </artifact>
-    <artifact classifier='binary' id='org.eclipse.rcp.configuration_root.gtk.linux.x86' version='1.0.0.M20110210-1200'>
+    <artifact classifier='binary' id='org.eclipse.cvs_root' version='1.3.200.v20120525-1249-7B79FJJAkF7BF7SDL5EAJT'>
       <properties size='1'>
-        <property name='download.size' value='187617'/>
+        <property name='download.size' value='8902'/>
       </properties>
     </artifact>
-    <artifact classifier='binary' id='org.eclipse.cvs_root' version='1.2.1.r362_v20101111-7B77FKv99HL0GvIAF99I8H14B7E'>
+    <artifact classifier='binary' id='org.eclipse.cdt_root' version='8.1.0.201206111645'>
       <properties size='1'>
-        <property name='download.size' value='8825'/>
+        <property name='download.size' value='8076'/>
       </properties>
     </artifact>
-    <artifact classifier='binary' id='org.eclipse.platform_root' version='3.6.2.r362_v20110210-9gF78Gs1FrIGnHDHWkEcopoN8AmxeZflGDGKQi'>
+    <artifact classifier='binary' id='org.eclipse.rcp.configuration_root.gtk.linux.x86' version='1.0.0.I20120608-1400'>
       <properties size='1'>
-        <property name='download.size' value='47850'/>
+        <property name='download.size' value='350620'/>
+      </properties>
+    </artifact>
+    <artifact classifier='binary' id='org.eclipse.platform_root' version='4.2.0.v20120608-135145-9JF7BHV8FyMteji0Oi_ePMz0xuZ8TVo7lV0z0ecb'>
+      <properties size='1'>
+        <property name='download.size' value='38125'/>
       </properties>
     </artifact>
   </artifacts>

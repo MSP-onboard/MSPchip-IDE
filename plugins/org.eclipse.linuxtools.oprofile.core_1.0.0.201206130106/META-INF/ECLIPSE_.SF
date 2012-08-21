@@ -1,0 +1,61 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest: r82n5twx2YBGrsZI/4LjFBk7+x4=
+Created-By: 1.6.0 (IBM Corporation)
+SHA1-Digest-Manifest-Main-Attributes: wYCQK3k536mcR8jBe+djp5ljYdc=
+
+Name: natives/linux/scripts/opcontrol-wrapper.security
+SHA1-Digest: jklmDaOpD1LIwNhfpk8xAs3rTX8=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: QdryQvJlVywlE0MGLuwYCkmkyWk=
+
+Name: natives/linux/scripts/.svnignore
+SHA1-Digest: zM8OUhUqFTPrFr9JFb2HMyg7YHs=
+
+Name: natives/linux/scripts/install-consolehelper.sh
+SHA1-Digest: PT5G5imlPMJUtVPoX9IOnv8so8Y=
+
+Name: natives/linux/scripts/org.eclipse.linuxtools.oprofile.policy
+SHA1-Digest: 6X/qTMPulaLX/kULzjhGS5flFyQ=
+
+Name: natives/linux/scripts/install-noconsolehelper.sh
+SHA1-Digest: h91ZwbkvSf/MntmkitGIP9+Okzc=
+
+Name: natives/linux/scripts/opcontrol-wrapper.pamd
+SHA1-Digest: YxVAeNq1+mtktC0Dd6BNk4Qw9+g=
+
+Name: op_error_key
+SHA1-Digest: ttHoZEN/qOD88c95aTEvvl2LesE=
+
+Name: META-INF/maven/org.eclipse.linuxtools.oprofile/org.eclipse.linux
+ tools.oprofile.core/pom.properties
+SHA1-Digest: NUrJRg919gBLueq44nTes3QKgPc=
+
+Name: about.html
+SHA1-Digest: p+J1lshfujMqAzV5/VljRFB28RA=
+
+Name: plugin.properties
+SHA1-Digest: ZQ6VIgXtFC9BoByGkN29M6fgGHc=
+
+Name: README
+SHA1-Digest: ddZSU44eMhVukHGAfQc/9G9xXH8=
+
+Name: natives/linux/scripts/uninstall.sh
+SHA1-Digest: MNLSNGeNKO3DcYxiIHse3ZjGiTI=
+
+Name: natives/linux/scripts/install.sh
+SHA1-Digest: 9omgaEIJTANXMfQ9jQOUGIPjJUU=
+
+Name: natives/linux/scripts/uninstall-consolehelper.sh
+SHA1-Digest: keNahiY+ZtPqumLgMoBjr1bA8n0=
+
+Name: META-INF/maven/org.eclipse.linuxtools.oprofile/org.eclipse.linux
+ tools.oprofile.core/pom.xml
+SHA1-Digest: 5nzlRDoItSgezZNT2XFddPx/9AQ=
+
+Name: natives/linux/scripts/uninstall-noconsolehelper.sh
+SHA1-Digest: iMv5eMrN0EBSzNNwwSl+Qakcg90=
+
+Name: oprofile-core.jar
+SHA1-Digest: PONsSZ4jTK+YljT71kHU49qBSlc=
+

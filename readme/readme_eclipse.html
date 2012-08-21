@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
-<title>Eclipse Project Release Notes 3.6.2</title>
+<title>Eclipse Project Release Notes 4.2</title>
 </head>
 <body>
 
 <h1>Eclipse Project Release Notes</h1>
-<p>Release 3.6.2<br/>
-  Last revised February 10, 2011</p>
+<p>Release 4.2.0<br/>
+  Last revised June 8th, 2012</p>
 <p align="left"><strong>This software is OSI Certified Open Source Software.<br/>
 OSI Certified is a certification mark of the Open Source Initiative.&nbsp;</strong></p>
 <blockquote>
@@ -32,12 +32,11 @@ OSI Certified is a certification mark of the Open Source Initiative.&nbsp;</stro
   Java Platform itself. Portions are targeted to specific classes of operating
   environments, requiring their source code to only reference facilities available
   in particular class libraries (e.g. J2ME Foundation 1.1, J2SE 1.4, Java 5, etc).</p>
-<p>In general, the 3.6 release of the Eclipse Project is developed on a mix
-  of Java 1.4, Java 5 and Java 6 VMs. As such, the Eclipse SDK as a whole
-  is targeted at all modern, desktop Java VMs. Most functionality is available for
-  1.4 level development everywhere, and extended development capabilities are made
+<p>In general, the 4.2 release of the Eclipse Project is developed on
+  Java SE 6 VMs. As such, the Eclipse SDK as a whole is targeted at all modern, desktop Java VMs. 
+  Most functionality is available for Java SE 6 level development everywhere, and extended development capabilities are made
   available on the VMs that support them.</p>
-<p><a href="#Appendix1">Appendix 1</a> contains a table that indicates the class
+<p><a href="#appendix">Appendix 1</a> contains a table that indicates the class
   library level required for each bundle.</p>
 <p>There are many different implementations of the Java Platform running atop
   a variety of operating systems. We focus our testing on a handful of
@@ -47,7 +46,8 @@ OSI Certified is a certification mark of the Open Source Initiative.&nbsp;</stro
   them we cannot vouch for them. Problems encountered when running Eclipse on a
   non-reference platform that cannot be recreated on any reference platform will
   be given lower priority than problems with running Eclipse on a reference platform.</p>
-<p>Eclipse 3.6 is tested and validated on the following reference platforms:</p>
+<p>Eclipse 4.2 is tested and validated on the following reference platforms
+  (this list is updated over the course of the release cycle):</p>
 <style type="text/css">
 	table.platforms {
 		border-width: 1px;
@@ -86,76 +86,51 @@ OSI Certified is a certification mark of the Open Source Initiative.&nbsp;</stro
 		</tr>
 		<!-- ************ WINDOWS ************** -->
 		<tr class="c0">
-			<td rowspan="6">Windows</td>
+			<td rowspan="4">Windows</td>
 			<td rowspan="2">7</td>
 			<td rowspan="1">x86 32-bit</td>
-			<td rowspan="2">Sun Java 5 Update 22<br/>
-				IBM Java 5 SR11
+			<td rowspan="4">Oracle Java 7 Update 2<br/>
+				Oracle Java 6 Update 27<br/>
+				IBM Java 6 SR9
 			</td>
-			<td rowspan="6">Win32</td>
+			<td rowspan="4">Win32</td>
 		</tr>
 		<tr>
 			<td rowspan="1">x86 64-bit</td>
-		</tr>
-		<tr>
-			<td rowspan="2">Vista</td>
-			<td rowspan="1">x86 32-bit</td>
-			<td>Sun Java 5 Update 22<br/>
-				IBM Java 5 SR11<br/>
-				Oracle JRockit 27.6.5
-			</td>
-		</tr>
-		<tr class="c0">
-			<td rowspan="1">x86 64-bit</td>
-			<td>Sun Java 5 Update 22<br/>
-				IBM Java 5 SR11
-			</td>
 		</tr>
 		<tr class="c0">
 			<td rowspan="2">XP</td>
 			<td rowspan="1">x86 32-bit</td>
-			<td>Sun Java 6 Update 17<br/>
-				Sun Java 5 Update 22<br/>
-				IBM Java 5 SR11<br/>
-				Oracle JRockit 27.6.5
-			</td>
 		</tr>
 		<tr class="c0">
 			<td rowspan="1">x86 64-bit</td>
-			<td>Sun Java 5 Update 22<br/>
-				IBM Java 5 SR11
-			</td>
 		</tr>
 		<!-- ************ RHEL ************** -->
 		<tr class="c1">
 			<td rowspan="3">Red Hat Enterprise Linux</td>
-			<td rowspan="2">5.0</td>
+			<td rowspan="3">6</td>
 			<td rowspan="1">x86 32-bit</td>
-			<td>Sun Java 6 Update 17<br/>
-				Sun Java 5 Update 22<br/>
-				IBM Java 5 SR11<br/>
-				Oracle JRockit 27.6.5
+			<td rowspan="2">
+			    Oracle Java 7 Update 2<br/>
+			    Oracle Java 6 Update 27<br/>
+				IBM Java 6 SR9
 			</td>
 			<td rowspan="3">GTK</td>
 		</tr>
 		<tr class="c1">
-			<td rowspan="1">Power 64-bit</td>
-			<td>IBM Java 5 SR11</td>
+			<td rowspan="1">x86 64-bit</td>
 		</tr>
 		<tr class="c1">
-			<td rowspan="1">4.0</td>
-			<td rowspan="1">x86 64-bit</td>
-			<td>Sun Java 5 Update 22<br/>
-				IBM Java 5 SR11
-			</td>
+			<td rowspan="1">Power 64-bit</td>
+			<td>IBM Java 6 SR9</td>
 		</tr>
 		<!-- ************ SLES ************** -->
 		<tr class="c0">
 			<td rowspan="3">SUSE Linux Enterprise Server</td>
 			<td rowspan="3">11</td>
 			<td rowspan="1">x86 32-bit</td>
-			<td rowspan="2">Sun Java 5 Update 22<br/>
-				IBM Java 5 SR11
+			<td rowspan="2">Oracle Java 6 Update 27<br/>
+				IBM Java 6 SR9
 			</td>
 			<td rowspan="3">GTK</td>
 		</tr>
@@ -164,15 +139,15 @@ OSI Certified is a certification mark of the Open Source Initiative.&nbsp;</stro
 		</tr>
 		<tr class="c0">
 			<td rowspan="1">Power 64-bit</td>
-			<td>IBM Java 5 SR11</td>
+			<td>IBM Java 6 SR9</td>
 		</tr>
 		<!-- ************ Ubuntu ************** -->
 		<tr class="c1">
 			<td rowspan="2">Ubuntu Long Term Support</td>
 			<td rowspan="2">10.04</td>
 			<td rowspan="1">x86 32-bit</td>
-			<td rowspan="2">Sun Java 5 Update 22<br/>
-				IBM Java 5 SR11
+			<td rowspan="2">Oracle Java 6 Update 27<br/>
+				IBM Java 6 SR9
 			</td>
 			<td rowspan="2">GTK</td>
 		</tr>
@@ -181,10 +156,10 @@ OSI Certified is a certification mark of the Open Source Initiative.&nbsp;</stro
 		</tr>
 		<!-- ************ Solaris ************** -->
 		<tr class="c0">
-			<td rowspan="2">Sun Solaris</td>
-			<td rowspan="2">10</td>
+			<td rowspan="2">Oracle Solaris</td>
+			<td rowspan="2">11</td>
 			<td rowspan="1">x86 32-bit</td>
-			<td rowspan="2">Sun Java 5 Update 22</td>
+			<td rowspan="2">Oracle Java 6 Update 27</td>
 			<td rowspan="2">GTK</td>
 		</tr>
 		<tr class="c0">
@@ -193,29 +168,25 @@ OSI Certified is a certification mark of the Open Source Initiative.&nbsp;</stro
 		<!-- ************ HPUX ************** -->
 		<tr class="c1">
 			<td rowspan="1">HP-UX</td>
-			<td rowspan="1">11i v2</td>
+			<td rowspan="1">11i v3</td>
 			<td rowspan="1">ia64 32-bit</td>
-			<td rowspan="1">HP-UX Java 5 Update 18</td>
-			<td rowspan="1">Motif 2.1</td>
+			<td rowspan="1">HP-UX Java 6 Update 10</td>
+			<td rowspan="1">GTK</td>
 		</tr>
 		<!-- ************ AIX ************** -->
 		<tr class="c0">
 			<td rowspan="1">IBM AIX</td>
-			<td rowspan="1">5.3</td>
-			<td rowspan="1">Power 32-bit</td>
-			<td rowspan="1">IBM Java 5 SR11</td>
-			<td rowspan="1">Motif 2.1</td>
+			<td rowspan="1">7.1</td>
+			<td rowspan="1">Power 64-bit</td>
+			<td rowspan="1">IBM Java 6 SR9</td>
+			<td rowspan="1">GTK</td>
 		</tr>
 		<!-- ************ Mac ************** -->
 		<tr class="c1">
-			<td rowspan="3">Apple Mac OS X</td>
-			<td rowspan="3">10.5</td>
-			<td rowspan="1">Universal</td>
-			<td rowspan="3">Apple Java 10.5 Update 2</td>
-			<td rowspan="1">Carbon</td>
-		</tr>
-		<tr class="c1">
+			<td rowspan="2">Apple Mac OS X</td>
+			<td rowspan="2">10.6</td>
 			<td rowspan="1">Universal 32-bit</td>
+			<td rowspan="2">Apple Java 10.6 Update 5</td>
 			<td rowspan="2">Cocoa</td>
 		</tr>
 		<tr class="c1">
@@ -232,67 +203,67 @@ OSI Certified is a certification mark of the Open Source Initiative.&nbsp;</stro
   user interface elements provided by the Eclipse SDK components, including dialogs
   and error messages, are externalized. The English strings are provided as the
   default resource bundles.</p>
-<p>Latin-1 and DBCS locales are supported by the Eclipse SDK on all reference platforms;
-  BIDI locales are supported by the Eclipse SDK everywhere but on Motif.</p>
+<p>Latin-1, DBCS, and BiDi locales are supported by the Eclipse SDK on all reference platforms.</p>
 <p>The Eclipse SDK supports GB 18030 (level 1), the Chinese code page standard,
-  on Windows XP and 2000, Linux/GTK and the Macintosh.</p>
+  on Windows, Linux and the Macintosh.</p>
 <p>German and Japanese locales are tested.</p>
 
 <h2>2. <a name="Compatibility"></a>Compatibility with Previous Releases</h2>
-<h3>Compatibility of Release 3.6 with 3.5</h3>
-<p>Eclipse 3.6 is compatible with Eclipse 3.5 (and all earlier 3.x versions).</p>
+<h3>Compatibility of Release 4.2 with 3.8</h3>
+<p>Eclipse 4.2 is compatible with Eclipse 3.8 (and all earlier 3.x versions).</p>
 
-<p><strong>API Contract Compatibility:</strong> Eclipse SDK 3.6 is upwards
-  contract-compatible with Eclipse SDK 3.5 except in those areas noted in the
-  <a href="http://dev.eclipse.org/viewcvs/index.cgi/%7Echeckout%7E/org.eclipse.platform.doc.isv/porting/eclipse_3_6_porting_guide.html" target="_top">
-    <em>Eclipse 3.6 Plug-in Migration Guide</em>
+<p><strong>API Contract Compatibility:</strong> Eclipse SDK 4.2 is upwards
+  contract-compatible with Eclipse SDK 3.8 except in those areas noted in the
+  <a href="http://git.eclipse.org/c/platform/eclipse.platform.common.git/plain/bundles/org.eclipse.platform.doc.isv/porting/eclipse_4_2_porting_guide.html?h=R4_HEAD" target="_top">
+    <em>Eclipse 4.2 Plug-in Migration Guide</em>
   </a>. Programs that use affected APIs and extension points will need to be ported
-  to Eclipse SDK 3.6 APIs. Downward contract compatibility
-  is not supported. There is no guarantee that compliance with Eclipse SDK 3.6
-  APIs would ensure compliance with Eclipse SDK 3.5 APIs. Refer to
+  to Eclipse SDK 4.2 APIs. Downward contract compatibility
+  is not supported. There is no guarantee that compliance with Eclipse SDK 4.2
+  APIs would ensure compliance with Eclipse SDK 3.8 APIs. Refer to
   <a href="http://wiki.eclipse.org/index.php/Evolving_Java-based_APIs">
     <em>Evolving Java-based APIs</em>
   </a> for a discussion of the kinds of API changes that maintain contract compatibility.</p>
   
-<p><strong>Binary (plug-in) Compatibility:</strong> Eclipse SDK 3.6 is upwards
-  binary-compatible with Eclipse SDK 3.5 except in those areas noted in the
-  <a href="http://dev.eclipse.org/viewcvs/index.cgi/%7Echeckout%7E/org.eclipse.platform.doc.isv/porting/eclipse_3_6_porting_guide.html" target="_top">
-    <em>Eclipse 3.6 Plug-in Migration Guide</em>
+<p><strong>Binary (plug-in) Compatibility:</strong> Eclipse SDK 4.2 is upwards
+  binary-compatible with Eclipse SDK 3.8 except in those areas noted in the
+  <a href="http://git.eclipse.org/c/platform/eclipse.platform.common.git/plain/bundles/org.eclipse.platform.doc.isv/porting/eclipse_4_2_porting_guide.html?h=R4_HEAD" target="_top">
+    <em>Eclipse 4.2 Plug-in Migration Guide</em>
   </a>. Downward plug-in compatibility is not supported. Plug-ins for Eclipse SDK
-  3.6 will not be usable in Eclipse SDK 3.5. Refer to
+  4.2 will not be usable in Eclipse SDK 3.8. Refer to
   <a href="http://wiki.eclipse.org/index.php/Evolving_Java-based_APIs">
     <em>Evolving Java-based APIs</em>
   </a> for a discussion of the kinds of API changes that maintain binary compatibility.</p>
   
-<p><strong>Source Compatibility:</strong> Eclipse SDK 3.6 is upwards source-compatible
-  with Eclipse SDK 3.5 except in the areas noted in the
-  <a href="http://dev.eclipse.org/viewcvs/index.cgi/%7Echeckout%7E/org.eclipse.platform.doc.isv/porting/eclipse_3_6_porting_guide.html" target="_top">
-    <em>Eclipse 3.6 Plug-in Migration Guide</em>
+<p><strong>Source Compatibility:</strong> Eclipse SDK 4.2 is upwards source-compatible
+  with Eclipse SDK 3.8 except in the areas noted in the
+  <a href="http://git.eclipse.org/c/platform/eclipse.platform.common.git/plain/bundles/org.eclipse.platform.doc.isv/porting/eclipse_4_2_porting_guide.html?h=R4_HEAD" target="_top">
+    <em>Eclipse 4.2 Plug-in Migration Guide</em>
   </a>. This means that source files written
-  to use Eclipse SDK 3.5 APIs might successfully compile and run against Eclipse
-  SDK 3.6 APIs, although this is not guaranteed. Downward source compatibility
+  to use Eclipse SDK 3.8 APIs might successfully compile and run against Eclipse
+  SDK 4.2 APIs, although this is not guaranteed. Downward source compatibility
   is not supported. If source files use new Eclipse SDK APIs, they will not be
   usable with an earlier version of the Eclipse SDK. </p>
   
-<p><strong>Workspace Compatibility:</strong> Eclipse SDK 3.6 is upwards
-  workspace-compatible with earlier 3.x versions of the Eclipse SDK unless noted.
-  This means that workspaces and projects created with Eclipse SDK 3.5 .. 3.0 can be successfully
-  opened by Eclipse SDK 3.6 and upgraded to a 3.6 workspace. This includes both
+<p><strong>Workspace Compatibility:</strong> Eclipse SDK 4.2 is upwards
+  workspace-compatible with earlier 3.x and 4.x versions of the Eclipse SDK unless noted.
+  This means that workspaces and projects created with Eclipse SDK 4.1, 4.0, 3.8 .. 3.0 can be successfully
+  opened by Eclipse SDK 4.2 and upgraded to a 4.2 workspace. This includes both
   hidden metadata, which is localized to a particular workspace, as well as metadata
   files found within a workspace project (e.g., the .project file), which may
   propagate between workspaces via file copying or team repositories. Individual
-  plug-ins developed for Eclipse SDK 3.6 should provide similar upwards compatibility
+  plug-ins developed for Eclipse SDK 4.2 should provide similar upwards compatibility
   for their hidden and visible workspace metadata created by earlier versions;
-  3.6 plug-in developers are responsible for ensuring that their plug-ins recognize
+  4.2 plug-in developers are responsible for ensuring that their plug-ins recognize
   metadata from earlier versions and process it appropriately. User
   interface session state may be discarded when a workspace is upgraded. Downward
   workspace compatibility is not supported. A workspace created (or opened) by
-  a product based on Eclipse 3.6 will be unusable with a product based on an earlier
+  a product based on Eclipse 4.2 will be unusable with a product based on an earlier
   version of Eclipse. Visible metadata files created (or overwritten) by Eclipse
-  3.6 will generally be unusable with earlier versions of Eclipse. </p>
+  4.2 will generally be unusable with earlier versions of Eclipse. </p>
   
 <p><strong>Non-compliant usage of API's</strong>: All non-API methods and classes,
-  and certainly everything in a package with &quot;internal&quot; in its name,
+  and certainly everything in a package with &quot;internal&quot; in its name or
+  x-internal in the bundle manifest entry,
   are considered implementation details which may vary between operating environment
   and are subject to change without notice. Client plug-ins that directly depend
   on anything other than what is specified in the Eclipse SDK API are inherently
@@ -331,12 +302,13 @@ OSI Certified is a certification mark of the Open Source Initiative.&nbsp;</stro
 <p>Note: Bug numbers refer to the Eclipse project bug database at <a href="http://dev.eclipse.org/bugs/">http://bugs.eclipse.org/bugs/</a></p>
 
 <h3>3.1 <a name="I-General">General problems</a></h3>
+
 <h3>3.1.1 <a name="I-General-Startup">General - Startup</a></h3>
 <h4>Installation/Configuration issues that can cause Eclipse to fail start</h4>
 <p>Here are some common problems that can cause Eclipse not to start:</p>
 <ul>
-  <li>As shown <a href="#TargetOperatingEnvironments">above</a>, Eclipse 3.6 requires 
-    at least a 1.4.2 VM. Perhaps an older version of the VM is being found in 
+  <li>As shown <a href="#TargetOperatingEnvironments">above</a>, Eclipse 4.2 requires 
+    at least a Java SE 6. Perhaps an older version of the VM is being found in 
     your path. To explicitly specify which VM to run with, use the Eclipse <tt>-vm</tt> 
     command-line argument. (See also the <a href="#RunningEclipse">Running Eclipse</a> 
     section below.)</li>
@@ -420,10 +392,10 @@ Eg: <code>Build id: M20070212-1330 (Ubuntu version: 3.2.2-0ubuntu3)</code>
 
 It is imperative that 64-bit builds are downloaded and used if a 64-bit Java
 runtime environment has been installed. Below are two sample tarball names of
-version 3.6.0 of the Eclipse SDK packaged for 32-bit and 64-bit processors.
+version 4.2 of the Eclipse SDK packaged for 32-bit and 64-bit processors.
 
-<pre>eclipse-SDK-3.6-linux-gtk.tar.gz (32-bit)
-eclipse-SDK-3.6-linux-gtk-x86_64.tar.gz (64-bit)</pre>
+<pre>eclipse-SDK-4.2-linux-gtk.tar.gz (32-bit)
+eclipse-SDK-4.2-linux-gtk-x86_64.tar.gz (64-bit)</pre>
 
 <p>To run Eclipse with an alternate Java runtime environment, the path to the Java
 virtual machine's binary must be identified. With an Eclipse installation from
@@ -527,14 +499,6 @@ version of a plug-in that is already installed will have no effect. To change th
 of a plug-in installed in your system, you need to either perform an update, or install
 a feature patch.</p>
 
-<h4>XML files with UTF-8 byte order mark fail to have content type detected</h4>
-<p>Eclipse will fail to detect the proper content type for XML files that have a
-UTF-8 byte order mark if Crimson is the XML parser (as it is on Sun 1.4 JREs,
-but not on Sun 1.5 JREs). This
-problem will prevent actions normally available when files of the affected
-content types are selected from being presented to the user. The workaround is
-to ensure the default XML parser supports UTF-8 BOMs (such as Xerces does). (bug
-<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=67048">67048</a>)</p>
 <h4>No branding with old config.ini</h4>
 <p>If you have an old config.ini file and use it with a new Eclipse build, you
 may not get the correct product branding. This is because the id of the standard
@@ -543,8 +507,7 @@ situation as previous builds of Eclipse automatically generated config.ini files
 in some cases. The work around is either to delete the local config.ini or
 update the eclipse.product line to read eclipse.product=org.eclipse.platform.ide.</p>
 
-<h4>Problems with
-classloaders in created threads</h4>
+<h4>Problems with classloaders in created threads</h4>
 <p>There is a known issue with trying to load classes from a newly-created
 thread using a class loader different from the plug-in class loader. The result
 will be a <code>ClassNotFoundException</code>. As a workaround, do the
@@ -561,8 +524,7 @@ be unpredictable. However, there should be no problem in practice provided you
 reset the context class loader back to its original value when your use in the
 current thread is&nbsp;complete. (bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=8907">8907</a>)</p>
 
-<h4>Deadlock creating executable
-extension in Plugin.startup</h4>
+<h4>Deadlock creating executable extension in Plugin.startup</h4>
 <p>If <code>Plugin.startup</code> code is too complex and performs tasks such
 as creating an executable extension, a deadlock situation can be created. Only
 simple bookkeeping tasks should be performed in <code>Plugin.startup</code>
@@ -648,13 +610,8 @@ void myCallback(void) {
 }
 </pre>
 
-
 <h3>3.2.2 <a name="I-Platform-Ant">Platform - Ant</a></h3>
-<h4>UTF-8 encoded buildfiles with Byte Order Mark</h4>
-<p>UTF-8 encoded buildfiles with byte order marks will fail to be parsed correctly depending on the XML parser being used for the build. Therefore a valid buildfile will fail to build with an error message similar to: "BUILD FAILED: C:\workspace\bom.xml:1: Document root element is missing.". To succeed in building with these files, ensure to include Xerces jars on the Ant runtime classpath so that the Xerces parser is used to parse the XML. As well the context menu for these files in the Navigator or Package Explorer will not have the run shortcuts for Ant builds. (bug
-<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=67048">67048</a>)</p>
-<h4> Custom Ant tasks and Ant
-types must be separate from plug-in library JARs</h4>
+<h4> Custom Ant tasks and Ant types must be separate from plug-in library JARs</h4>
 <p>Including the class files for custom Ant tasks or Ant types in the regular
 code JAR for your plug-in causes problems. These class files must be provided in
 a separate JAR that is contributed to the <code>org.eclipse.ant.core.antTasks</code>
@@ -666,33 +623,18 @@ special Ant class loader and not by a plug-in classloader. (bug <a href="https:/
 <p>Eclipse can run Ant in the same JVM as the rest of Eclipse. Several aspects
 of Ant and its use of global Java resources (such as System.out and System.err),
 make it unsafe to run more than one Ant build concurrently in the same JVM. (bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=24129">24129</a>).</p>
-<h4> Running certain Ant tasks
-cause memory leakage</h4>
-<p>Certain Ant tasks are known to leak memory. Please see the bug report for
-details, patches, and possible workarounds. (bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=24448">24448</a>)</p>
-<h4> Tasks that require input
-lock up workspace</h4>
 
-<p>As with using Ant from the command line, prompts for input from the
-console is not handled. This is not the same as making use of the &lt;input&gt;
-task, which works correctly within Eclipse. (bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=21748">21748</a>)</p>
-<h4>&quot;version&quot; property is always set when running Ant in the same VM as Eclipse</h4>
-<p>The Xalan libraries set system properties including a version property. These get set as properties within the Ant build and therefore the "version" property cannot be set within an Ant buildfile due to the immutable nature of Ant properties. This property will always be set to "2.4.1" for Ant builds in the same VM as Eclipse. (bug
-<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=45717">45717</a>)</p>
 <h4>XDoclet support from within Eclipse</h4>
-
 <p>Since there are differences when running Ant from the commandline and within Eclipse, some extra steps may be needed to have XDoclet support function correctly within Eclipse. Problems may occur creating XDoclet subtasks. The workarounds and full discussion can be found in bug report. (bug
 <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=37070">37070</a>)</p>
-<h4>Ant Editor code completion based on Ant 1.6.1</h4>
-<p>Code completion provided by the Ant editor does not respect the user-specified version of org.eclipse.ant.core plug-in or ANT_HOME. Code completion proposals are mostly based on Ant 1.6.1 with some updates to Ant 1.6.5 (bug
-<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=30886">30886</a>)</p>
-<h4> Eclipse can hang due to implementation of the Ant &lt;property&gt; task (Windows 9X
-only)</h4>
-<p>On Windows 9X, using:&lt;property environment="env"/&gt; will cause Eclipse to hang if the build occurs in the same VM as Eclipse. Running the build in a separate VM will hang the build but not Eclipse.
-(bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=44196">44196</a>)</p>
+
+<h4>Ant Editor code completion based on Ant 1.6.x</h4>
+<p>Code completion provided by the Ant editor does not respect the user-specified version of org.eclipse.ant.core plug-in or ANT_HOME. 
+Code completion proposals are mostly based on Ant 1.6.x with some updates to Ant 1.8.3 (bug
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=193046">bug 193046</a>)</p>
 
 <h4> Setting build loggers not supported when debugging Ant builds</h4>
-<p>When debugging Ant builds within Eclipse, setting -logger as a program argument will be ignored.</p>
+<p>When debugging Ant builds within Eclipse, setting <code>-logger</code> as a program argument will be ignored.</p>
 
 <h4>Renaming an External Tool builder set to run during auto-build will cause errors</h4>
 <p>If you rename an existing external tool builder that is configured to run during auto-builds, you will get the following error:
@@ -705,12 +647,22 @@ The workaround is to first disable the builder for auto-builds and then rename t
 
 <h4>Slow typing/saving of the Ant editor with imports that define numerous macrodefs</h4>
 <p>The Ant editor is slow on saving with buildfiles that have &lt;import&gt; declarations of buildfiles that have numerous &lt;macrodef&gt;s.
-See bugs <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=92640">92640</a> and <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=125117">125117</a> for possible workarounds</p>
+See bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=125117">125117</a> for a possible workaround</p>
 
 <h4>Failure to run Ant builds on non-Windows platforms if Eclipse installed in location with spaces in the path</h4>
 <p>Due to a bug in Ant 1.7.0, Ant builds will fail with an IllegalArgumentException if the Eclipse installation is in a location with spaces in the path.
 Embedded usage of Ant builds, such as plug-in export will also fail.
 See bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=187993">187993</a> for possible workarounds</p>
+
+<h4>Ant 1.8.x reports missing libraries as build failures</h4>
+<p>
+In Ant 1.8.x, if you try to use a task that requires additional libraries and you do not have the libraries on the Ant classpath, the build will now properly report as failed. 
+In previous versions of Ant, the build would still report that it had suceeded even though it actually failed to run any of the tasks from additional bundles. See <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=344518">bug 344518</a>.
+</p>
+<p>
+For more information on tasks that require additional bundles please refer to the <a href="http://www.apache.org/dist/ant/RELEASE-NOTES-apache-ant-1.8.2.html">Ant 1.8.2 release notes</a>
+and the <a href="http://ant.apache.org/manual/install.html#optionalTasks">Optional Tasks</a> section in the At manual. 
+</p>
 
 <h3>3.2.3 <a name="I-Platform-User-Assistance">Platform - User Assistance</a></h3>
 <h4>Welcome page not displayed properly (Linux/Unix)</h4>
@@ -778,68 +730,14 @@ Color Scheme drop down. (bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi
 XP High Contrast mode. You can select this mode by selecting Accessibility
 Options &gt; Display &gt; Use High Contrast from the Windows XP Control Panel
 menu.</p>
-<h4>Default text file encoding
-may be detected incorrectly (Windows XP/2000 only)</h4>
 
-<p><strong>Note</strong>: the bug report associated with this problem has been fixed. 
-If you run Eclipse with JDK 1.5 or greater you should not have to use the workaround 
-stated below any longer. However, the problem still exists when running Eclipse with 
-JDK 1.4.x or lower, so in this case  the workaround is still required . </p>
-<p>The &quot;Text file encoding&quot; value displayed in the Preferences
-  dialog under &quot;Editors&quot; may be wrong on platforms running Windows XP
-(or 2000) when the user locale and system locale differ.&nbsp;</p>
-<p>Example of the manifestation of the bug: A Japanese user using Japanese
-Windows 2000 works in New York, United States. The user has selected English
-(United States) as the user locale. The &quot;Text file encoding&quot; value
-displayed by Eclipse is incorrect: &quot;Cp1252&quot; (English). It should
-display the system locale &quot;MS932&quot; (Japanese).</p>
-<p>Workaround: The user can modify the user locale so that user locale and
-system locale are identical. In the example above, this means the user should
-set Japanese as the user locale. Then restart Eclipse. The &quot;Text file
-encoding&quot; value will then be correct: &quot;MS932&quot; (Japanese).</p>
-
-<p>For Windows XP:</p>
-<ul>
-  <li>To check the system locale: Open the Control Panel. Go to Regional and
-    Language Options. Switch to the Advanced tab. The system locale is specified
-    in &quot;Language for non-Unicode programs&quot;.</li>
-  <li>To change the user locale: Open the Control Panel. Go to Regional and
-    Language Options. The user locale can be modified by changing the language
-    in &quot;Standards and formats&quot;.</li>
-</ul>
-<p>For Windows 2000:</p>
-<ul>
-  <li>To check the system locale: Open the Control Panel. Go to Regional
-    Options. Look up the items in the General tab, inside the &quot;Language
-    settings for the system&quot; group. The system locale is the item marked as
-    (Default).</li>
-  <li>To change the user locale: Open the Control Panel. Go to Regional
-    Options. The user locale can be modified by changing the location in
-    &quot;Settings for the current user&quot;.</li>
-
-</ul>
-<p>(bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=20641">20641</a>)</p>
-<h4> Dirty state not tracked
-properly for OLE documents (Windows only)</h4>
+<h4> Dirty state not tracked properly for OLE documents (Windows only)</h4>
 <p>The dirty state for an OLE document is not updated properly. This causes
 Eclipse to prompt to save the contents of the editor when the document is
 closed, even if the contents have already been saved. (bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=2564">2564</a>)</p>
-<h4> OLE document crashes can
-cause Eclipse to also crash (Windows only)</h4>
+<h4> OLE document crashes can cause Eclipse to also crash (Windows only)</h4>
 <p>If an OLE document crashes, Eclipse can crash, or the workbench menus can
 become inconsistent.</p>
-<h4>2.1 Presentation based workspaces incorrectly get new Min/Max behavior</h4>
-<p>
-Workspaces that are currently using the Eclipse 2.1 Presentation will incorrectly
-'inherit' the new min/max behavior when opened with 3.3.
-</p>
-<p>
-Workaround:</p>
-<ol>
- <li>Go to the 'Preferences -&gt; Appearance' page, change the current presentation to 'Default' and select apply</li>
- <li>Change it back to the 2.1 Presentation, select 'OK' and 'Yes' to the restart prompt</li>
-</ol>
-When the workbench re-opens the old min/max behavior will be restored.
 <h4>Toolbars only containing contributed controls exhibit display errors on Mac/Linux</h4>
 <p>
 Currently there is no way on the Max or Linux platforms to define the <b>height</b> for controls contributed to
@@ -847,7 +745,45 @@ toolbars, nor will those platforms respect the size returned by the control's <c
 encounter this issue there is currently no truly viable workaround.
 (bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=183003">183003</a>)
 </p>
-
+<h4>Customizing menus and toolbars not working reliably</h4>
+<p>
+The Customize Perspective Dialog can still be used to turn on action sets in the Command Groups Availability tab,
+but the items contained within the action sets are no longer displayed in the dialog.  The Toolbar Visibility
+and Menu Visibility no longer display the correct information or icons, and will not work correctly.
+(bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=378845">378845</a>)
+</p>
+<h4>Cannot launch a workbench with &quot;-data @none&quot;</h4>
+<p>
+Eclipse 3.x RCP apps cannot be launched with no workspace.  The workaround is to supply a /tmp directory to 
+<b>-data</b> when launching.
+(bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=380853">380853</a>)
+</p>
+<h4>Launching an inner eclipse can lead to PermGen errors</h4>
+<p>
+On some Oracle JVMs, launching an inner eclipse during plug-in development can lead to PermGen errors
+for the inner eclipse.  The native launcher checks the JVM  and can add <i>-XX:MaxPermSize=256m</i>,
+but PDE launches simply use java and don't go through the native launchers.  The workaround is to add
+the appropriate JVM arg to your launch config or to the <i>Preferences &gt; Java &gt; Installed JREs</i>.
+(bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=339763">339763</a>)
+</p>
+<h4>Eclipse doesn't exit dragging mode</h4>
+<p>
+Sometimes after releasing the mouse while dragging a part, eclipse doesn't exit drag mode.
+The workaround is to hit <b>ESC</b>.
+(bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=379590">379590</a>)
+</p>
+<h4>Some key shortcuts stop working after switching schemes</h4>
+<p>
+Sometimes after switching schemes (to and from Emacs) some keys will stop working or not function
+correctly (CTRL+L, CTRL+K, CTRL+A, etc).
+(bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=378684">378684</a>)
+</p>
+<h4>Capabilities and Activities don't affect the menus and toolbars</h4>
+<p>
+Capabilities used to hide GUI elements like menu entries won't work yet, as Capabilities have not
+been fully implemented in the 4.2 Workbench.
+(bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=359778">359778</a>)
+</p>
 
 <h3>3.2.5 <a name="I-Platform-Text">Platform - Text</a></h3>
 None.
@@ -872,83 +808,15 @@ of Windows\System32\USP10.DLL in the Eclipse startup directory or uninstall
 Service Pack 2.
 (bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=56390">56390</a>)</p>
 
-<h4>Input Method broken (Motif only)</h4>
-<p>Some versions of RedHat Linux such as Fedora Core 3 and Enterprise Linux WS 
-release 4 use a new technology called IIIM (Intranet/Internet Input Method
-Framework) to replace the old XIM (X input method).   When running on these 
-new systems, Eclipse will crash if you attempt to enter any DBCS character.  The 
-workaround is to use a XIM based input method such as chinput.  This problem 
-may be fixed in newer releases of RedHat.
-(bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=89722">89722</a>)</p>
-
-<h4>Eclipse does not start on Linux-Motif with Xinerama and a UTF-8 locale</h4>
-<p>The Linux-motif build of Eclipse does not launch properly when run on a 
-computer with Xinerama (provides support for dual head monitors) and a UTF-8 
-locale.  The workaround for this problem is to change the locale to a non-UTF-8 
-value, or to disable Xinerama.
-(bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=38843">38843</a>)
-</p>
-
 <h4>Eclipse hangs when pasting from an unresponsive application (GTK only)</h4>
 <p>If the application that is supplying the clipboard material is unresponsive,
 the paste operation hangs Eclipse for several minutes. This situation can be
 encountered when copying from an Eclipse target workbench, suspending the target
 workbench at a breakpoint and pasting into the hosting Eclipse workbench. (bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=44915">44915</a>)</p>
 
-<h4>Unable to drag data between applications in simplified Chinese locale (Motif only)</h4>
-<p>When configured for the simplified Chinese locale, it is not possible to
-drag data between applications running on the Motif window system. This is a
-known limitation of the Open Motif library. (bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=29777">29777</a>)</p>
-
-<h4>Crash when attempting to launch file browser (AIX Motif only)</h4>
-<p>There is a known AIX graphics bug affecting certain levels of AIX
-releases. Ensure that the AIX install includes the necessary service updates as
-described in the &quot;Install notes/requirements for Eclipse on AIX&quot;
-attachment to Eclipse bug report number <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=34524">34524</a>.</p>
-
-<h4>Available colors on 8-bit Linux (Linux only)</h4>
-<p>Typically, in Gnome Linux installs running with 8-bit visuals (i.e. 256
-color mode), before the Eclipse application is started there are no free colors.
-This may mean that Eclipse is unable to allocate the default widget background
-color, causing it to display a white background. The functionality, however, is
-otherwise unaffected.</p>
-
-<h4>IME-related crash (Linux Motif only)</h4>
-<p>When using Linux Motif and GB18030 IME &quot;chinput&quot;, Eclipse can
-crash if the IME client window is left open when the parent window is disposed.
-(bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=32045">32045</a>)</p>
-
 <h4>IME conversion problem (Solaris GTK only)</h4>
 <p>When typing Japanese text, the conversion to Kanji must be done one ideogram at
 a time. (bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=226636">226636</a>)</p>
-
-<h4> gtk_init_check and X11 socket failure when using the IBM 1.4.2 JRE (GTK only)</h4>
-<p>Under RHEL 3.1 with the IBM 1.4.2 JRE and a large number
-of plugins, Eclipse may fail to launch with an exception from
-<tt>gtk_init_check</tt> along with this error:</p>
-<pre>
-_X11TransSocketOpen: socket() failed for local
-_X11TransSocketOpenCOTSClient: Unable to open socket for local
-</pre>
-<p>A workaround is to set the environment variable <tt>JAVA_HIGH_ZIPFDS</tt> to
-a value of 500 before starting Eclipse. (bug
-<a href="http://bugs.eclipse.org/bugs/show_bug.cgi?id=106396">106396</a>)</p>
-
-<h4>Key bindings can stop working on Debian (GTK+ only)</h4>
-<p>On some versions of Debian, Eclipse key bindings may stop working.  In this context
-the only way to make the key bindings work again is to restart Eclipse.
-</p><p>
-The problem is that a focus issue exists in GTK+ 2.6.7 and earlier, for which SWT has
-a workaround.  This workaround is incompatible with the GTK+ 2.6.7 fix, so a GTK+ version
-check is done at runtime to determine whether the workaround should be used or not.
-However, Debian backported the GTK+ focus fix into their libgtk+2.0 (2.6.4-2) package,
-so the SWT workaround and GTK+ fix are both incorrectly applied in this context.
-</p><p>
-To work around this problem, either get the Debian unstable version of GTK+, compile your
-own GTK+, or hack SWT's Shell.gtk_realize(int) and change the version that it checks.
-See SWT bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=107013">107013</a>
-and GTK+ bug <a href="http://bugzilla.gnome.org/show_bug.cgi?id=109246">109246</a>
-for more information.</p>
 
 <h4>Typing in an editor crashes with IBM 1.5 VM (Linux GTK PPC only)</h4>
 <p>When running on the IBM Java 5.0 VM, Eclipse crashes while the user is typing in an editor.
@@ -963,15 +831,6 @@ The command line for launching Eclipse with this vm should be: <br/>
 To launch eclipse you must disable file locking using the osgi.locking property.
 For example, you could launch eclipse as follows: <br/>
 <code>eclipse -vmargs -Dosgi.locking=none</code>
-</p>
-
-<h4>SWT for Carbon cannot be used with Mac OS X JRE version 1.6 (Mac OS X 10.5 only)</h4>
-<p>On Leopard (Mac OS X 10.5), JDK version 1.6 assumes that pointers have a size of 64 bits, but SWT's Carbon
-port only uses 32-bit pointers, so SWT and Eclipse cannot be used on Leopard with JDK version
-1.6.  The workaround is to use the Cocoa version of SWT or an earlier supported version
-of the Mac OS X JDK.
-</p>
-<p>Snow Leopard (Mac OS X 10.6) has both a 32-bit and 64-bit version of JDK 1.6, so this restriction does not apply on that version of the operating system.
 </p>
 
 <h4>Strings may be truncated or incorrectly wrapped on RHEL5 (Linux GTK only)</h4>
@@ -991,7 +850,7 @@ differ from the visual representation of the selection. (bug <a href="https://bu
 <h4>Older versions of some Windows screen readers no longer work with Eclipse</h4>
 <p>JAWS versions 8 and 9 and Window-Eyes version 6 no longer work well with Eclipse and other SWT applications.
 Window-Eyes 6 will cause Eclipse to crash, and JAWS 8 and 9 can cause SWT applications to crash.
-This happens because IAccessible2 support was added to SWT for Eclipse 3.6, but these older screen reader versions contain
+This happens because IAccessible2 support was added to SWT for Eclipse 3.7, but these older screen reader versions contain
 partial implementations of IAccessible2 that do not follow the current IAccessible2 specification.</p>
 <p>
 The workaround for these cases is to specify Java property <code>org.eclipse.swt.accessibility.UseIA2</code> with value <code>false</code>,
@@ -999,6 +858,42 @@ which will instruct SWT to not attempt to use IA2 interfaces.  An easy way to se
 <code>-Dorg.eclipse.swt.accessibility.UseIA2=false</code> when launching Eclipse or your SWT application. (bug
 <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=313182">313182</a>)</p>
 
+<h4>Drawing problems when using non-advanced graphics on recent GTK versions</h4>
+<p>On modern Linux distributions with a GTK version greater than 2.18, clipping problems and pixel corruption 
+can occur if the SWT client uses non-advanced GC calls. These problems seem to be caused by low-level bugs 
+in the interactions between GDK and X.
+</p>
+
+<h4>Menus do not appear in Unity desktop menu bar</h4>
+<p>On recent Ubuntu Linux distributions that feature the Unity desktop, the menus from the workbench 
+will not appear in the top desktop menu bar. They will continue to appear in the shell.</p>
+
+<h4>Slider controls do not draw on Ubuntu</h4>
+<p>Sliders do not work on Linux distros with overlay scrollbars enabled  (such as
+Ubuntu 12.04). A workaround for this is to disable the overlay scrollbars
+(export LIBOVERLAY_SCROLLBAR=0 ) before launching Eclipse.</p>
+
+<h4>BIDI Segments in Text controls</h4>
+<p>BIDI Segments in text controls only work on Windows and GTK.</p>
+
+<h4>Toolbar controls on GTK are not properly sized</h4>
+
+<p>There is a known problem in ToolItem that prevents control set in separators
+from being sized properly. (See Bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=377961">377961</a>)
+</p>
+
+<h4>Navigation using tab and arrow keys</h4>
+<p>
+Navigating directly to a specific view or editor using keyboard shortcuts is the
+same in Eclipse 4.x as it was in Eclipse 3.x with the exception of tab traversal.
+In Eclipse 3.x, tab, shift+tab, ctrl+tab and ctrl+shift+tab always traversed within
+a view or editor stack. In 4.x, these keys traverse through all of the view and editor stacks.
+When traversing in the forward direction (tab or ctrl+tab), the active view or editor
+will take focus. When navigating in the reverse direction, other elements of a view,
+such as the view toolbar or menu, can take focus as well. This behavior can be a
+little quirky, and we are looking into normalizing it for 4.2.1
+(bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=376011">376011</a>)
+</p>
 
 <h3>3.2.7 <a name="I-Platform-Team-CVS">Platform - Team - CVS</a></h3>
 <p>The following are known problems with the CVS repository provider only, and
@@ -1025,6 +920,7 @@ page. </p>
 <p>If a connection initially fails due to a network problem, the connection may
 continue to fail even when the network problem is fixed. In order to establish
 the connection you must exit and restart Eclipse. (bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=9295">9295</a>)</p>
+
 <h4>&quot;Received broken pipe signal&quot; error from server</h4>
 <p>Eclipse sometimes performs multiple commands within a single connection to
 the server. This may cause problems with CVS servers that are running server
@@ -1134,26 +1030,12 @@ not always suspend execution). The problem occurs on Windows and Linux
 platforms. This is an issue with the VM and not with Eclipse.
 The workaround is to use the <code>-XX:+UseParallelGC</code> VM option. (bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=279137">279137</a>).
 
-<h4>Side effects of Step into Selection and Run to Line</h4>
-<p>The actions &quot;Step into Selection&quot; and &quot;Run to Line&quot;
-optimistically set breakpoints on the line the user has chosen to step into or
-run to. However, the debugger can not determine if or when execution will ever
-reach the chosen line. The breakpoints set by the underlying implementation are
-not visible to the user and can cause execution to suspend unexpectedly at a
-later time, when the associated line is actually executed. (bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=51507">51507</a>)</p>
-
-<h4>Default locale initialization incorrect</h4>
-<p>The default locale is generally initialized from the settings in the
-operating system when a target VM is launched. However, when using javaw.exe on
-JDK1.4.2, Windows XP, the default locale is incorrectly initialized to en_US, no
-matter what the operating system settings are. (bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=65945">65945</a>)</p>
-
 <h4>Some refactoring script operations fail with Sun 6.0 JREs</h4>
 <p>Creating and applying refactoring scripts sometimes fails with Sun 6.0 JREs
 due to a bug in the XML parser that is shipped with those VMs.
 A workaround is to use a J2SE 5.0 VM or an IBM 6.0 VM.
 Another workaround is to replace the XML parser using the
-<a href="http://java.sun.com/javase/6/docs/technotes/guides/standards/index.html">Java Endorsed Standards Override Mechanism</a>:
+<a href="http://download.oracle.com/javase/6/docs/technotes/guides/standards/index.html">Java Endorsed Standards Override Mechanism</a>:
 </p>
 <ol>
   <li>Get original versions of xml-apis.jar, xercesImpl.jar, xalan.jar, and serializer.jar from Apache, e.g.
@@ -1230,8 +1112,6 @@ edits and builds source code. However, hot code replace is limited to changes
 that a particular virtual machine implementation supports. For example, changes
 within existing methods may be supported, but the addition or removal of members
 may not be.</p>
-<p>Note that hot code replace and stepping on JDK 1.4.0 VMs was unreliable. The
-underlying VM problems were fixed in JDK 1.4.1, and later.</p>
 <h4> Scrapbook</h4>
 Setting a breakpoint inside a scrapbook page is not supported.
 
@@ -1277,11 +1157,6 @@ pop-up menu (or use the shortcut &quot;delete&quot; key). Associated system
 processes in the OS may not be properly cleaned up. If a debug target has no
 suspended threads, termination works properly. (bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=1631">1631</a>)
 
-
-<h4> Memory View (Linux only)</h4>
-The feature to automatically load segments of memory while scrolling in the Memory
-view does not work on Linux. Instead the user must use the &quot;Next Page&quot; and &quot;Previous Page&quot; actions
-to manually load memory segments (bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=74559">74559</a>)
 <h4>Java 6 and MacOS</h4>
 Apple JavaSE-1.6 VMs only execute on 64-bit architectures but JDT will detect 1.6 VMs installed on 32-bit
 architectures when a new workspace is started or when the user presses the &quot;Search...&quot; button
@@ -1336,12 +1211,7 @@ org.eclipse.swt as binary with source attached. (bug <a href="https://bugs.eclip
 work in manifest editor fields</h4>
 <p>Non-default key bindings currently do not work in fields on non-source
 pages of the PDE manifest editors. (bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=19482">19482</a>)</p>
-<h4>Plug-in import wizard does
-not allow plug-ins of different versions to be imported</h4>
-<p>The Eclipse platform allows two plug-ins with the same ID but different
-versions to coexist if the only thing they contribute is run-time libraries.
-However, PDE cannot handle these plug-ins because it creates project names using
-plug-in Ids during binary project import. (bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=18500">18500</a>)</p>
+
 <h4>Export of plug-in may silently drop classes</h4>
 <p>When exporting a plug-in using the plug-in, feature or product wizards, some classes
 might be dropped from the resulting archive if their fully qualified name is too long.
@@ -1361,53 +1231,34 @@ and <code>buildDirectory</code> must refer to a fully qualified path.
 (bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=139554">139554</a>)
 </p>
 
-<h4>Target Platform only sees installed plug-ins</h4>
-<p>With the new p2 provisioning system in 3.4, PDE introduced a preference to control how target platforms are built. 
-By default, this preference is on if your target equals your host, otherwise it's off. When this preference is enabled, PDE attempts to
-read a target platform's configuration and build the target platform based in the target's list of installed plug-ins. If a configuration
-can't be found (a bundles.info or platform.xml file), PDE will simply manually scan the target directory and populate the target platform's
-list of plug-ins.
-(bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=226037">226037</a> and bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=225148">225148</a>)
+<h4>Importing in Eclipse application fails if plug-in exists in host workspace</h4>
+<p>When running an Eclipse application (self-hosting) importing plug-ins will not
+work correctly if the plug-in being imported exists in the host Eclipse's
+workspace. This is because PDE modifies the target platform of the application
+to point at the running plug-ins from the host (target weaving). This also
+affects the PDE test suite.
+(bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=294005">294005</a>)
 </p>
 
-<h4>Delta pack is not seen by PDE when installed</h4>
-<p>If you're using the delta pack, the target platform preference for building a target based on the target's installed plug-ins must be checked off.
-This is because a target's runtime configuration only contains plug-ins specific to the platform it's running on.
-(bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=230146">230146</a>)
-</p>
-
-<h4>The org.osgi.util.tracker package is exported at wrong version</h4>
-<p>The Equinox OSGI Framework (org.eclipse.osgi) exports the org.osgi.util.tracker package
-at the incorrect version of 1.4.2.  The correct org.osgi.util.tracker package version for 
-the OSGi Release 4 Version 4.2 specification is version 1.4.0.  Bundles that 
-wish to run on other vendor frameworks should import the org.osgi.util.tracker package at
-version 1.4.0.  By default PDE will suggest the version 1.4.2 to be used when a bundle imports 
-the org.osgi.util.tracker package (using Import-Package manifest header).  Developers can 
-manually change the import to use 1.4.0 version of the package to be able to run on both
-Equinox and other vendor frameworks.
-(bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=279622">279622</a>)
-</p>
-
-<h4>Importing plug-ins as source misses resources</h4>
-<p>When importing plug-ins as source (from associated binary plug-ins and source bundles), resources
-such as property files and images will not be imported into the workspace. The workaround is to retrieve
-projects from their associated CVS repository or import binary plug-ins with attached source (if the ability
-to edit the imported plug-ins is not required).
-(bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=280259">280259</a>)
+<h4>Reusing a workspace after changing architectures silently breaks PDE models</h4>
+<p>If a workspace is reused on a machine with a different architecture, the PDE
+models used to build plug-ins may silently fail. To work around this problem,
+delete the metadata in &lt;workspace&gt;/.metadata/.plugins/org.eclipse.pde.core.
+(bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=350172">350172</a>)
 </p>
 
 <h2>4. <a name="RunningEclipse">Running Eclipse</a></h2>
 <p>After installing the Eclipse SDK in a directory, you can start the Workbench
-by running the Eclipse executable included with the release (you also need a 1.4.2
+by running the Eclipse executable included with the release (you also need a Java SE 6
 JRE, not included with the Eclipse SDK). On Windows, the executable file is called <samp>eclipse.exe</samp>,
 and is located in the <code>eclipse</code> sub-directory of the install. If
-installed at <code>c:\eclipse-SDK-3.6-win32</code>, the executable is <code>c:\eclipse-SDK-3.6-win32\eclipse\eclipse.exe</code>.
+installed at <code>c:\eclipse-SDK-4.2-win32</code>, the executable is <code>c:\eclipse-SDK-4.2-win32\eclipse\eclipse.exe</code>.
 
 <b>Note:</b> Set-up on most other operating environments is analogous. Special
 instructions for Mac OS X are listed <a href="#macosx">below</a>.</p>
 
 <h3>Allocating enough memory and solving OutOfMemoryErrors</h3>
-<p>By default, Eclipse will allocate up to 256 megabytes of Java heap memory. This should
+<p>By default, Eclipse will allocate up to 512 megabytes of Java heap memory. This should
 be ample for all typical development tasks. However, depending on the JRE
 that you are running, the number of additional plug-ins you are using, and
 the number of files you will be working with, you could conceivably have to increase this amount. 
@@ -1418,14 +1269,14 @@ Thus, to increase the available heap memory, you would typically use:</p>
   <p><code>eclipse -vmargs -Xmx&lt;memory size&gt;</code></p>
 </blockquote>
 <p>with the <code>&lt;memory size&gt;</code> value set to greater than
-&quot;256M&quot; (256 megabytes -- the default). 
+&quot;512M&quot; (512 megabytes -- the default). 
 </p>
 <p>
-When using a Sun VM, you may also need to increase the size of the permanent
+When using an Oracle VM, you may also need to increase the size of the permanent
 generation memory.  The default maximum is 64 megabytes, but more may
 be needed depending on your plug-in configuration and use.  When the VM runs
 out of permanent generation memory, it may crash or hang during class loading.
-This failure is less common when using Sun JRE version 1.5.0_07 or greater.
+This failure is less common when using Oracle JRE version 1.5.0_07 or greater.
 The maximum permanent generation size is increased using the -XX:MaxPermSize=&lt;memory size&gt; argument:</p>
 <blockquote>
   <p><code>eclipse -vmargs -XX:MaxPermSize=&lt;memory size&gt;</code></p>
@@ -1452,7 +1303,7 @@ dialog (or via the &quot;<code>-data</code>&quot; command line argument).</p>
 <p>Here is a typical Eclipse command line:&nbsp;</p>
 
 <blockquote>
-  <p><code>eclipse -vm c:\jdk1.4.2\jre\bin\javaw</code></p>
+  <p><code>eclipse -vm c:\jdk6u22\jre\bin\javaw</code></p>
 </blockquote>
 <p><i>Tip:</i> It's generally a good idea to explicitly specify which Java VM to
 use when running Eclipse. This is achieved with the &quot;<code>-vm</code>&quot;
@@ -1551,10 +1402,21 @@ list on start-up, or</li>
 <li>Manually add the referenced JARs to the User Library or to the project.</li>
 </ul>
 </p>
+<h3>Dropped in bundles may not resolve after upgrade</h3>
+<p>If you have installed bundles by dropping them into the <tt>plugins</tt>
+or <tt>dropins</tt> directory, they might no longer resolve when you upgrade
+to a new Eclipse Platform version. In each new version of the Eclipse Platform,
+there are new versions of bundles included in the platform, and often a small 
+number of removed bundles. This may cause your previously dropped in bundles
+to no longer resolve and run. It is always recommended that you install software
+via the <tt>Help &gt; Install New Software</tt> mechanism so you are made
+aware of any install-time failure to resolve dependencies.
+</p>
+
 <h2>6. <a name="InteroperabilityWithPreviousReleases">Interoperability with
 Previous Releases</a></h2>
-<h3>6.1 Interoperability of Release 3.6 with previous releases</h3>
-<h4>Sharing projects between heterogeneous Eclipse 3.6 and 3.5</h4>
+<h3>6.1 Interoperability of Release 4.2 with previous releases</h3>
+<h4>Sharing projects between heterogeneous Eclipse 4.2 and 3.8</h4>
 <p>Special care is required when a project in a team repository is being loaded
 and operated on by developers using Eclipse-based products based on different
 feature or plug-in versions. The general problem is that the existence,
@@ -1562,2069 +1424,64 @@ contents, and interpretation of metadata files in the workspaces may be specific
 to a particular feature or plug-in version, and differ between versions. The
 workspace compatibility guarantees only cover cases where all developers upgrade
 their Eclipse workspaces in lock step. In those cases there should be no problem
-with shared metadata. However, when some developers are working in Eclipse 3.6
-while others are working in Eclipse 3.5, there are no such guarantees.
+with shared metadata. However, when some developers are working in Eclipse 4.2
+while others are working in Eclipse 3.x, there are no such guarantees.
 This section provides advice for what to do and not to do. It addresses the
 specific issues with the Eclipse SDK.</p>
 
-<p>The typical failure mode is noticed by the 3.6 user. 3.6 metadata is lost
-when a 3.5 user saves changes and then commits the updated metadata files to the
+<p>The typical failure mode is noticed by the 4.2 user. 4.2 metadata is lost
+when a 3.x user saves changes and then commits the updated metadata files to the
 repository. Here's how things typically go awry:</p>
 <ul>
-  <li>A user working in Eclipse 3.6 creates or modifies a project in a way that
-    results in changes to a shared metadata file that rely on 3.6-specific
+  <li>A user working in Eclipse 4.2 creates or modifies a project in a way that
+    results in changes to a shared metadata file that rely on 4.2-specific
     information. The user then commits the updated project files, including the
     shared metadata file, to the shared repository.</li>
-  <li>Another user working in Eclipse 3.5 shares this project from the same
-    repository. The 3.6-specific information in the shared metadata file is not
-    understood by Eclipse 3.5, and is generally discarded or ignored without
+  <li>Another user working in Eclipse 3.x shares this project from the same
+    repository. The 4.2-specific information in the shared metadata file is not
+    understood by Eclipse 3.x, and is generally discarded or ignored without
     warning. The user modifies the project in a way that results in changes to
     the shared metadata file, causing the shared metadata file to be rewritten
-    without any of the 3.6-specific information. The user commits the updated
+    without any of the 4.2-specific information. The user commits the updated
     project files, including the shared metadata file, to the shared repository.
     The user is generally unaware that shared information has just been lost as
     a result of their actions.</li>
-  <li>A user working in Eclipse 3.6 picks up the changes to a project from the
+  <li>A user working in Eclipse 4.2 picks up the changes to a project from the
     shared repository, including the updated shared metadata file. The user may
     be unaware that they have just taken a retrograde step until later when
     things start to malfunction.</li>
 </ul>
 <p>Here are some things to watch out for when sharing projects between
-Eclipse 3.6 and earlier 3.x releases:</p>
+Eclipse 4.2 and earlier 3.x releases:</p>
 <ul>
   <li><b>Virtual folders</b> - 
-  Eclipse 3.6 supports a notion of <i>virtual folders</i> that did not exist
-  in Eclipse 3.5 or earlier. If such virtual folders are created in 3.6, and the project
+  Eclipse 4.2 supports a notion of <i>virtual folders</i> that did not exist
+  in Eclipse 3.5 or earlier. If such virtual folders are created in 4.2, and the project
   is subsequently loaded into an Eclipse 3.5 or earlier workspace, these folders
   will not be recognized. Recommendation: avoid creating virtual folders where project
   compatibility with Eclipse 3.5 or earlier is required.</li>
   <li><b>Resource filters</b> - 
-  Eclipse 3.6 supports a notion of <i>resource filters</i> that did not exist
-  in Eclipse 3.5 or earlier. If such filters are added to resources in 3.6, and the project
+  Eclipse 4.2 supports a notion of <i>resource filters</i> that did not exist
+  in Eclipse 3.5 or earlier. If such filters are added to resources in 4.2, and the project
   is subsequently loaded into an Eclipse 3.5 or earlier workspace, these filters
   will not be recognized. Recommendation: avoid creating resource filters where project
   compatibility with Eclipse 3.5 or earlier is required.</li>
   <li><b>Predefined path variables</b> - 
-  Eclipse 3.6 supports a set of built in path variables that can be used as the basis
+  Eclipse 4.2 supports a set of built in path variables that can be used as the basis
   for linked resource locations. Such variables will not be defined automatically in 
   Eclipse 3.5 or earlier. If compatibility with 3.5 or earlier workspace is required,
   users on 3.5 or earlier workspaces will need to define such path variables manually.
   </li>
 </ul>
-<h4>Using Eclipse 3.6 to develop plug-ins that work in Eclipse 3.5</h4>
-<p>It is also possible (and reasonable) to use Eclipse 3.6 to develop a plug-in 
-  intended to work in Eclipse 3.5 or earlier. Use the <b>Plug-in Development &gt; 
+<h4>Using Eclipse 4.2 to develop plug-ins that work in Eclipse 3.7</h4>
+<p>It is also possible (and reasonable) to use Eclipse 4.2 to develop a plug-in 
+  intended to work in Eclipse 3.7 or earlier. Use the <b>Plug-in Development &gt; 
   Target Platform </b>preference page to locate non-workspace plug-ins in an Eclipse 
-  3.5 install. This ensures that the code for your plug-in is being compiled and 
-  tested against Eclipse 3.5 APIs, extension points, and plug-ins. (The above 
+  3.7 install. This ensures that the code for your plug-in is being compiled and 
+  tested against Eclipse 3.7 APIs, extension points, and plug-ins. (The above 
   list of concerns do not apply since they affect the layout and interpretation 
   of files in the plug-in <i>project</i> but none affect the actual deployed form 
   of the plug-in.)</p>
-  
-  
-  
-  <h2>7. <a name="DefectsFixed"></a>Defects Fixed in Maintenance Releases</h2>
-
-<h3>7.1 Defects fixed in release 3.6.2 since 3.6.1</h3>
-<p>Release 3.6.2 is a maintenance release to fix serious defects present in
-release 3.6.1 These changes only affect some plug-ins and
-features.</p>
-
-<p>Maintenance release 3.6.2 contains fixes for the following defects and others:</p>
-
-<p>
-Note: Bug fixes since the 3.6.1 release can be obtained by the following the Bugzilla query: </p> 
-<p>
-
-<a href="https://bugs.eclipse.org/bugs/buglist.cgi?bug_file_loc_type=allwordssubstr;bug_status=RESOLVED;bug_status=VERIFIED;bug_status=CLOSED;classification=Eclipse;classification=RT;field-1-0-0=bug_status;field-1-1-0=classification;field-1-2-0=product;field-1-3-0=resolution;field-1-4-0=target_milestone;field0-0-0=noop;keywords_type=allwords;long_desc_type=allwordssubstr;product=Equinox;product=JDT;product=PDE;product=Platform;query_format=advanced;remaction=;resolution=FIXED;short_desc=;short_desc_type=allwordssubstr;status_whiteboard=;status_whiteboard_type=allwordssubstr;target_milestone=3.6.2;type-1-0-0=anyexact;type-1-1-0=anyexact;type-1-2-0=anyexact;type-1-3-0=anyexact;type-1-4-0=anyexact;type0-0-0=noop;value-1-0-0=RESOLVED%2CVERIFIED%2CCLOSED;value-1-1-0=Eclipse%2CRT;value-1-2-0=Equinox%2CJDT%2CPDE%2CPlatform;value-1-3-0=FIXED;value-1-4-0=3.6.1;value0-0-0=|;query_based_on=">Bugs fixed in the 3.6.2 release</a>
-
-</p>
-
-
-
-
-
-<table class="bz_buglist" cellspacing="0" cellpadding="4" width="100%">
-    <tr class="bz_buglist_header bz_first_buglist_header">
-      <th colspan="1" class="first-child">
-        <a href="buglist.cgi?bug_file_loc_type=allwordssubstr&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;classification=Eclipse&amp;classification=RT&amp;columnlist=short_desc&amp;field0-0-0=noop&amp;keywords_type=allwords&amp;long_desc_type=allwordssubstr&amp;product=Equinox&amp;product=JDT&amp;product=PDE&amp;product=Platform&amp;query_format=advanced&amp;remaction=&amp;resolution=FIXED&amp;short_desc=&amp;short_desc_type=allwordssubstr&amp;status_whiteboard=&amp;status_whiteboard_type=allwordssubstr&amp;target_milestone=3.6.2&amp;type0-0-0=noop&amp;value0-0-0=%7C&amp;order=bug_id%20DESC&amp;query_based_on=">ID</a>
-      </th>
-
-<th colspan="1">
-    <a href="buglist.cgi?bug_file_loc_type=allwordssubstr&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;classification=Eclipse&amp;classification=RT&amp;columnlist=short_desc&amp;field0-0-0=noop&amp;keywords_type=allwords&amp;long_desc_type=allwordssubstr&amp;product=Equinox&amp;product=JDT&amp;product=PDE&amp;product=Platform&amp;query_format=advanced&amp;remaction=&amp;resolution=FIXED&amp;short_desc=&amp;short_desc_type=allwordssubstr&amp;status_whiteboard=&amp;status_whiteboard_type=allwordssubstr&amp;target_milestone=3.6.2&amp;type0-0-0=noop&amp;value0-0-0=%7C&amp;order=short_desc%2Cbug_id&amp;query_based_on=">Summary</a>
-  </th>
-
-
-    </tr>
-
-
-  <tr class="bz_bugitem
-             bz_major             bz_P3             bz_VERIFIED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b210027"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=210027">210027</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">TreeModelLabelProvider does not cancel stale updates.
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b283320"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=283320">283320</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[SWT] Widgets flashing when moving mouse while holding Alt button
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P2             bz_RESOLVED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b301894"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=301894">301894</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">OutOfMemory error when building a large project with annotations
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b302184"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=302184">302184</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[About] About dialog text - needs to not cache system property values
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b307345"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=307345">307345</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[Browser][Mozilla][Mac]Can't use ctrl+f2 to move focus to the menu bar in Mozilla browser
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_VERIFIED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b312189"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=312189">312189</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[quick assist] BadLocationException when applying proposal while preview is computed
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_VERIFIED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b317771"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=317771">317771</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">FUP of 315978: Add performance tracking test for scenario fixed by bug# 315978
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_critical             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b319123"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=319123">319123</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[launcher] Application becomes unresponsive when code completion tooltip shows
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_VERIFIED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b319337"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=319337">319337</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[Win32] WindowXP command &quot;Close Group&quot; can not close all the Eclipse window that in one group
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_VERIFIED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b321155"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=321155">321155</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[DynamicGUI] UIExtensionTracker calling Display.syncExec() on disposed Display
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_major             bz_P3             bz_VERIFIED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b323514"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=323514">323514</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[indexing] The Java Indexer is taking longer to run in eclipse 3.6 when opening projects
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_critical             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b323763"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=323763">323763</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">Eclipse 3.7 M1 crashes as it is starting up - detected by Java Runtime Environment
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_critical             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b324102"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=324102">324102</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">Backspace key, delete key and tab stop working when my application is minimized
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_major             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b324236"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=324236">324236</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[Browser-Mozilla] Links and JS actions opening a new window do not work
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b324596"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=324596">324596</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[releng][p2] consume ECF build for 3.6.1 maintenance
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b324801"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=324801">324801</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">enable WebKitGTK on Linux-PPC
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b324892"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=324892">324892</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">Wrong constant values for some IA2 events
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_critical             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b325028"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=325028">325028</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[a11y] Frequent crashes in editor resulting from atk_object_get_attributes()
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_major             bz_P3             bz_VERIFIED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b325161"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=325161">325161</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">NPE in Java breakpoint properties page with JavaStratumLineBreakpoint
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_critical             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b325227"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=325227">325227</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[Backport] NatureManager is NOT threadsafe causing incorrect responses to isNatureEnabled() (and others)
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED             bz_secure             bz_secure_mode_manual             bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b325294"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=325294">325294</a>
-      <span style="display: none">[SEC]</span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[launcher] DLL hijacking exploit
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b325557"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=325557">325557</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">Associating a Launch with Perspective &quot;None&quot; is not persisted
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_major             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b325797"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=325797">325797</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">views automatically opened based on debug context are hidden/closed on perspective switch
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_major             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b325885"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=325885">325885</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">Dynamic import resolver bug
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED             bz_secure             bz_secure_mode_manual             bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b325902"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=325902">325902</a>
-      <span style="display: none">[SEC]</span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[launcher] Windows LoadLibrary search cwd DLL exploit
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b325946"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=325946">325946</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[backport] Provide a way to disable capping in the comparison algorithm
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_VERIFIED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b326152"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=326152">326152</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[Memory View] new monitors added while Memory view is hidden or closed are not shown in the tree
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_VERIFIED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b326263"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=326263">326263</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">Windows File Locks are obtained on bundles exporting extension points and not released.
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b326351"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=326351">326351</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">remove p2.selfhosting bundle from org.eclipse.releng/maps/p2.map
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_major             bz_P3             bz_VERIFIED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b326354"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=326354">326354</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[3.6][compiler][regression] Compiler in 3.6 and 3.6.1 generates bad code
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b326395"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=326395">326395</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[Backport] Cannot compare word documents
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_major             bz_P3             bz_VERIFIED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b326434"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=326434">326434</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">New issues with NPE refreshing external folders with 3.6.1
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b326453"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=326453">326453</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">releng compare tool and pde api tooling should compare against 3.6.1 in 3.6.2 maintenance stream
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b326516"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=326516">326516</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">3.6.2 feature versions need to be incremented
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b326532"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=326532">326532</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">run compare tool against p2 repos instead of sdk (backport to 3.6.2)
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b326541"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=326541">326541</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">Plan Verifier results not checked in reconciler
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b326673"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=326673">326673</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[WorkingSets] FileNotFoundException in WorkingSetManager
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_major             bz_P3             bz_VERIFIED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b326958"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=326958">326958</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">default ANT home directory lower than the Ant plugin version
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_trivial             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b327138"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=327138">327138</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[Import/Export] WizardExportResourcesPage's Finish button isn't sensitive to Select/Deselect All
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b327233"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=327233">327233</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">p2 and equinox feature versions need to be incremented in 3.6.2 stream
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b327234"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=327234">327234</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">version of org.eclipse.core.resources needs to be incremented in 3.6.x stream
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b327362"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=327362">327362</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">setUrl() call navigates to about:blank prior to real url breaks IEWebHistory
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b327425"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=327425">327425</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[backport] New option to not use capped algorithm misses documentation
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b327446"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=327446">327446</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">Launch's wait for build logic does not check for autobuild correctly
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_major             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b327560"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=327560">327560</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">Failed to create Citrix Client v12
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_VERIFIED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b327654"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=327654">327654</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">FUP of bug 317264: Refactoring is not possible if the commons-lang.jar is in the path
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_major             bz_P3             bz_VERIFIED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b327706"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=327706">327706</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">Headless build failure with Eclipse 3.6.1
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b327772"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=327772">327772</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">equinox.serverside.sdk version needs to be incremented to 3.6.1 in R3_6_maintenance stream
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b327790"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=327790">327790</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[Widgets] Controls with null background inside Group or TabFolder do not display correctly in Cocoa
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_critical             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b327827"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=327827">327827</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[Webapp] Fix for Eclipse 3.6.2 - Eclipse help system content panel tree component is unusable by people using screen readers
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_major             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b328145"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=328145">328145</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[cocoa, gef] Guide markers not fully visible on Cocoa
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b328151"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=328151">328151</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[launcher] 3.6.2: Remember to compile for S390(x)
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_VERIFIED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b328177"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=328177">328177</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">Project ant builder cannot run in headless context as it attempts to load a UI AntInputHandler (even when not in use)
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b328295"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=328295">328295</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">Launch button disabled after failed launch
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b328345"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=328345">328345</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">version of org.eclipse.equinox.supplement needs to be incremented in 3.6.2 stream
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b328350"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=328350">328350</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">update location of platform zips used in p2 tests
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_major             bz_P3             bz_VERIFIED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b328400"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=328400">328400</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">TextEdit computed incorrectly for inserting annotation before package declaration
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b328826"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=328826">328826</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">content.xml is too big (20 MB+)
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_major             bz_P3             bz_RESOLVED             bz_FIXED             bz_secure             bz_secure_mode_manual             bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b328975"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=328975">328975</a>
-      <span style="display: none">[SEC]</span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[Webapp] Possible security issue with JSP code exposure.
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b329129"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=329129">329129</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[Mac] Unhandled event loop exception when closing Error Log Event Details
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_major             bz_P3             bz_RESOLVED             bz_FIXED             bz_secure             bz_secure_mode_manual             bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b329193"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=329193">329193</a>
-      <span style="display: none">[SEC]</span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[Webapp] Possible security issue with JSP code exposure.
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_major             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b329212"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=329212">329212</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">OSGI app binaries do not inherit Java 2 security
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_enhancement             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b329222"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=329222">329222</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">Request for AIX 64-bit gtk build in 3.6.2
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b329223"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=329223">329223</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">Need 3.6.2 launcher for AIX 64 GTK
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b329267"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=329267">329267</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">3.6.1 download page should contain link to 3.6 new &amp; noteworthy
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_major             bz_P3             bz_VERIFIED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b329288"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=329288">329288</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">Fetching parameter names literally hangs on a class with a lot of methods
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b329303"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=329303">329303</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">Port AIX GTK 64 back to 3.6.2
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_VERIFIED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b329333"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=329333">329333</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[Backport] Concurrent access to file while decorating
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_major             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b329485"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=329485">329485</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[Help] Fix for 3.6.2 On WinXP bookmarks added from help view get name &quot;N/A&quot;
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b329494"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=329494">329494</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[Help] Fix in Eclipse 3.6.2 - Jaws does not give enough context info when in Help pane
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b329713"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=329713">329713</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[Webapp] Fix in 3.6.2 Wrong topic was selected in the TOC tree
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_VERIFIED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b329838"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=329838">329838</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[KeyBindings] Exporting key preferences to CSV does not allow context being null
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_major             bz_P3             bz_RESOLVED             bz_FIXED             bz_secure             bz_secure_mode_manual             bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b330026"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=330026">330026</a>
-      <span style="display: none">[SEC]</span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[Webapp][Security] Fix for Eclipse 3.6.2 Eclipse Help Server XSS
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_major             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b330030"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=330030">330030</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">P2 Nullpointer Exception at RepositoryTransport.download
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_VERIFIED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b330047"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=330047">330047</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">PluginRegistry.findModel* throws IllegalArgumentExceptions
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_major             bz_P3             bz_VERIFIED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b330081"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=330081">330081</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[compiler] ArrayIndexOutOfBoundsException when Switched from C/C++ Perspective to Java Perspective
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_major             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b330122"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=330122">330122</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[3.6 maint] HTMLTransfer broken from Firefox --&gt; SWT [Carbon]
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_major             bz_P3             bz_VERIFIED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b330285"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=330285">330285</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[Commands] Stackoverflow in BindingSystem
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_VERIFIED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b330310"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=330310">330310</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[webapp] Regression: Capability filtering and &quot;Show All&quot; are missing in Eclipse 3.6
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_VERIFIED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b330438"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=330438">330438</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[ltk] NPE in UndoDocumentChange
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b330460"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=330460">330460</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[planner] p2 director does not install source bundles from optional features
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b330463"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=330463">330463</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">Optimize manifest TouchPointData memory footprint for MetadataRepositories
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_critical             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b330515"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=330515">330515</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[Help] Fix in 3.6.2 Remote Help HTTPS support is setting java.protocol.handler.pkgs=javax.net.ssl
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b330549"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=330549">330549</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[Wizards] cancelable parameter does not disable Wizard progress bar cancel button
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b330584"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=330584">330584</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">org.eclipse.equinox.core.sdk needed to be tagged in 3.6.2 stream
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b330605"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=330605">330605</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">test 3.6.2 build with bundles from M20101117-1123 to fix p2 source generation problem
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b330611"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=330611">330611</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[launcher] Add mechanism for ignoring user specified config.ini values
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b330815"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=330815">330815</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">perf_35x baselines failing due to relocated archives
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b330824"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=330824">330824</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[Graphics] Splash screen for SR2 should be updated to use Oracle's copyrights
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_major             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b330927"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=330927">330927</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[backport] Default external web browser not found when running 32-bit Eclipse on 64-bit Ubuntu 9.04
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_VERIFIED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b331303"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=331303">331303</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[backport] Regression: Convert line delimiter action enablement is broken
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_VERIFIED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b331563"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=331563">331563</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">Backport: [Import/Export]  Import file system doesn't include the top folder you select
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_major             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b331758"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=331758">331758</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[backport] performance regression caused by fix in 298835
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b331762"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=331762">331762</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[repository] Share StringPool for Composite Repositories
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b332041"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=332041">332041</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">Backport bug 162079: [PropertiesView] Properties view should be a post selection listener
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b332095"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=332095">332095</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[query] Repository query takes a long time when deleting a lot of IUs (from dropins)
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b332098"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=332098">332098</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">Metadata generator should not create mkdir/rmdir actions for reconciler bundle
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b332148"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=332148">332148</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[native] Don't fail install when rmdir cannot delete empty directory
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_major             bz_P3             bz_VERIFIED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b332637"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=332637">332637</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">Dead Code detection removing code that isn't dead
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b332639"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=332639">332639</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[backport] There are no changes for models  showing in the Synchronize view with Team &gt; Merge operation.
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b332640"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=332640">332640</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[backport] Team &gt; Merge operation for project contains logical model always show no changes between two branches
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b332686"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=332686">332686</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[backport][Browser] Search for external browser in Preferences finds &gt; 40 instances of firefox on Ubuntu 64bit, if started in /usr/bin
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b332709"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=332709">332709</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">Use JNI add an  window callback function to Shell, function can not be called.
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b333416"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=333416">333416</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[backport] Call to IResource.setEncoding() persists derived file's encoding setting in .settings\org.eclipse.core.resources.prefs
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b333493"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=333493">333493</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">disposed widget exception when closing editor with Browser with Ctrl+F4
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_major             bz_P3             bz_VERIFIED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b333576"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=333576">333576</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[jre] &quot;JRE System Library&quot; default not used properly after Java update
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b333898"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=333898">333898</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[Preferences] [accessibility] Preferences Dialog menu button needs a tooltip
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b334048"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=334048">334048</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[3.6.2] Clicking on a checkbox in a CheckboxTreeViewer selects the row.
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_enhancement             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b334160"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=334160">334160</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[reconciler] Provide mechanism for specifying multiple non-default drop-ins folders
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_major             bz_P3             bz_VERIFIED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b334161"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=334161">334161</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">Eclipse crashes if link to PDF with anchor is clicked twice from Browser Widget
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_CLOSED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b334707"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=334707">334707</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">[discovery] Cache jars downloaded by RemoteBundleDiscoveryStrategy
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b334725"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=334725">334725</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">Something whacky with the build ids
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b334916"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=334916">334916</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">About text needs to be updated to 2011
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_even             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b334919"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=334919">334919</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">org.eclipse.equinox.p2.sdk feature version needs to be incremented in 3.6.2 stream
-    </td>
-
-  </tr>
-
-
-
-  <tr class="bz_bugitem
-             bz_normal             bz_P3             bz_RESOLVED             bz_FIXED                                       bz_row_odd             ">
-
-    <td class="first-child bz_id_column">
-      <a name="b334947"
-         href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=334947">334947</a>
-      <span style="display: none"></span>
-    </td>
-
-    <td 
-        class="bz_short_desc_column">swt bundles still have version 3.6.1 in 3.6.2 stream
-    </td>
-
-  </tr>
-
-
-
-</table>
-
-
-
-
-
-<span class="bz_result_count">115 bugs found.
-</span>
-
-
-
-
 
 <hr/>
 <p>Sun, Solaris, Java and all Java-based trademarks are trademarks of Oracle Corporation.
@@ -3639,13 +1496,13 @@ U.S. and other countries.</p>
 Software Systems Ltd.</p>
 <p>Other company, product, and service names may be trademarks or service marks
 of others.</p>
-<p>(c) Copyright IBM Corp. and others 2009, 2010</p>
+<p>(c) Copyright IBM Corp. and others 2009, 2011</p>
 
 <h2><a name="Appendix1">Appendix 1: Execution Environment by Bundle</a></h2>
 
-<p>In the table below, the &quot;3.6 minimum execution environment&quot;
+<p>In the table below, the &quot;4.1 minimum execution environment&quot;
   column indicates the minimum Java class library requirements of each bundle
-  for the 3.6 release, where the value is one of:</p>
+  for the 4.1 release, where the value is one of:</p>
 <table border="0" width="90%">
   <tbody>
     <tr>
@@ -3701,38 +1558,62 @@ of others.</p>
   <tbody>
     <tr>
       <td width="290"><strong>Bundle</strong></td>
-      <td width="60"><div align="center"><p align="center"><b>3.6<br/>minimum<br/>execution<br/>environment</b></p></div></td>
-    </tr>
-    <tr>
-      <td>aa.compute.bundle.ee</td>
-      <td><div align="center">1.5</div></td>
+      <td width="60"><div align="center"><p align="center"><b>4.2<br/>minimum<br/>execution<br/>environment</b></p></div></td>
     </tr>
     <tr>
       <td>com.ibm.icu</td>
-      <td><div align="center">F1.0</div></td>
+      <td><div align="center">1.5</div></td>
     </tr>
     <tr>
       <td>com.jcraft.jsch</td>
       <td><div align="center">1.4</div></td>
     </tr>
     <tr>
+      <td>com.sun.el</td>
+      <td><div align="center">1.5</div></td>
+    </tr>
+    <tr>
+      <td>javax.annotation</td>
+      <td><div align="center">1.5</div></td>
+    </tr>
+    <tr>
+      <td>javax.el</td>
+      <td><div align="center">1.5</div></td>
+    </tr>
+    <tr>
+      <td>javax.inject</td>
+      <td><div align="center">1.5</div></td>
+    </tr>
+    <tr>
       <td>javax.servlet</td>
-      <td><div align="center">F1.1</div></td>
+      <td><div align="center">1.6</div></td>
     </tr>
     <tr>
       <td>javax.servlet.jsp</td>
-      <td><div align="center">F1.0</div></td>
+      <td><div align="center">1.6</div></td>
+    </tr>
+    <tr>
+      <td>javax.xml</td>
+      <td><div align="center">J2SE-1.2</div></td>
     </tr>
     <tr>
       <td>org.apache.ant</td>
       <td><div align="center">J2SE-1.2</div></td>
     </tr>
     <tr>
-      <td>org.apache.commons.codec</td>
-      <td><div align="center">F1.0</div></td>
+      <td>org.apache.batik.css</td>
+      <td><div align="center">1.3</div></td>
     </tr>
     <tr>
-      <td>org.apache.commons.el</td>
+      <td>org.apache.batik.util</td>
+      <td><div align="center">1.3</div></td>
+    </tr>
+    <tr>
+      <td>org.apache.batik.util.gui</td>
+      <td><div align="center">1.3</div></td>
+    </tr>
+    <tr>
+      <td>org.apache.commons.codec</td>
       <td><div align="center">F1.0</div></td>
     </tr>
     <tr>
@@ -3744,16 +1625,32 @@ of others.</p>
       <td><div align="center">F1.0</div></td>
     </tr>
     <tr>
-      <td>org.apache.jasper</td>
-      <td><div align="center">F1.0</div></td>
+      <td>org.apache.felix.gogo.command</td>
+      <td><div align="center">not specified</div></td>
+    </tr>
+    <tr>
+      <td>org.apache.felix.gogo.runtime</td>
+      <td><div align="center">not specified</div></td>
+    </tr>
+    <tr>
+      <td>org.apache.felix.gogo.shell</td>
+      <td><div align="center">not specified</div></td>
+    </tr>
+    <tr>
+      <td>org.apache.jasper.glassfish</td>
+      <td><div align="center">1.6</div></td>
     </tr>
     <tr>
       <td>org.apache.lucene</td>
-      <td><div align="center">not specified</div></td>
+      <td><div align="center">1.4</div></td>
     </tr>
     <tr>
       <td>org.apache.lucene.analysis</td>
-      <td><div align="center">not specified</div></td>
+      <td><div align="center">1.4</div></td>
+    </tr>
+    <tr>
+      <td>org.apache.lucene.core</td>
+      <td><div align="center">1.4</div></td>
     </tr>
     <tr>
       <td>org.eclipse.ant.core</td>
@@ -3778,10 +1675,6 @@ of others.</p>
     <tr>
       <td>org.eclipse.compare.win32</td>
       <td><div align="center">1.4</div></td>
-    </tr>
-    <tr>
-      <td>org.eclipse.core.boot</td>
-      <td><div align="center">F1.0</div></td>
     </tr>
     <tr>
       <td>org.eclipse.core.commands</td>
@@ -3824,28 +1717,16 @@ of others.</p>
       <td><div align="center">1.4</div></td>
     </tr>
     <tr>
-      <td>org.eclipse.core.filesystem.win32.x86</td>
-      <td><div align="center">not specified</div></td>
-    </tr>
-    <tr>
       <td>org.eclipse.core.jobs</td>
-      <td><div align="center">F1.0</div></td>
+      <td><div align="center">F1.1</div></td>
     </tr>
     <tr>
       <td>org.eclipse.core.net</td>
       <td><div align="center">F1.1</div></td>
     </tr>
     <tr>
-      <td>org.eclipse.core.net.win32.x86</td>
-      <td><div align="center">1.4</div></td>
-    </tr>
-    <tr>
       <td>org.eclipse.core.resources</td>
-      <td><div align="center">1.4</div></td>
-    </tr>
-    <tr>
-      <td>org.eclipse.core.resources.win32.x86</td>
-      <td><div align="center">not specified</div></td>
+      <td><div align="center">1.5</div></td>
     </tr>
     <tr>
       <td>org.eclipse.core.runtime</td>
@@ -3853,10 +1734,6 @@ of others.</p>
     </tr>
     <tr>
       <td>org.eclipse.core.runtime.compatibility</td>
-      <td><div align="center">F1.0</div></td>
-    </tr>
-    <tr>
-      <td>org.eclipse.core.runtime.compatibility.auth</td>
       <td><div align="center">F1.0</div></td>
     </tr>
     <tr>
@@ -3880,240 +1757,100 @@ of others.</p>
       <td><div align="center">1.4</div></td>
     </tr>
     <tr>
-      <td>org.eclipse.ecf</td>
-      <td><div align="center">F1.1</div></td>
+      <td>org.eclipse.e4.core.commands</td>
+      <td><div align="center">1.5</div></td>
     </tr>
     <tr>
-      <td>org.eclipse.ecf.filetransfer</td>
-      <td><div align="center">F1.0</div></td>
+      <td>org.eclipse.e4.core.contexts</td>
+      <td><div align="center">1.5</div></td>
     </tr>
     <tr>
-      <td>org.eclipse.ecf.identity</td>
-      <td><div align="center">F1.1</div></td>
+      <td>org.eclipse.e4.core.di</td>
+      <td><div align="center">1.5</div></td>
     </tr>
     <tr>
-      <td>org.eclipse.ecf.provider.filetransfer</td>
-      <td><div align="center">F1.1</div></td>
+      <td>org.eclipse.e4.core.di.extensions</td>
+      <td><div align="center">1.5</div></td>
     </tr>
     <tr>
-      <td>org.eclipse.ecf.provider.filetransfer.httpclient</td>
-      <td><div align="center">F1.1</div></td>
+      <td>org.eclipse.e4.core.services</td>
+      <td><div align="center">1.5</div></td>
     </tr>
     <tr>
-      <td>org.eclipse.ecf.provider.filetransfer.httpclient.ssl</td>
-      <td><div align="center">F1.1</div></td>
+      <td>org.eclipse.e4.ui.bindings</td>
+      <td><div align="center">1.5</div></td>
     </tr>
     <tr>
-      <td>org.eclipse.ecf.provider.filetransfer.ssl</td>
-      <td><div align="center">1.4</div></td>
+      <td>org.eclipse.e4.ui.css.core</td>
+      <td><div align="center">1.5</div></td>
     </tr>
     <tr>
-      <td>org.eclipse.ecf.ssl</td>
-      <td><div align="center">1.4</div></td>
+      <td>org.eclipse.e4.ui.css.swt</td>
+      <td><div align="center">1.5</div></td>
     </tr>
     <tr>
-      <td>org.eclipse.equinox.app</td>
-      <td><div align="center">M1.2</div></td>
+      <td>org.eclipse.e4.ui.css.swt.theme</td>
+      <td><div align="center">1.5</div></td>
     </tr>
     <tr>
-      <td>org.eclipse.equinox.common</td>
-      <td><div align="center">F1.1</div></td>
+      <td>org.eclipse.e4.ui.di</td>
+      <td><div align="center">1.5</div></td>
     </tr>
     <tr>
-      <td>org.eclipse.equinox.concurrent</td>
-      <td><div align="center">F1.0</div></td>
+      <td>org.eclipse.e4.ui.model.workbench</td>
+      <td><div align="center">1.5</div></td>
     </tr>
     <tr>
-      <td>org.eclipse.equinox.ds</td>
-      <td><div align="center">M1.2</div></td>
+      <td>org.eclipse.e4.ui.services</td>
+      <td><div align="center">1.5</div></td>
     </tr>
     <tr>
-      <td>org.eclipse.equinox.event</td>
-      <td><div align="center">M1.1</div></td>
+      <td>org.eclipse.e4.ui.widgets</td>
+      <td><div align="center">1.5</div></td>
     </tr>
     <tr>
-      <td>org.eclipse.equinox.frameworkadmin</td>
-      <td><div align="center">F1.1</div></td>
+      <td>org.eclipse.e4.ui.workbench</td>
+      <td><div align="center">1.5</div></td>
     </tr>
     <tr>
-      <td>org.eclipse.equinox.frameworkadmin.equinox</td>
-      <td><div align="center">F1.1</div></td>
+      <td>org.eclipse.e4.ui.workbench.addons.swt</td>
+      <td><div align="center">1.5</div></td>
     </tr>
     <tr>
-      <td>org.eclipse.equinox.http.jetty</td>
-      <td><div align="center">1.4</div></td>
+      <td>org.eclipse.e4.ui.workbench.renderers.swt</td>
+      <td><div align="center">1.5</div></td>
     </tr>
     <tr>
-      <td>org.eclipse.equinox.http.registry</td>
-      <td><div align="center">F1.0</div></td>
+      <td>org.eclipse.e4.ui.workbench.swt</td>
+      <td><div align="center">1.5</div></td>
     </tr>
     <tr>
-      <td>org.eclipse.equinox.http.servlet</td>
-      <td><div align="center">F1.0</div></td>
+      <td>org.eclipse.e4.ui.workbench3</td>
+      <td><div align="center">1.5</div></td>
     </tr>
     <tr>
-      <td>org.eclipse.equinox.jsp.jasper</td>
-      <td><div align="center">F1.0</div></td>
+      <td>org.eclipse.emf.common</td>
+      <td><div align="center">1.5</div></td>
     </tr>
     <tr>
-      <td>org.eclipse.equinox.jsp.jasper.registry</td>
-      <td><div align="center">F1.0</div></td>
+      <td>org.eclipse.emf.ecore</td>
+      <td><div align="center">1.5</div></td>
     </tr>
     <tr>
-      <td>org.eclipse.equinox.launcher</td>
-      <td><div align="center">M1.2</div></td>
+      <td>org.eclipse.emf.ecore.change</td>
+      <td><div align="center">1.5</div></td>
     </tr>
     <tr>
-      <td>org.eclipse.equinox.launcher.win32.win32.x86</td>
-      <td><div align="center">not specified</div></td>
-    </tr>
-    <tr>
-      <td>org.eclipse.equinox.p2.artifact.repository</td>
-      <td><div align="center">F1.1</div></td>
-    </tr>
-    <tr>
-      <td>org.eclipse.equinox.p2.console</td>
-      <td><div align="center">F1.1</div></td>
-    </tr>
-    <tr>
-      <td>org.eclipse.equinox.p2.core</td>
-      <td><div align="center">F1.1</div></td>
-    </tr>
-    <tr>
-      <td>org.eclipse.equinox.p2.director</td>
-      <td><div align="center">F1.1</div></td>
-    </tr>
-    <tr>
-      <td>org.eclipse.equinox.p2.director.app</td>
-      <td><div align="center">F1.1</div></td>
-    </tr>
-    <tr>
-      <td>org.eclipse.equinox.p2.directorywatcher</td>
-      <td><div align="center">F1.1</div></td>
-    </tr>
-    <tr>
-      <td>org.eclipse.equinox.p2.engine</td>
-      <td><div align="center">F1.1</div></td>
-    </tr>
-    <tr>
-      <td>org.eclipse.equinox.p2.extensionlocation</td>
-      <td><div align="center">F1.1</div></td>
-    </tr>
-    <tr>
-      <td>org.eclipse.equinox.p2.garbagecollector</td>
-      <td><div align="center">F1.1</div></td>
-    </tr>
-    <tr>
-      <td>org.eclipse.equinox.p2.jarprocessor</td>
-      <td><div align="center">F1.1</div></td>
-    </tr>
-    <tr>
-      <td>org.eclipse.equinox.p2.metadata</td>
-      <td><div align="center">F1.1</div></td>
-    </tr>
-    <tr>
-      <td>org.eclipse.equinox.p2.metadata.generator</td>
-      <td><div align="center">1.4</div></td>
-    </tr>
-    <tr>
-      <td>org.eclipse.equinox.p2.metadata.repository</td>
-      <td><div align="center">F1.1</div></td>
-    </tr>
-    <tr>
-      <td>org.eclipse.equinox.p2.operations</td>
-      <td><div align="center">F1.1</div></td>
-    </tr>
-    <tr>
-      <td>org.eclipse.equinox.p2.publisher</td>
-      <td><div align="center">F1.1</div></td>
-    </tr>
-    <tr>
-      <td>org.eclipse.equinox.p2.ql</td>
-      <td><div align="center">F1.1</div></td>
-    </tr>
-    <tr>
-      <td>org.eclipse.equinox.p2.reconciler.dropins</td>
-      <td><div align="center">F1.1</div></td>
-    </tr>
-    <tr>
-      <td>org.eclipse.equinox.p2.repository</td>
-      <td><div align="center">F1.1</div></td>
-    </tr>
-    <tr>
-      <td>org.eclipse.equinox.p2.repository.tools</td>
-      <td><div align="center">F1.1</div></td>
-    </tr>
-    <tr>
-      <td>org.eclipse.equinox.p2.touchpoint.eclipse</td>
-      <td><div align="center">F1.1</div></td>
-    </tr>
-    <tr>
-      <td>org.eclipse.equinox.p2.touchpoint.natives</td>
-      <td><div align="center">F1.1</div></td>
-    </tr>
-    <tr>
-      <td>org.eclipse.equinox.p2.ui</td>
-      <td><div align="center">F1.1</div></td>
-    </tr>
-    <tr>
-      <td>org.eclipse.equinox.p2.ui.sdk</td>
-      <td><div align="center">F1.1</div></td>
-    </tr>
-    <tr>
-      <td>org.eclipse.equinox.p2.ui.sdk.scheduler</td>
-      <td><div align="center">F1.1</div></td>
-    </tr>
-    <tr>
-      <td>org.eclipse.equinox.p2.updatechecker</td>
-      <td><div align="center">F1.1</div></td>
-    </tr>
-    <tr>
-      <td>org.eclipse.equinox.p2.updatesite</td>
-      <td><div align="center">F1.1</div></td>
-    </tr>
-    <tr>
-      <td>org.eclipse.equinox.preferences</td>
-      <td><div align="center">F1.1</div></td>
-    </tr>
-    <tr>
-      <td>org.eclipse.equinox.registry</td>
-      <td><div align="center">F1.0</div></td>
-    </tr>
-    <tr>
-      <td>org.eclipse.equinox.security</td>
-      <td><div align="center">1.4</div></td>
-    </tr>
-    <tr>
-      <td>org.eclipse.equinox.security.ui</td>
-      <td><div align="center">1.4</div></td>
-    </tr>
-    <tr>
-      <td>org.eclipse.equinox.security.win32.x86</td>
-      <td><div align="center">1.4</div></td>
-    </tr>
-    <tr>
-      <td>org.eclipse.equinox.simpleconfigurator</td>
-      <td><div align="center">F1.1</div></td>
-    </tr>
-    <tr>
-      <td>org.eclipse.equinox.simpleconfigurator.manipulator</td>
-      <td><div align="center">F1.1</div></td>
-    </tr>
-    <tr>
-      <td>org.eclipse.equinox.util</td>
-      <td><div align="center">M1.1</div></td>
+      <td>org.eclipse.emf.ecore.xmi</td>
+      <td><div align="center">1.5</div></td>
     </tr>
     <tr>
       <td>org.eclipse.help</td>
       <td><div align="center">F1.0</div></td>
     </tr>
     <tr>
-      <td>org.eclipse.help.appserver</td>
-      <td><div align="center">F1.0</div></td>
-    </tr>
-    <tr>
       <td>org.eclipse.help.base</td>
-      <td><div align="center">1.4</div></td>
+      <td><div align="center">1.5</div></td>
     </tr>
     <tr>
       <td>org.eclipse.help.ui</td>
@@ -4126,6 +1863,10 @@ of others.</p>
     <tr>
       <td>org.eclipse.jdt</td>
       <td><div align="center">not specified</div></td>
+    </tr>
+    <tr>
+      <td>org.eclipse.jdt.annotation</td>
+      <td><div align="center">1.5</div></td>
     </tr>
     <tr>
       <td>org.eclipse.jdt.apt.core</td>
@@ -4157,11 +1898,11 @@ of others.</p>
     </tr>
     <tr>
       <td>org.eclipse.jdt.debug</td>
-      <td><div align="center">1.4</div></td>
+      <td><div align="center">1.5</div></td>
     </tr>
     <tr>
       <td>org.eclipse.jdt.debug.ui</td>
-      <td><div align="center">1.4</div></td>
+      <td><div align="center">1.5</div></td>
     </tr>
     <tr>
       <td>org.eclipse.jdt.doc.isv</td>
@@ -4173,7 +1914,7 @@ of others.</p>
     </tr>
     <tr>
       <td>org.eclipse.jdt.junit</td>
-      <td><div align="center">1.4</div></td>
+      <td><div align="center">1.5</div></td>
     </tr>
     <tr>
       <td>org.eclipse.jdt.junit.core</td>
@@ -4189,11 +1930,11 @@ of others.</p>
     </tr>
     <tr>
       <td>org.eclipse.jdt.launching</td>
-      <td><div align="center">1.4</div></td>
+      <td><div align="center">1.5</div></td>
     </tr>
     <tr>
       <td>org.eclipse.jdt.ui</td>
-      <td><div align="center">1.4</div></td>
+      <td><div align="center">1.5</div></td>
     </tr>
     <tr>
       <td>org.eclipse.jface</td>
@@ -4222,18 +1963,6 @@ of others.</p>
     <tr>
       <td>org.eclipse.ltk.ui.refactoring</td>
       <td><div align="center">1.4</div></td>
-    </tr>
-    <tr>
-      <td>org.eclipse.osgi</td>
-      <td><div align="center">M1.2</div></td>
-    </tr>
-    <tr>
-      <td>org.eclipse.osgi.services</td>
-      <td><div align="center">M1.2</div></td>
-    </tr>
-    <tr>
-      <td>org.eclipse.osgi.util</td>
-      <td><div align="center">M1.2</div></td>
     </tr>
     <tr>
       <td>org.eclipse.pde</td>
@@ -4324,10 +2053,6 @@ of others.</p>
       <td><div align="center">F1.0</div></td>
     </tr>
     <tr>
-      <td>org.eclipse.swt.win32.win32.x86</td>
-      <td><div align="center">F1.0</div></td>
-    </tr>
-    <tr>
       <td>org.eclipse.team.core</td>
       <td><div align="center">1.4</div></td>
     </tr>
@@ -4357,7 +2082,7 @@ of others.</p>
     </tr>
     <tr>
       <td>org.eclipse.ui.browser</td>
-      <td><div align="center">1.4</div></td>
+      <td><div align="center">1.5</div></td>
     </tr>
     <tr>
       <td>org.eclipse.ui.cheatsheets</td>
@@ -4408,8 +2133,8 @@ of others.</p>
       <td><div align="center">F1.1</div></td>
     </tr>
     <tr>
-      <td>org.eclipse.ui.presentations.r21</td>
-      <td><div align="center">1.4</div></td>
+      <td>org.eclipse.ui.trace</td>
+      <td><div align="center">1.5</div></td>
     </tr>
     <tr>
       <td>org.eclipse.ui.views</td>
@@ -4429,11 +2154,7 @@ of others.</p>
     </tr>
     <tr>
       <td>org.eclipse.ui.workbench</td>
-      <td><div align="center">F1.1</div></td>
-    </tr>
-    <tr>
-      <td>org.eclipse.ui.workbench.compatibility</td>
-      <td><div align="center">1.4</div></td>
+      <td><div align="center">1.5</div></td>
     </tr>
     <tr>
       <td>org.eclipse.ui.workbench.texteditor</td>
@@ -4441,22 +2162,6 @@ of others.</p>
     </tr>
     <tr>
       <td>org.eclipse.update.configurator</td>
-      <td><div align="center">F1.0</div></td>
-    </tr>
-    <tr>
-      <td>org.eclipse.update.core</td>
-      <td><div align="center">F1.0</div></td>
-    </tr>
-    <tr>
-      <td>org.eclipse.update.core.win32</td>
-      <td><div align="center">not specified</div></td>
-    </tr>
-    <tr>
-      <td>org.eclipse.update.scheduler</td>
-      <td><div align="center">F1.0</div></td>
-    </tr>
-    <tr>
-      <td>org.eclipse.update.ui</td>
       <td><div align="center">F1.0</div></td>
     </tr>
     <tr>
@@ -4472,26 +2177,26 @@ of others.</p>
       <td><div align="center">1.5</div></td>
     </tr>
     <tr>
-      <td>org.mortbay.jetty.server</td>
-      <td><div align="center">1.4</div></td>
-    </tr>
-    <tr>
-      <td>org.mortbay.jetty.util</td>
-      <td><div align="center">1.4</div></td>
-    </tr>
-    <tr>
       <td>org.objectweb.asm</td>
       <td><div align="center">1.3</div></td>
     </tr>
     <tr>
-      <td>org.sat4j.core</td>
-      <td><div align="center">1.4</div></td>
+      <td>org.slf4j.api</td>
+      <td><div align="center">F1.1</div></td>
     </tr>
     <tr>
-      <td>org.sat4j.pb</td>
-      <td><div align="center">1.4</div></td>
+      <td>org.w3c.css.sac</td>
+      <td><div align="center">F1.0</div></td>
     </tr>
-    </tbody>
+    <tr>
+      <td>org.w3c.dom.smil</td>
+      <td><div align="center">F1.0</div></td>
+    </tr>
+    <tr>
+      <td>org.w3c.dom.svg</td>
+      <td><div align="center">F1.0</div></td>
+    </tr>
+  </tbody>
 </table>
 
 </body>
