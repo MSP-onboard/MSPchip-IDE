@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<title>Reverting changes</title>
+	<meta name="copyright"  content="Copyright (c) 2005-2011 Polarion Software. All rights reserved. This page is provided under the terms of the Eclipse Public License v1.0 which accompanies this distribution, and is available at http://www.eclipse.org/legal/epl-v10.html Contributors: Alexander Gurov."/>
+	<LINK REL="STYLESHEET" HREF="../../book.css" CHARSET="ISO-8859-1" TYPE="text/css"/>
+</head>
+<body>
+
+	<table cellpadding = "0" cellspacing = "0" border = "0" width = "100%">
+		<tr>
+			<td class="head_picture">
+				<img src="../../images/guide_1.gif"/>
+			</td>
+			<td class="head_picture" width="100%"  align="right">
+				<img src="../../images/guide_2.gif"/>
+			</td>
+		</tr>
+	</table>
+<h3>Reverting changes</h3>
+	<p>Why shall the user revert his changes? The first and the most simple explanation is that he didn't want to do the changes or made them accidentally but noticed that much later. Reverting action changes a file to a base state. It works like if it deletes the file and then updates it to a base revision, but really it doesn't have to do those operation so it doesn't need any network. To perform the reverting action click on the <i>'Team>Revert...'</i> menu item of the resource pop-up menu <i>'Revert...'</i> menu item of the <i>'SVN main menu group'</i>. The dialog allows the user to choose which resources changes to revert and provides a probability to remove unversioned resources.</p>
+	<table cellpadding="1" cellspacing="0" border="0">
+		<tr>
+			<td valign="top" align="left">
+				<p align="left">
+					<i>
+						<b>Note:</b>
+					</i>
+				</p>
+			</td>
+			<td valign="top">
+				<p>
+					<i>
+						All local changes for the selected resources will be lost while this operation. The Revert Operation will be applied only to the resources which are selected in the list represented in the dialog window.
+					</i>
+				</p>
+			</td>
+		</tr>
+	</table>
+	<p>This is how <i>'Revert Dialog'</i> looks like:</p>
+	<img border = "0" src="../../images/revert.png" alt="Revert dialog"/>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<title>SVN Tree Conflicts</title>
+	<meta name="copyright"  content="Copyright (c) 2005-2011 Polarion Software. All rights reserved. This page is provided under the terms of the Eclipse Public License v1.0 which accompanies this distribution, and is available at http://www.eclipse.org/legal/epl-v10.html Contributors: Alexander Gurov."/>
+	<LINK REL="STYLESHEET" HREF="../book.css" CHARSET="ISO-8859-1" TYPE="text/css"/>
+</head>
+<body>
+
+	<table cellpadding = "0" cellspacing = "0" border = "0" width = "100%">
+		<tr>
+			<td class="head_picture">
+				<img src="../images/guide_1.gif"/>
+			</td>
+			<td  class="head_picture" width="100%"   align="right">
+				<img src="../images/guide_2.gif"/>
+			</td>
+		</tr>
+	</table>
+	<h2>SVN Tree Conflicts</h2>
+
+	<p>
+		Since 1.6 version SVN recognizes a new kind of conflict, known as a "tree conflict". Such conflicts manifest at the level of directory structure, rather than file content.
+		<br/>
+		Situations now flagged as conflicts include deletions of locally modified files, and incoming edits to locally deleted files.
+		There are many different situations that can result in a tree conflict, and all of them require different steps to resolve the conflict. 		
+		Files and directories which are victims of a tree conflict cannot be committed before the conflict is marked resolved.
+		<br/>
+		Note that Subversion is still treating renames as a "copy+delete" operation, so file renames causing tree conflicts can only be detected in terms of file additions and deletions. Because of this, false positives during tree conflict detection are possible.
+		<br/>
+		To facilitate tree conflict detection, attempting to commit the deletion of a file which has already been deleted in the HEAD revision now causes an error. In Subversion 1.5, this was treated as a no-op, potentially resulting in "empty" revisions which contained no changes.
+	</p>
+	
+	<p>
+		Subversive detects tree conflicts during update/switch/merge operations 
+		and provides additional information about the conflict with the ability to edit it.
+		This is how resources which have tree conflicts look like in Synchronize view:
+	</p>	
+	<img border="0" src="../images/tree_conflicts.png" alt="Tree Conflicts"/>
+	
+	<p>
+		Resources with tree conflicts have the same decoration as the resources with conflicts at the level of file content.
+		You can edit tree conflicts by right-clicking conflicted resource and calling 'Edit Tree Conflicts' action. 
+		<br/>
+		This is how 'Edit Tree Conflict' dialog looks like:
+	</p>	
+	<img border="0" src="../images/edit_tree_conflicts.png" alt="Edit Tree Conflicts"/>	  					
+	<p>				
+		'Edit Tree Conflict' dialog shows conflict information and provides ability to resolve the conflict.
+		For some cases user will need to traverse history for the resource, e.g. if resource was renamed or moved, and there are 
+		links which allows to do it. 
+		Conflict Info area includes following: operation, local status, incoming action, start version and end version.
+	</p>
+	Conflict Resolution area have following options:				
+			
+	<ul>
+		<li>
+			<i>Apply local changes. </i>In this case incoming changes will be rejected.
+		</li>				
+		<li>
+			<i>Apply incoming changes. </i> In this case incoming changes will override local changes.
+		</li>
+		
+		<li>
+			<i>Manual (do nothing). </i>In this case no steps are applied to resolve the problem.
+		</li>
+		<li>
+			<i>Marks as merged. </i> When we apply local changes conflict markers for resource will be deleted and this option is disabled.
+			When we apply incoming changes user can select whether to remove the conflict markers or not.
+			This is done because resource may have other conflicts, e.g. properties conflicts etc. or user may need to perform other additional steps to resolve the conflict.
+		</li>
+	</ul>	
+</body>
+</html>

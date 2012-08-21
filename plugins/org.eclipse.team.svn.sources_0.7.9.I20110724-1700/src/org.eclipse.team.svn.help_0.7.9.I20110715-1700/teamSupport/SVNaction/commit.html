@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<title>Committing</title>
+	<meta name="copyright"  content="Copyright (c) 2005-2011 Polarion Software. All rights reserved. This page is provided under the terms of the Eclipse Public License v1.0 which accompanies this distribution, and is available at http://www.eclipse.org/legal/epl-v10.html Contributors: Alexander Gurov."/>
+	<LINK REL="STYLESHEET" HREF="../../book.css" CHARSET="ISO-8859-1" TYPE="text/css"/>
+</head>
+<body>
+
+	<table cellpadding = "0" cellspacing = "0" border = "0" width = "100%">
+		<tr>
+			<td class="head_picture">
+				<img src="../../images/guide_1.gif"/>
+			</td>
+			<td class="head_picture" align="right">
+				<img src="../../images/guide_2.gif"/>
+			</td>
+		</tr>
+	</table>
+<h3>Committing</h3>
+	<p>After the user has made some changes he surely would like to save them to a remote location. This is when the commit operation is used. To commit the changes click on the <i>'Team>Commit'</i> menu item, <i>'Commit the resource to version control'</i> button on the <i>'SVN toolbar'</i>, <i>'Commit...'</i> menu item in the SVN main menu group or clicking the <i>'Commit'</i> button in the Synchronization View toolbar. The appeared dialog will allow the user to enter commit comments and choose which resources to commit. After performing this operation local changes are saved to a repository location. There may be errors while committing. For example, if the repository file copy changed his state after last synchronization, the commit operation would fail and to commit the resource the user should to perform synchronization and only then may be after some changes to local resource commit it. If there is a conflict the user should merge it and commit the resource, may be with overriding, if needed.</p>
+	<table cellpadding="1" cellspacing="0" border="0">
+		<tr>
+			<td valign="top" align="left">
+				<p align="left">
+					<i>
+						<b>Tip:</b>
+					</i>
+				</p>
+			</td>
+			<td valign="top">
+				<p>
+					<i>
+						It is strongly recommended to always input sensible commit comment. The dialog gives the user a warning message if the comment edit stays empty while some changes are made. Also there is another nice feature - the last entered comments are saved. So if the user is going to commit his changes and then remembers that he has forgotten, for example, make changes in "build.properties", of course there is no necessity to change the commit comment, so actually the user'll soon find this feature to be very useful. And at last the user can paste the names of all committing files to the comment by simple click on a <i>'Paste selected names'</i> button. To force the locked resources remain locked enable 'Keep locks' option.
+					</i>
+				</p>
+			</td>
+		</tr>
+	</table>
+	<p>This is how <i>'Commit Dialog'</i> looks like:</p>
+	<img border = "0" src="../../images/commit.png" alt="Commit dialog"/>
+	<br/>
+	<img border="0" src="../../images/rel_tops.png" alt="Related topics"/>
+	<br/>
+	<a href="../../teamSupport/svn_main_menu.html">SVN main menu group</a>
+	<br/>
+	<a href="../../teamSupport/svn_toolbar.html">SVN Toolbar</a>
+	<br/>
+	<a href="../../teamSupport/workspace_synch.html">SVN Workspace Synchronization</a>
+	<br/>
+	<a href="../../teamSupport/compareEditor/compare_oc.html">Making your own changes</a>
+	<br/>
+	<a href="../../teamSupport/compareEditor/compare_cc.html">Working with conflict changes</a>
+	<br/>
+	<a href="../../teamSupport/SVNaction/override.html">Overriding operations</a>
+	<br/>
+	<a href="../../preferences/pref_comments.html">Comment templates</a>
+</body>
+</html>

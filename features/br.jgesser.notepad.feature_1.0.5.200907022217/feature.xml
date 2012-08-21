@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="br.jgesser.notepad.feature"
+      label="Notepad Feature"
+      version="1.0.5.200907022217"
+      provider-name="Júlio Vilmar Gesser">
+
+   <description url="http://eclipsenotepad.sourceforge.net">
+      Feature for Eclipse Notepad Plugin.
+   </description>
+
+   <copyright>
+      (c) Júlio Vilmar Gesser
+   </copyright>
+
+   <license url="http://www.eclipse.org/legal/epl-v10.html">
+      See Eclipse Public License:
+http://www.eclipse.org/legal/epl-v10.html
+   </license>
+
+   <url>
+      <update label="Notepad Update Site" url="http://eclipsenotepad.sourceforge.net/updates"/>
+      <discovery label="Eclipse Notead Plugin" url="http://eclipsenotepad.sourceforge.net"/>
+   </url>
+
+   <plugin
+         id="br.jgesser.notepad"
+         download-size="0"
+         install-size="0"
+         version="1.0.5.200907022217"
+         unpack="false"/>
+
+</feature>

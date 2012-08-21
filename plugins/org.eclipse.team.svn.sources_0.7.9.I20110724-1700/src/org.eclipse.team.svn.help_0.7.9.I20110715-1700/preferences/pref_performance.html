@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<title>Performance</title>
+	<meta name="copyright"  content="Copyright (c) 2005-2011 Polarion Software. All rights reserved. This page is provided under the terms of the Eclipse Public License v1.0 which accompanies this distribution, and is available at http://www.eclipse.org/legal/epl-v10.html Contributors: Alexander Gurov."/>
+	<LINK REL="STYLESHEET" HREF="../book.css" CHARSET="ISO-8859-1" TYPE="text/css"/>
+	<script language="JavaScript" src="PLUGINS_ROOT/org.eclipse.help/livehelp.js"></script>
+</head>
+<body>
+
+	<table cellpadding = "0" cellspacing = "0" border = "0" width = "100%">
+		<tr>
+			<td class="head_picture">
+				<img src="../images/guide_1.gif"/>
+			</td>
+			<td class="head_picture" width="100%"  align="right">
+				<img src="../images/guide_2.gif"/>
+			</td>
+		</tr>
+	</table>
+	<h2>Performance</h2>
+	<p>
+		These preferences can be changed on <a class="command-link" href='javascript:executeCommand("org.eclipse.ui.window.preferences(preferencePageId=org.eclipse.team.svn.ui.SVNTeamPerformancePage)")'>
+			<img src="PLUGINS_ROOT/org.eclipse.help/command_link.png"/>
+			<i>'Team>SVN>Performance'</i>
+		</a> properties page. The performance options allows you to set balance between performance and memory consumption according your requirements.</p>
+	<table cellpadding="1" cellspacing="0" border="0">
+		<tr>
+			<td valign="top" align="left">
+				<p align="left">
+					<i>
+						<b>Tip:</b>
+					</i>
+				</p>
+			</td>
+			<td valign="top">
+				<p>
+					<i>
+						You may switch off some minor features in order to improve performance of team menu and decoration for large projects. At the same time you may switch off SVN status cache in order to save lots of memory for very large projects, but please note that disabling of the SVN cache definitely decreases performance. In case when deep decoration and precise team menu enablement options are enabled SVN statuses cache is always active.
+					</i>
+				</p>
+			</td>
+		</tr>
+	</table>
+	<table cellpadding="5" cellspacing="0" border="1" width="100%">
+		<tr>
+			<td class="header" align="center" valign="center">Option</td>
+			<td class="header" align="center" valign="center">Description</td>
+			<td class="header" align="center" valign="center">Default</td>
+		</tr>
+		<tr>
+			<td align="center" valign="center">Compute deep outgoing state</td>
+			<td align="center" valign="center">Specifies if the computing of
+				deep outgoing state is enabled.</td>
+			<td align="center" valign="center">Enabled</td>
+		</tr>
+		<tr>
+			<td align="center" valign="center">Calculate precise Team Menu
+				enablements</td>
+			<td align="center" valign="center">Specifies if the enamblements
+				of Team Menu actions should be calculated before showing it. When
+				disabled the Team Menu is shown immediately, but the enablement is
+				not calculated. If enabled, the Team Menu for large projects can
+				appear in some period of time.</td>
+			<td align="center" valign="center">Disabled</td>
+		</tr>
+		<tr>
+			<td align="center" valign="center">Enable SVN statuses cache</td>
+			<td align="center" valign="center">Specifies if the SVN statuses
+				cache is enabled. Always enabled if computing of deep outgoing state
+				is enabled.</td>
+			<td align="center" valign="center">Enabled</td>
+		</tr>
+		<tr>
+			<td align="center" valign="center">Enable persistent SSH connections</td>
+			<td align="center" valign="center">Specifies if SVN+SSH protocol should use persistent connections (if it is possible) or not. Using persistent SVN+SSH connections improves  overall performance when working with SVN+SSH protocol. Disabling this option could reduce amount of workload on the server caused by permanently running instances of svnserve executable module.</td>
+			<td align="center" valign="center">Enabled</td>
+		</tr>
+	</table>
+	<br/>
+	This is how <i>'Performance'</i> properties page looks like:
+	<br/><br/><img border="0" src="../images/pref_perf.png" alt="Performance properties page"/>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?metadataRepository version='1.1.0'?>
+<repository name='update site: http://update.exria.org/jiyulipse/' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1.0.0'>
+  <properties size='2'>
+    <property name='p2.timestamp' value='1342697113025'/>
+    <property name='site.checksum' value='0'/>
+  </properties>
+  <references size='2'>
+    <repository uri='http://update.exria.org/jiyulipse/' url='http://update.exria.org/jiyulipse/' type='0' options='0'/>
+    <repository uri='http://update.exria.org/jiyulipse/' url='http://update.exria.org/jiyulipse/' type='1' options='0'/>
+  </references>
+</repository>

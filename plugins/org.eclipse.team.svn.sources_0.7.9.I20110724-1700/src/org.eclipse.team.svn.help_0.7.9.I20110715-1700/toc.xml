@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<?eclipse version="3.0"?>
+
+<toc label="Subversive User Guide">
+	<topic label="Subversive overview" href="overview.html"/>
+	<topic label="Getting started" href="gettingStarted.html">
+		<link toc="getting_started.xml" />
+	</topic>
+	<anchor id="subversive_getting_started" />
+	<topic label="Preferences" href="prefs.html">
+		<link toc="preferences.xml" />
+	</topic>
+	<anchor id="subversive_preferences" />
+	<topic label="Team support with SVN®" href="teamSupport.html">
+		<link toc="svn_team.xml" />
+	</topic>
+	<anchor id="subversive_team" />
+	<topic label="Installation and migration" href="install_migrate.html"/>
+	<topic label="FAQ" href="faq.html"/>
+	<topic label="Special Thanks" href="thanks.html"/>
+	<topic label="Legal" href="notices.html"/>
+</toc>

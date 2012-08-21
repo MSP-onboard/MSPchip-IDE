@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<?eclipse version="3.0"?>
+
+<toc label="Working with Compare Editor"  href="teamSupport/compare.html">
+	<topic label="Making your own changes" href="teamSupport/compareEditor/compare_oc.html"/>
+	<topic label="Another user changes" href="teamSupport/compareEditor/compare_ac.html"/>
+	<topic label="Working with conflict changes" href="teamSupport/compareEditor/compare_cc.html"/>
+</toc>

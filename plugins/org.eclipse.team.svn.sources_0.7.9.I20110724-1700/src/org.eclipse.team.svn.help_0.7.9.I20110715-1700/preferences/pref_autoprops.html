@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<title>Properties Configuration</title>
+	<meta name="copyright"  content="Copyright (c) 2005-2011 Polarion Software. All rights reserved. This page is provided under the terms of the Eclipse Public License v1.0 which accompanies this distribution, and is available at http://www.eclipse.org/legal/epl-v10.html Contributors: Alexander Gurov."/>
+	<LINK REL="STYLESHEET" HREF="../book.css" CHARSET="ISO-8859-1" TYPE="text/css"/>
+	<script language="JavaScript" src="PLUGINS_ROOT/org.eclipse.help/livehelp.js"></script>
+</head>
+<body>
+
+	<table cellpadding = "0" cellspacing = "0" border = "0" width = "100%">
+		<tr>
+			<td class="head_picture">
+				<img src="../images/guide_1.gif"/>
+			</td>
+			<td class="head_picture" width="100%"  align="right">
+				<img src="../images/guide_2.gif"/>
+			</td>
+		</tr>
+	</table>
+	<h2>Properties Configuration</h2>
+	<p>
+		These preferences can be changed on <a class="command-link" href='javascript:executeCommand("org.eclipse.ui.window.preferences(preferencePageId=org.eclipse.team.svn.ui.SVNTeamPropsPreferences)")'>
+			<img src="PLUGINS_ROOT/org.eclipse.help/command_link.png"/>
+			<i>'Team>SVN>Properties Configuration'</i>
+		</a> properties page.</p>
+	<b>Automatic properties</b>	
+	<p>On this tab group user can Import, Export, Add, Remove and Edit automatic properties for specified files. To do described actions use appropriate buttons.</p>
+	<table cellpadding="1" cellspacing="0" border="0">
+		<tr>
+			<td valign="top" align="right">
+				<p align="right">
+					<i>
+						<b>Tip:</b>
+					</i>
+				</p>
+			</td>
+			<td valign="top">
+				<p align="justify">
+				<i>
+					This feature is very useful, because the user actually doesn't want to set a copyright property, for example, to all files one by one, so he can easily do this by adding such automatic property. So he clicks on <i>'Add...'</i> button and in a dialog inputs '*.*' as a filter and 'copyright="(c) 2007, Great Solutions"' and this property will be added automatically to all files to be added them to source control.
+				</i>
+				</p>
+			</td>
+		</tr>
+	</table>
+	This is how <i>'Automatic properties'</i> tab group looks like:
+	<br/><br/><img border="0" src="../images/pref_autoprops.png" alt="Automatic Properties tab group"/>
+	<br/><br/>
+	<b>Custom properties</b>	
+	<p>On this tab group the user can Add, Remove and Edit custom properties to be shown in a combo of an <i>'Add property'</i> dialog. There is a probability for the user to enter property name, its description and
+	a regular expression to be used for validating property before setting it.</p>
+	This is how <i>'Custom properties'</i> tab group looks like:
+	<br/><br/><img border="0" src="../images/pref_customprops.png" alt="Custom Properties tab group"/>
+	<br/>
+	<img border="0" src="../images/rel_tops.png" alt="Related topics"/>
+	<br/>
+	<a href="../teamSupport/props_view.html">SVN Properties View</a>
+	<br/>
+	<a href="../teamSupport/SVNaction/set_props.html">Setting properties</a>
+</body>
+</html>

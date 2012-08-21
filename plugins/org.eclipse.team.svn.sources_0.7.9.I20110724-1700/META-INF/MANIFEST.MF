@@ -1,0 +1,1549 @@
+Manifest-Version: 1.0
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-Name: %pluginName
+Bundle-SymbolicName: org.eclipse.team.svn.sources; singleton=true
+Bundle-Version: 0.7.9.I20110724-1700
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/S
+ VNaction/override.html
+SHA1-Digest: qlnFWtcwNl/ggnVf4U5R4+/MSpY=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/preferences/p
+ ref_annotate.html
+SHA1-Digest: 6xcgkfCFBB2eoNKul0GM+ej7gwM=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/pref_p
+ erf.png
+SHA1-Digest: m7XJj0o4eIJ8vxFVjEcGkS54nvc=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/connec
+ tors_discovery.png
+SHA1-Digest: 3JapFcy2+95KXDirkV1WsOJsDuI=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/instal
+ l_finish.png
+SHA1-Digest: sDhg02SBGlssAke6l3iOmU9hmTA=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/graph_
+ toolbar.png
+SHA1-Digest: oTQTUFtlm+vRrJSHetP4cGcUCxw=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/add_ke
+ yword.png
+SHA1-Digest: a99QOrgOWIVpkOuhrTmJBXuXI5g=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/objects/r
+ evisions.gif
+SHA1-Digest: 0kTeGEC+Mw6oumHx9qklAvENu20=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/common/ac
+ tions/update.gif
+SHA1-Digest: 8N+qePcIvMFkwWZt1M4dvkNPiGs=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/objects/h
+ ead.gif
+SHA1-Digest: V+rdG+xvGs/0ANOShoinmruNGr4=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/common/ac
+ tions/merge.gif
+SHA1-Digest: q0SWJiQz9hrG69URuKkmR5FWB1o=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/commit
+ .gif
+SHA1-Digest: otpGS0hoKshB+LKXCO9GWawHBzU=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/gettingStarte
+ d/aboutSubversive/features.html
+SHA1-Digest: TaySLmgtnHQkoDAc9+YwEyznKxo=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/check_
+ out_location.png
+SHA1-Digest: krtABsHwlE1csglrRXAcwToKoyY=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/synch_
+ button.gif
+SHA1-Digest: kPVKf4mNTkLKrPa1hoxiWNsHdz8=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/gettingStarte
+ d/aboutSubversive/linux.html
+SHA1-Digest: YtyGYfpjUmASByB0bN0ja5ICRXQ=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/Subversive.png
+SHA1-Digest: d4QG5/9nOk4cXZFmnThwgomGwes=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/S
+ VNaction/set_externals.html
+SHA1-Digest: KqfEnu2VWhScmuwW6iYDLwrOlI4=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/add_si
+ te.png
+SHA1-Digest: iDQGFEhHBUkIhXUR4TQ7DFHJ7ug=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/rep_lo
+ c_layout.png
+SHA1-Digest: t5vYVubRkqM3v92Zjn5Lsw0o9Mc=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/l
+ ocks_view.html
+SHA1-Digest: BMEVanAR1mNkBoOzofS/bDwCy+Y=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/S
+ VNaction/share.html
+SHA1-Digest: qBPlnfA90dKlHcXXcuRL1Rg8VEY=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/s
+ vn_main_menu.html
+SHA1-Digest: 4nCmJPGz4SEDVPjvjwMs2fFtRNw=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/r
+ epos_browser_view.html
+SHA1-Digest: 0VoHBqZB1boEmUuvKjkz0TsWK5w=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/c
+ ompareEditor/compare_ac.html
+SHA1-Digest: XuswUXSL/Y3w7vBiK4XXn7Z9RmY=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/c
+ onnectors_discovery.html
+SHA1-Digest: bhuNJllV/rhYoGzsrI3NFxCCyIc=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/S
+ VNaction/ignore_vc.html
+SHA1-Digest: 8d2DeitYx2O68KQSl4IIBEahTmU=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/gettingStarte
+ d/subversion/svn_folders.html
+SHA1-Digest: VYMkXFEtnGj7YCaItIXm8bzqM4o=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/l
+ ayouts.html
+SHA1-Digest: NU3cHbr/APQryxKRH2LoelQx0vU=
+
+Name: src/org.eclipse.team.svn.core_0.7.9.I20110724-1700/schema/resour
+ ceIgnoreRules.exsd
+SHA1-Digest: Z/3kFJH2BcibGPivdLutp/wCU34=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/overlays/
+ conflicted_unresolved.gif
+SHA1-Digest: r5Emor2jgZ213veakszKEUneOAw=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/views/his
+ tory/stop_on_copy.gif
+SHA1-Digest: 7UOsJw5tYogaURRlzs1nUDsr7hE=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/lock.g
+ if
+SHA1-Digest: a0l2GNW9+eewKsMBwfuuhyU1jgk=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/wizards/f
+ ind-clear.gif
+SHA1-Digest: Hkk3F+A+vwPO8xTmg0Cl3/Ox2JU=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/monoli
+ t_pr_layout.png
+SHA1-Digest: HxA9a8kfPcFEh8Kdc49tkJoH5ZU=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/preferences/p
+ ref_comments.html
+SHA1-Digest: rn4JrMym/ED4c24sxgooliydzUc=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/Subversive.pn
+ g
+SHA1-Digest: d4QG5/9nOk4cXZFmnThwgomGwes=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/n
+ ew_location_wiz.html
+SHA1-Digest: 5J0xLjjz8kb7GQOdiRXJXRcm5Ig=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/gettingStarte
+ d/subversion/svn_diffs.html
+SHA1-Digest: xsWSyDTxxrgU+txYkwsXim+DDEk=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/common/ac
+ tions/branch.gif
+SHA1-Digest: p0z1AbN4VFhOVPXbX9dC1yh6tzk=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/gettingStarte
+ d/aboutSubversive/install.html
+SHA1-Digest: Yt5q8GhUIEYQcKBZlEC1lrwey78=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/common/de
+ lete_realm.gif
+SHA1-Digest: 5pS4kIi1Nt57JcKvJ7l47tz0nwY=
+
+Name: src/org.eclipse.team.svn_0.7.9.I20110318-1700/intro/css/firstste
+ ps.css
+SHA1-Digest: BUoU2tgjaC08gmA+AozNV7vj338=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/views/rep
+ ositories/checkout.gif
+SHA1-Digest: /pn2He7uRklzRxffLt4uHmNZw1k=
+
+Name: src/org.eclipse.team.svn_0.7.9.I20110318-1700/intro/tutorials.xm
+ l
+SHA1-Digest: QxXVLIHh+ndfJ+ip0+jHjk0+6Tk=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/show_i
+ n.gif
+SHA1-Digest: FmZWMlkVouTlbQ7xd9c0/pjI37U=
+
+Name: src/org.eclipse.team.svn.core_0.7.9.I20110724-1700/schema/coreop
+ tions.exsd
+SHA1-Digest: gudTuYPl83B+N6lbD/JAmmrd5pU=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/overlays/
+ new_resource.gif
+SHA1-Digest: oiY8PPwd/i8BIlDG7D4Vs5XDCaA=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/update
+ s.png
+SHA1-Digest: pLBCkP7w5wgH4fRwtvyvIwdxyTA=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/svn_re
+ vision_graph.png
+SHA1-Digest: jk4+AnroczWidxUjQ5HmRyf9tOA=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/blue_c
+ olor.png
+SHA1-Digest: Vr4pmIWhrQ3Ai1IXq+nzmXdaWEs=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/pref_c
+ ustomprops.png
+SHA1-Digest: 4bju93baQ3wW8vjxnCSVDEJkiS8=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/outgo_
+ add.png
+SHA1-Digest: fxT3EjqtnJRBu56H7F+53YAzWpw=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/schema/sharepro
+ ject.exsd
+SHA1-Digest: 5mOF3HxGEooFBt92QmZ2gT4koG8=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/t
+ ree_conflicts.html
+SHA1-Digest: fiCzdfi3+eqlYmcv0xeemRPJBAo=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/rep_ex
+ pl_persp.png
+SHA1-Digest: 3PzQhwmpYn/A4Bumr+j1kJugWMg=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/merge_
+ view.png
+SHA1-Digest: mz1ZEce9EoPbElG7dXEcDDFYqqo=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/views/his
+ tory/folder.gif
+SHA1-Digest: bV8vvDfmMyh3iGUvZHFIBnz5r1s=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/proper
+ tiesedit.gif
+SHA1-Digest: LVBX9aszNDQXPizjjrhGYm7gG2s=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/update
+ _diagram.png
+SHA1-Digest: B8NeKOK8VP/gCe2bJHuXiCdkpBc=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/gettingStarte
+ d/aboutSubversive/arch.html
+SHA1-Digest: vAFMH9qOAlQQiyixWUY7zjh8WO8=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/preferences/p
+ ref_svn.html
+SHA1-Digest: kwb52haVmwF1iXpEWHzVNMwLDBw=
+
+Name: src/org.eclipse.team.svn_0.7.9.I20110318-1700/intro/css/overview
+ .css
+SHA1-Digest: Y/sxQ2GVyemvobSu7EWSX8N3Ylo=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/revert
+ .png
+SHA1-Digest: YHbSLSI8jrExQkZJEeS9fy/teQ8=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/find_a
+ nd_update.png
+SHA1-Digest: BbPU9NWW33Ot0ZKMUSKGr+2pnto=
+
+Name: src/org.eclipse.team.svn_0.7.9.I20110318-1700/intro/overview.xml
+SHA1-Digest: pExYWNZX2+o1A2QHn8ANPc+nSSY=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/find_a
+ nd_install.png
+SHA1-Digest: 3luAgrAsTm9bGasMVhS/3Ani6+k=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/show_c
+ onf.gif
+SHA1-Digest: FYFbsxfMYIvXDmN0K7NMOYKd/zI=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/views/his
+ tory/paging.gif
+SHA1-Digest: OtcgeQKUhud1J3ZzBmZ63XPi4qA=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/schema/decorati
+ on.exsd
+SHA1-Digest: tDIQ3zGdBYpNcompU52beQ5m53s=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/svn_te
+ am_pr_conf.png
+SHA1-Digest: 8s1RnLjijLKdcGWwA4GoQEpIo1I=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/prefs.html
+SHA1-Digest: hMfPAAvwpz38o4xeWqGOGeQB18w=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/module
+ s.png
+SHA1-Digest: BxD8E7VhjitgX46Cam1IcM/eWrU=
+
+Name: src/org.eclipse.team.svn.core_0.7.9.I20110724-1700/resources/dif
+ f-ppt.vbs
+SHA1-Digest: wZ7qXah6t37jnZZXZiXd6By/RqY=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/remote
+ _change.png
+SHA1-Digest: cYrig9kziqmuBlctzoAfLAcvIRc=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/views/his
+ tory/affected_folder.gif
+SHA1-Digest: +bVpUFC7csAZCN27K9Q7K2ipXBk=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/S
+ VNaction/set_props.html
+SHA1-Digest: R4O61PMeCmW3VdJ+E2DPxZvmico=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/s
+ haring_wiz.html
+SHA1-Digest: MGoLL/XxIGAyqYLxfgLj71jh+8g=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/share_
+ exists.png
+SHA1-Digest: cYSnafYqG+lntEVURL9WujImF/8=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/schema/reportin
+ gdescriptor.exsd
+SHA1-Digest: MFU3Dq9I17o/X4pJUT6TSjkS/7s=
+
+Name: src/org.eclipse.team.svn.core_0.7.9.I20110724-1700/resources/dif
+ f-xls.vbs
+SHA1-Digest: 8ipzj+Gwai/71SV+9eMq8ViBUh0=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/grey_c
+ olor.png
+SHA1-Digest: pFQZsFtKe274u0jiwGqNSFStjzI=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/objects/r
+ epository-gray.gif
+SHA1-Digest: 900WhBTv4VG1VR+V4kTKE5VCwrQ=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/instal
+ l.png
+SHA1-Digest: nMbDqgruCSHWZs5LnEOn0Sjr+r8=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/instal
+ l_license.png
+SHA1-Digest: us3POcL7NfYWZviMgLiUQDcZE6w=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/preferences/p
+ ref_pass.html
+SHA1-Digest: /WegpAOoIKMtluKuth4qZQ8RFCs=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/discovery.prope
+ rties
+SHA1-Digest: BSy4cTio6lGcRJWXUJu7jkg008I=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/svn_an
+ notate_view.png
+SHA1-Digest: gK5E6Tm4L57yNDuCyljKg7pLb+E=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/overlays/
+ lock.gif
+SHA1-Digest: 3PgpLpopWVz1ZzRdVPLc3i6rN1A=
+
+Name: src/org.eclipse.team.svn_0.7.9.I20110318-1700/about.ini
+SHA1-Digest: x6Bt+1hwPv2TwnQ0+OQ9L7F8zCw=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/k
+ eys.html
+SHA1-Digest: iZjDu4QiEpt1lWgI1xGLnj6Eo74=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/contexts.xml
+SHA1-Digest: CrHJOixq8GBLINiKv+Yq4xVJTA0=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/outgo_
+ change.png
+SHA1-Digest: nUs640RYTbPKasTp8jZX/sPACqY=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/migrat
+ e.png
+SHA1-Digest: OdSjrmstzR5O9Fm0Fkqb3oYDKKQ=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/label_
+ decors.png
+SHA1-Digest: w9N97plA6T8Tw23ScLeVBlpgxTM=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/pin.gi
+ f
+SHA1-Digest: ATIBH+8jYHZlzRgJiDgzNI1JZWs=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/remove
+ .gif
+SHA1-Digest: h0kZkzhUBBwSKCLEH4ItnWNDcLk=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/overlays/
+ modified_resource.gif
+SHA1-Digest: fBpvdMAEDTMUKsi/djeb4SX8kI4=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/common/ac
+ tions/switch.gif
+SHA1-Digest: 3cWoUSPwN8NcFsFyKO545l0LTwE=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/views/rep
+ ositories/new_repository.gif
+SHA1-Digest: MTTqqW7+lIylsuOB0iMqTuyQ1hk=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/pref_d
+ iff_viewer.png
+SHA1-Digest: 4DWt9MPBmfpus/e4w/hnjnB7qcs=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/common/ac
+ tions/unlock.gif
+SHA1-Digest: Fc4iQ6tbh241I9ecWHdeNPQbTRE=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/guide.
+ gif
+SHA1-Digest: vCVk+9whZEe4fefeyMiTPrDrO1E=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/S
+ VNaction/locks.html
+SHA1-Digest: GE0EUydF9AdpYXR0z4F2h9iMR/8=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/update
+ _site_connectors.png
+SHA1-Digest: cZAdCtTrT7qUn6oGa2zlilQynvs=
+
+Name: src/org.eclipse.team.svn.core_0.7.9.I20110724-1700/schema/svncon
+ nector.exsd
+SHA1-Digest: wGa18PLpvY8I3K/CxN8E/C7STy8=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/views/his
+ tory/tree_layout.gif
+SHA1-Digest: J08i2rueFvxIsJ1Z9BgktWZSpEE=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/c
+ reate_repository.html
+SHA1-Digest: RVidBBRVzKJ59CjZqd/jqq/hEvk=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/confli
+ ct_del.png
+SHA1-Digest: 0fOOxk6XtVFe+cCmJrpGVDu9DLo=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/preferences/p
+ ref_diff_viewer.html
+SHA1-Digest: omBtWLUtH+rrWbdRk4gCBCJbXjA=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/wizards/f
+ ind-clear-disabled.gif
+SHA1-Digest: WxhnTMWKIL+67CkVDVgJs8l2hwY=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/show_o
+ ut.gif
+SHA1-Digest: vAvdZyngje9gspK7+HUs5HP7EP8=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/redbro
+ wn_color.png
+SHA1-Digest: FGeqDDZUU/Q63TfZ670CC+OvuqU=
+
+Name: src/org.eclipse.team.svn.core_0.7.9.I20110724-1700/src.zip
+SHA1-Digest: 30VE1yGqjOQswgKT5jtuDzfW4Gw=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/views/rep
+ ositories/checkout_projects.gif
+SHA1-Digest: StsYI9sr67xRlsJ0mRXSpFO8EUg=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/restar
+ t_dialog.png
+SHA1-Digest: 9BSmweHsmSZsczuL5zQaxqH8vgg=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/new_rl
+ _advance.png
+SHA1-Digest: 8SG+ZtRDUL1SWwTctf7cG14CdZ8=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/install_migra
+ te.html
+SHA1-Digest: 1lNqvMIeT4euyfOysUNfc3553wE=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/mylyn3
+ .png
+SHA1-Digest: akbuk+/4g9T+AozB1y6M+nKQFtM=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/common/re
+ fresh.gif
+SHA1-Digest: 3NWUc5UjsZeI5q6NCFvfEyeUB1I=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/new_rl
+ _ssh.png
+SHA1-Digest: NQzGGQ8mgmLUe9jPQMScpLUYA9M=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/overlays/
+ replaced_2way.gif
+SHA1-Digest: ktOLOdAzsiDyBFzKb5rxJBM3Qyc=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/subversion.xm
+ l
+SHA1-Digest: cV7e+dr85E79a+zl2EsvUSZn+1E=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/prev.g
+ if
+SHA1-Digest: nUGy85EowQLrI5hDomzojsZItS4=
+
+Name: about.html
+SHA1-Digest: TJE/VnPy57cRfceSrcf0Ew/GbX0=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/s
+ vn_label_decor.html
+SHA1-Digest: ajpB4ejK0XCd4feWNZAJzo6QqRU=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/merge_
+ url_15.png
+SHA1-Digest: O1RzomWzhMnxGJGj0mpLP0MvxFk=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/share_
+ select.png
+SHA1-Digest: kvx4D+JJdHP76tv6DqwGNxrgt3c=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/branch
+ .png
+SHA1-Digest: t+uBwaTilFiTIY4HQu7KLtcNsbo=
+
+Name: src/org.eclipse.team.svn_0.7.9.I20110318-1700/intro/css/migrate.
+ css
+SHA1-Digest: UzpkOeEm8GG4IJUHl7CeBlq2DWI=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/pref_l
+ abel_decors.png
+SHA1-Digest: pAB4dRnHm8zlWeIyRE7Y/XgsfvM=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/svn_team.xml
+SHA1-Digest: PXzsATxN9jxMRNq1y1FI/o/UbUI=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/schema/synchron
+ izeActionContribution.exsd
+SHA1-Digest: pTntSq1mquhVwYC0KKbtzMh8r90=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/add_to
+ _ignore.png
+SHA1-Digest: Qo37aNZw7/h5+096BA2sDsgjwM0=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/S
+ VNaction/patch.html
+SHA1-Digest: J2jE6wr0SYtXI0OXEojZeANRKgo=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/revisi
+ on_selection.png
+SHA1-Digest: Ygqn4My//V3ZzjRnQoMunQmRXyA=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/common/ac
+ tions/commit.gif
+SHA1-Digest: otpGS0hoKshB+LKXCO9GWawHBzU=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/discovery
+ /message_info.gif
+SHA1-Digest: Jp6jc3eHNNEwzbCLjn7smofN+VY=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/gettingStarte
+ d/aboutSubversive/buckminster.html
+SHA1-Digest: 2/CPAwSGaLa8m6aC47Sw6w/DyJQ=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/views/his
+ tory/local_rev.gif
+SHA1-Digest: f7Cxeay+AsNBf/i5RnBOdkMTkX8=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/histor
+ y_view.png
+SHA1-Digest: J/du9Pscz9vZo1tMWCQ/9LVKfU0=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/common/pa
+ ste.gif
+SHA1-Digest: wMU2/pJ0Y+TtS2NlKKKcvTcUFQQ=
+
+Name: src/org.eclipse.team.svn.core_0.7.9.I20110724-1700/resources/dif
+ f-doc.vbs
+SHA1-Digest: q0w/oQEw/+lbmBHBM7ihvYNTVRc=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/preferences/p
+ ref_label_decors.html
+SHA1-Digest: bsSFD+Qo44mt8Xdrtzy8ait3AyY=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/book.css
+SHA1-Digest: uo7yh7bkUp6BBpK7KiUDKicUPpI=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/a
+ nnotation_view.html
+SHA1-Digest: KbEaUacgxpmupNUdyVksWJPDzdA=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/common/de
+ lete.gif
+SHA1-Digest: ORJe0sG1BDPf20zkd9DI+HUjfk8=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/views/his
+ tory/both_history_mode.gif
+SHA1-Digest: YsX9cqDklZfSMAmvQFlUHFKulR4=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/overview.html
+SHA1-Digest: +2hk3HDxKjzNk3hED/XKha3YpMA=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/about.ini
+SHA1-Digest: U6BqEACFjHSqH2brHm4gKbJpHPU=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/views/his
+ tory/paging_all.gif
+SHA1-Digest: ZUbcN1n4Xx8V1pjPYBa16jVTWKE=
+
+Name: src/org.eclipse.team.svn.core_0.7.9.I20110724-1700/about.ini
+SHA1-Digest: E2mExOrNvtv+iM1t2W8BpZ6A+HM=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/gettingStarte
+ d/aboutSubversive/protocols.html
+SHA1-Digest: 6DphmZQud6BMnpbKzL/GPRE25bk=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/S
+ VNaction/branch.html
+SHA1-Digest: rQlyMDYeoLE/XZzH0nx+vv845IU=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/check_
+ out_into_project.png
+SHA1-Digest: beRQ5v2FzSnCY/j5tMwI2MSD56Q=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/confli
+ ct_changeC.png
+SHA1-Digest: kuZp9WopmxxkpSrL1L6ki7jajtM=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/update
+ _site_subversive.png
+SHA1-Digest: 92qP2EuQu7sX3QtLY0gFxxlYPa0=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/multi_
+ pr_layout.png
+SHA1-Digest: xf9ZS9nuaiytr3JlLMrbDFpeSOI=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/featur
+ e_updates.png
+SHA1-Digest: QSMe+/BuR7hnCBuy5MG8I2LrQR8=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/gettingStarte
+ d/subversion/svn_intro.html
+SHA1-Digest: WLdBZUqo9JSla8K4nThHmOJVzV0=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/objects/c
+ hangeset.gif
+SHA1-Digest: j5/caRFZWzW9Ny0gLuUEZF0mkpc=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/preferences/p
+ ref_console.html
+SHA1-Digest: lJ0eLLY5sOBw3w4EhknnCFrZpx0=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/share_
+ pr_name.png
+SHA1-Digest: btUTiSjF0aQsqR6Yk1SR9ljE4/w=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/objects/t
+ ags.gif
+SHA1-Digest: eVHmlNsTWvC4gbYfRmK6fTVuzoE=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/mylyn2
+ .png
+SHA1-Digest: vKp9am0qQHS1tCIc3+xuMlT4gqA=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/getting_start
+ ed.xml
+SHA1-Digest: jH+DEJEuctioOsQXRiOz4n4kqn8=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/c
+ ompareEditor/compare_oc.html
+SHA1-Digest: xU/eZ09twOvnWPg5Gelcd6xPreY=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/f
+ ind_check_wiz.html
+SHA1-Digest: RToEYSDRDjZOVMFK2bQaQpOWQ0g=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/open_p
+ erspective.png
+SHA1-Digest: GS+9gBm4MfnYANpZ05ICGbroHww=
+
+Name: src/org.eclipse.team.svn_0.7.9.I20110318-1700/intro/css/tutorial
+ s.css
+SHA1-Digest: 7/+LDWENX0pAI5k2tyO2pMXFTIU=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/some_p
+ roject.png
+SHA1-Digest: 8ShQDbgnwEOQTRSAT4MajFR6RuU=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/expand
+ all.gif
+SHA1-Digest: s8M27dkBqoZwlsuYC/q9kXcbvTA=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/S
+ VNaction/add_vc.html
+SHA1-Digest: BD13vPbayRgi6XcxOxE9nA+VCDk=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/schema/reporter
+ factory.exsd
+SHA1-Digest: FQj2BKToZqt3z+XfijDF969fDb8=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/common/co
+ py.gif
+SHA1-Digest: t2yjkh4Fe/eXbNEAT6ALPln5rBE=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/wizards/n
+ ewconnect.gif
+SHA1-Digest: 9Wzb6VDogI2T2K7T8uQUgQAIUVk=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/merge_
+ url_14.png
+SHA1-Digest: FjKzWtFuwTnLeADuGfgZ8Uq4wR0=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/preferences/p
+ ref_graph.html
+SHA1-Digest: FPa7iKyeRTCVVI0N1PYAUPZ1el8=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/about.ini
+SHA1-Digest: ZwybHEEI060P1COOXAZz0iYKTgw=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/svn_actions.x
+ ml
+SHA1-Digest: WMNBwhhXwFFdk7oeIRD/cruj3S8=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/merge_
+ 2url.png
+SHA1-Digest: rfKmRJvK0/No8mVuqQneF8HjyXc=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/dialogs/f
+ atal_error.gif
+SHA1-Digest: /h+ZUgRMnAc0EJFm4BXNHQ7RPto=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/views/his
+ tory/local_history_mode.gif
+SHA1-Digest: f7Cxeay+AsNBf/i5RnBOdkMTkX8=
+
+Name: src/org.eclipse.team.svn_0.7.9.I20110318-1700/intro/css/graphics
+ /Subversive_hover.png
+SHA1-Digest: QAAtBBNgeAjhxBBrSyOMRXchl/Q=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/gettingStarte
+ d/aboutSubversive/modules.html
+SHA1-Digest: d7IH1RDokX0+Uybl7Vto2RNc0Yg=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/share_
+ comment.png
+SHA1-Digest: hlHwdypZxTxvPHib9ddtJo8qnGA=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/views/his
+ tory/clear.gif
+SHA1-Digest: bXxJZjOaMDUrOmW90FpZEwmNsEM=
+
+Name: about.ini
+SHA1-Digest: x6Bt+1hwPv2TwnQ0+OQ9L7F8zCw=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/svn_lo
+ cks_view.png
+SHA1-Digest: VXEFj2nTh/ddKyAdqUqTXo46dKs=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/common/le
+ vel_error.gif
+SHA1-Digest: dKlEezESemxdXGAOHjJPXnHdtTk=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/views/rep
+ ositories.gif
+SHA1-Digest: MEK36rukqqo8Snnq8/SWXIdwyD8=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/switch
+ .png
+SHA1-Digest: fUNwAi2kUG6BVzAuHerUg5DUbTw=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/dialogs/w
+ arning.gif
+SHA1-Digest: khgf4O8u68wX7v3vG8x9XAUQUSw=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/about.html
+SHA1-Digest: TJE/VnPy57cRfceSrcf0Ew/GbX0=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/views/his
+ tory/group_by_date.gif
+SHA1-Digest: zsiOzi9sWyt2qaGvyhvTmPZV8c8=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/create
+ _patch3.png
+SHA1-Digest: 99pFet52frHQ25VKCTCNUbDsAso=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/edit_t
+ ree_conflicts.png
+SHA1-Digest: TXtEvyfLgx/nc5JwCuvAR9+IkjY=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/objects/r
+ oot.gif
+SHA1-Digest: jFUPmtw0W0FLaXFJcMz+Y0LfsZ8=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/views/pro
+ pertiesedit.gif
+SHA1-Digest: LVBX9aszNDQXPizjjrhGYm7gG2s=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/views/svn
+ .gif
+SHA1-Digest: 6gqApan0pxOr+qmdDTr70lrDYts=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/schema/commit.e
+ xsd
+SHA1-Digest: i9BTCePMO7nT7MJLfhpFNxMQufo=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/next.g
+ if
+SHA1-Digest: RQXpLCwGwO2SKbD5h5J894Eotis=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/show_v
+ iew.png
+SHA1-Digest: pbt7lQeeBmCPg1HVTW5YuVdbNrA=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/update
+ _sites.png
+SHA1-Digest: 3BoU+vGHNLpXAB9BvbrOD3y5wLY=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/pref_e
+ rror_reporting.png
+SHA1-Digest: Qy9xHXueZIc27fvqRN3wUA3Xg9I=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/subversive.xm
+ l
+SHA1-Digest: Rk7uM3P5WDQ5nOVCXrz3vPHMvKA=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/single
+ _pr_layuot.png
+SHA1-Digest: KYmd9YzGbTVfR+C3K46q3cZGo7I=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/pref_v
+ iew_settings.png
+SHA1-Digest: QrYFPxtMWeI9mXCS94qqNGZL7Zs=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/gettingStarte
+ d/aboutSubversive/extensions.html
+SHA1-Digest: eIvBOWiRC9wVlt7U4TWFmvZ6TXI=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/rel_to
+ ps.png
+SHA1-Digest: Xt9XXZYaLH7yIXAIOIHWCemqsNg=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/common/cu
+ t.gif
+SHA1-Digest: ULU5pID/iaXdF3oTS6yqg0zmw84=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/schema/history.
+ exsd
+SHA1-Digest: 1Z64wjdbWFkI/TvdSPjUikm0/e0=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/svn_pr
+ ops_view.png
+SHA1-Digest: E6Ek7/rx0qC5bFXN37G9svqNVmo=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/notices.html
+SHA1-Digest: XD2WlPa0f6ORSHiaR5WoBdTeNGg=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/c
+ onsole.html
+SHA1-Digest: 3PcF3qXyJ38vb9hyqG83J0RqJt4=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/preferences.x
+ ml
+SHA1-Digest: hUTTa72BAP2eQLPJGj3Wu3tLrS8=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/discov
+ ery_connectors.png
+SHA1-Digest: gA8PXruhgVfOg0PzyysKvebP/kE=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/income
+ _del.png
+SHA1-Digest: DRcraJ9zZe8ooXlX83HKe3YEcKA=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/overlays/
+ deleted.gif
+SHA1-Digest: pqgI3GWarn11mItYyEmrombRIsg=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/compare_edito
+ r.xml
+SHA1-Digest: w5D887poHYDblkcNwcHJeXzo6cQ=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/change
+ set.gif
+SHA1-Digest: j5/caRFZWzW9Ny0gLuUEZF0mkpc=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/mylyn1
+ .png
+SHA1-Digest: lCmx1cSfIYVgncWFEgZLVYWI1qA=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/revert
+ .gif
+SHA1-Digest: mx95nqtE0VXZioKP4Y1ikECcdYM=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/showhi
+ story.gif
+SHA1-Digest: nYcCXjHQdloiA26r+A+rIEILdBM=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/remove
+ _all.gif
+SHA1-Digest: /GoPVhCpQ+0VtZ7rmiudbpEXoyg=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/add_pr
+ op.png
+SHA1-Digest: FVAjy9SGXaQKS3TOMy5EBgUkCSU=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/discovery
+ /message_warning.gif
+SHA1-Digest: fDwtYUWjteP13A0FZiIdDO7wEmU=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/a
+ ctions.html
+SHA1-Digest: 6Cv9fAPTaTbe2OUNebJqwwdOt7Q=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/own_ch
+ ange.png
+SHA1-Digest: 6zOyn2SewG4+5w7FyPh7z6+g2WM=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/views/his
+ tory/clear_filter.gif
+SHA1-Digest: +t8/f2vNMeMGz3NcpdPCXlgSjzQ=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/views/his
+ tory/flat_layout.gif
+SHA1-Digest: m7CoejyO/BwL1K8nsf+3iF2nYsg=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/add_ex
+ ternals.png
+SHA1-Digest: 5rn/60YCqc+bDQcafHgvD63nKOI=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/s
+ vn_toolbar.html
+SHA1-Digest: jaZO7dyk5e9LyR2vct/u4cckt1w=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/objects/p
+ roject.gif
+SHA1-Digest: 838NPPH8ii9hkW/xanvs0/jBHN4=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/gettingStarte
+ d/aboutSubversive/mylyn.html
+SHA1-Digest: tuidUJFqir2DVzyuAfMFqy7iAAQ=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/r
+ evision_graph.html
+SHA1-Digest: 7QJe82KkzMiKmLuxgvCWs3LZ1sI=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/graph_
+ merge_info.png
+SHA1-Digest: 0xoL9tKJyWE+XCwUWUOZro4Tj+Q=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/overlays/
+ replaced_out.gif
+SHA1-Digest: A0xyk4mIAAP/81Yk/qNOlZ1crWg=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/manage
+ _configuration_about.png
+SHA1-Digest: DNqLKMQLUhScOk7H15Ld5jIhr8I=
+
+Name: src/org.eclipse.team.svn_0.7.9.I20110318-1700/intro/css/graphics
+ /Subversive.png
+SHA1-Digest: QAAtBBNgeAjhxBBrSyOMRXchl/Q=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/preferences/p
+ ref_autoprops.html
+SHA1-Digest: t/YnDjUBuJnuIJJTPD/33GDScuU=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/common/ac
+ tions/tag.gif
+SHA1-Digest: eVHmlNsTWvC4gbYfRmK6fTVuzoE=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/views/rep
+ ositories/newfolder.gif
+SHA1-Digest: UJ9nAklqg9UDmmodF7ph1bDQRQY=
+
+Name: src/org.eclipse.team.svn.core_0.7.9.I20110724-1700/about.html
+SHA1-Digest: TJE/VnPy57cRfceSrcf0Ew/GbX0=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/views/con
+ sole.gif
+SHA1-Digest: FIDXAAZFEaL/0Brjy9dsPxMfn4k=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/views/his
+ tory/link_with_disabled.gif
+SHA1-Digest: t1WfTj8cRQ3o/E+jiif9ijsa6sM=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/commit
+ .png
+SHA1-Digest: OfnwROcJl/zc/TFUIf55JF2oneQ=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/guide_
+ 2.gif
+SHA1-Digest: 0+eQFBoW4uQiPNjW+di1a2QrvdE=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/create
+ _patch2.png
+SHA1-Digest: bB1WVPSP5RsxZ8PqNNVpXwHCOVI=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/pref_c
+ omment_templates.png
+SHA1-Digest: ek8zB4VCGJ0dtvXsTb8zK/F3fjk=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/toc.xml
+SHA1-Digest: ERdtzqjprUeJexPTFMmfZFvGi4I=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/common/ac
+ tions/synch.gif
+SHA1-Digest: VVRuMpMbIfV9lPIUnU792LJkt+w=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/common/im
+ port.gif
+SHA1-Digest: MKszEQjUx2EkgUA9dYuHWm9MBDk=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/gettingStarte
+ d/aboutSubversive/update_eclipse.html
+SHA1-Digest: qL3zCMR6AXAjXhK8JdPvkk10v6M=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/gettingStarte
+ d/subversive.html
+SHA1-Digest: R4GaNTaoFFpytxEwM3NhF+QLtFE=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/views/rep
+ ositories/browser.gif
+SHA1-Digest: CVE1K0C/Sr+Y7hnLj0c6M80N2vg=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/show_b
+ oth.gif
+SHA1-Digest: NrVK19fbcx0PPakHMMDK5BPgobg=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/reinte
+ grate.png
+SHA1-Digest: pkVElGb+rE3NKKrJuwGwaHZO1dM=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/S
+ VNaction/extract.html
+SHA1-Digest: L01NyE4jplHmDdFBMMcuJynhR4o=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: 09gN05tobgS/MdtqyTNQhOhB73M=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/S
+ VNaction/revert.html
+SHA1-Digest: 1SjcVa1Y9TrxjyjZVORAau5yn6E=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/schema/checkout
+ .exsd
+SHA1-Digest: cwLRAxWtfoirz+C5zLMQY58kvwc=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/manage
+ _configuration.png
+SHA1-Digest: 3HTzB45F5ffgDQwl9QGJ3Zp9d9E=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/views/his
+ tory/filter.gif
+SHA1-Digest: Z/PqFWy4IrQgwXdAoSsQaEM3Fws=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/new_rl
+ _general.png
+SHA1-Digest: PhIONhgOZjpVHCPpOmUU3erlUr0=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/red_co
+ lor.png
+SHA1-Digest: 4C6nThBmOryF93pHImHGF3zS4Oo=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/update
+ .gif
+SHA1-Digest: 8N+qePcIvMFkwWZt1M4dvkNPiGs=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/graph_
+ props_view.png
+SHA1-Digest: l4JHE+Crz5VT9Yni9uktwOUdsiw=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/gettingStarte
+ d/aboutSubversive/requirements.html
+SHA1-Digest: DZSVHw1ZjuXCX13AK1lhAWsrjzo=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/lock.p
+ ng
+SHA1-Digest: JtoP/7pm8SkJHRGyi4ebQELC/DQ=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/overlays/
+ replacement.gif
+SHA1-Digest: lo4bjiwjT3gGPHfOUiO+39qRExw=
+
+Name: Subversive.png
+SHA1-Digest: d4QG5/9nOk4cXZFmnThwgomGwes=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/c
+ ompareEditor/compare_cc.html
+SHA1-Digest: BG1BTZu25WYfVkE5qkzm0uoGeFo=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/confli
+ ct_add.png
+SHA1-Digest: Du7UeOeGyVTCDpxol9ZblEnv7Rw=
+
+Name: plugin.properties
+SHA1-Digest: Eel3UM8TbBGl1HKEbqV+2oRZym4=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/check_
+ out1.png
+SHA1-Digest: dpdOlDllomIQIoRi0yfdbUmL7NU=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/inside
+ .png
+SHA1-Digest: jOfwzXAow9e+j6YByP7kfTtExr8=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/thanks.html
+SHA1-Digest: lH3PR1p93POFrE5CnELZMMLFplo=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/create
+ _patch.png
+SHA1-Digest: MNvN/JZSXu3G7ITLOtQJGZpC6sk=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/tag.pn
+ g
+SHA1-Digest: jKAxWeoJf4umEEZdJgO24BTqdMo=
+
+Name: plugin.xml
+SHA1-Digest: I0t+o6kXbySrxIY1bLaTaeai3Vc=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/checko
+ ut_repos.png
+SHA1-Digest: vOnWFf5OOrEyelqQxr1LLrjusgo=
+
+Name: src/org.eclipse.team.svn.core_0.7.9.I20110724-1700/Subversive.pn
+ g
+SHA1-Digest: d4QG5/9nOk4cXZFmnThwgomGwes=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/pref_g
+ eneral.png
+SHA1-Digest: 6zMZgjUiG7fMEMofpc4S7EM6Trw=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/black_
+ color.png
+SHA1-Digest: 0g33J9004ANoX8ivxpXEIEsxpec=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/S
+ VNaction/update.html
+SHA1-Digest: hRKjIg0OZsFsGL9I2zW25X3xfyo=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/common/le
+ vel_ok.gif
+SHA1-Digest: 4T98Gtuw8PbM3/f7so5TxwZTLxM=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/graph_
+ dialog.png
+SHA1-Digest: 1UoJQJsp6vbPGDk38VzsExj7LKk=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/views/rep
+ ositories/browser_pending.gif
+SHA1-Digest: rA0tQDfGRglLt+DGrtuaMOutG98=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/arch_d
+ iagram.png
+SHA1-Digest: zYwzQpw+hITEy+jBqIrZQIWA/a0=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/outgo_
+ del.png
+SHA1-Digest: nsc8+TFnJVLKMYT3wrLYveqJhLg=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/p
+ rops_view.html
+SHA1-Digest: VR8NQJDx/HuD3VbBPXBbHAhBMzA=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/overlays/
+ deletion.gif
+SHA1-Digest: ByU02MZNWeDP8Gnc8QBmBTRUMfM=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/guide_
+ 1.gif
+SHA1-Digest: +CvuGRszZeEmT5iE87utCAtkous=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/S
+ VNaction/check_out.html
+SHA1-Digest: lWCn3ZS6lyp0Sm5uz0JlZqwzhi0=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/preferences/p
+ ref_performance.html
+SHA1-Digest: 0nzY4z4Hif07iknaR1RhjuWnHok=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/branch
+ .gif
+SHA1-Digest: p0z1AbN4VFhOVPXbX9dC1yh6tzk=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/w
+ orkspace_synch.html
+SHA1-Digest: KpwNXYYhbHKvQCI6lDR8KTAnE/E=
+
+Name: src/org.eclipse.team.svn_0.7.9.I20110318-1700/intro/migrate.xml
+SHA1-Digest: +XCsUBtw6Z0fh3ljXynBVQ7phwQ=
+
+Name: src/org.eclipse.team.svn.core_0.7.9.I20110724-1700/schema/connec
+ torDiscovery.exsd
+SHA1-Digest: vBMYIcJ061HuxGQ8JePetQl6JF8=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/s
+ vn_info.html
+SHA1-Digest: DCxgrQDCo0y19x6xnpNNravG5+I=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/gettingStarte
+ d/aboutSubversive/fast_track.html
+SHA1-Digest: s1FKS4yoW3je7FT1zIy8nBZjI4s=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/common/ex
+ port.gif
+SHA1-Digest: zv+eS+3w2VWQ6T4WB4+wbuwBWkw=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/pref_c
+ lient.png
+SHA1-Digest: ueaiwDxb8ddlokYRUfYjOdQauPY=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/dialogs/s
+ elect_revision.gif
+SHA1-Digest: 9Wzb6VDogI2T2K7T8uQUgQAIUVk=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/pref_l
+ abel_decors3.png
+SHA1-Digest: 0zX7TohMrFEY+aHmUy8hqgeNZ2g=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/views/his
+ tory/file.gif
+SHA1-Digest: hKWbPY9IGKI88i73fsZ8W60cNQs=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/overlays/
+ addition.gif
+SHA1-Digest: 6E0LSXBcDSLTSUuUdghsCyd6qpo=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/S
+ VNaction/commit.html
+SHA1-Digest: hVxEvPdoDrNPtteN/fkeoxjKp4o=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/views/loc
+ ksview.gif
+SHA1-Digest: qzJIh7A/RPhWscguSed2wle5IYA=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/S
+ VNaction/set_keys.html
+SHA1-Digest: L8FtxX88dShCintTGBmQ+kru8vQ=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/overlays/
+ obstructed.gif
+SHA1-Digest: iplThZy7Tm7qRb2x6bAv54VK63E=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/views/his
+ tory.gif
+SHA1-Digest: VS7T3/gelcA4Rdn0Rg7GaTHinz4=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/overlays/
+ replaced_in.gif
+SHA1-Digest: IdcAt3jiSW4UTdEwr0Lm4SLgSMA=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/svn_co
+ nsole.png
+SHA1-Digest: iHR8r553cO441C3hlLhmeihicis=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/overlays/
+ empty_error.gif
+SHA1-Digest: 57+5uK1GN2M+sxlvO4ot83qNNnk=
+
+Name: src/org.eclipse.team.svn_0.7.9.I20110318-1700/about.html
+SHA1-Digest: ejOZra0kypGLQQ2bJtGTX+LI8tU=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/synch_
+ view.png
+SHA1-Digest: hzvC+/KlADzzl6B29sXKaikbu1Y=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/pref_p
+ ass_manage.png
+SHA1-Digest: Klh4ykKomelUGn1MYwvL/9LTxrM=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/tree_c
+ onflicts.png
+SHA1-Digest: 5YS4JaFY5cdS2Sc8cpdfQsMBmG0=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/add_to
+ _vc.png
+SHA1-Digest: wp52nWG7KHj6x+mZt5fKpjA5jRs=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/pref_a
+ utoprops.png
+SHA1-Digest: vtWpkksTrsTJKe4KbGaKHkWDvj0=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/new_rl
+ _ssl.png
+SHA1-Digest: SNaLMGQ8innoOY4UBjcVQqAE4YQ=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/S
+ VNaction/switch.html
+SHA1-Digest: 75NeTL0HManboXDrUT9WCDUjyMw=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/about.html
+SHA1-Digest: TJE/VnPy57cRfceSrcf0Ew/GbX0=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/common/ac
+ tions/showhistory.gif
+SHA1-Digest: nYcCXjHQdloiA26r+A+rIEILdBM=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/graph_
+ merges.png
+SHA1-Digest: 2xp6S/zckStWT57DPuUjMmdsWTM=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/gettingStarte
+ d/aboutSubversive/management.html
+SHA1-Digest: 9sMEYmzgUbm2x3Pr3mUq+/gN6Tg=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/svn_to
+ olbar.png
+SHA1-Digest: kUSNQzcDxAObvn6rBkdiEEFDv3I=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/views/ann
+ otate.gif
+SHA1-Digest: 6N+20T6tqGe7PHU8z54CqKSey50=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/overlays/
+ change.gif
+SHA1-Digest: uO1YM4S0s8/W8XM+UoFTIfHyi5U=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/views/his
+ tory/hide_unrelated.gif
+SHA1-Digest: XnTOjCwcNr4kENR5Tzu1XMmLSx0=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/c
+ ompare.html
+SHA1-Digest: cYXc3wdCDi7e1pszAuNfJpGXz8Y=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/common/ac
+ tions/lock.gif
+SHA1-Digest: a0l2GNW9+eewKsMBwfuuhyU1jgk=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/r
+ epos_persp.html
+SHA1-Digest: lD4hOUqRO+esjAQOWMgwPSTWNlA=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/overlays/
+ prop_changed.png
+SHA1-Digest: fLhOlXfCs/DjRx+G0ecLWv0bOa8=
+
+Name: src/org.eclipse.team.svn_0.7.9.I20110318-1700/intro/firststeps.x
+ ml
+SHA1-Digest: J/hdNLmPmzTEfCWYDrV6rh9qlYI=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/gettingStarte
+ d.html
+SHA1-Digest: QmqpIe96GMcELYlmxF9hNzjhSMI=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/instal
+ l_search_res.png
+SHA1-Digest: rctYPRHL+JfpkKRYrlTpzSQDQ8A=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/comman
+ d_link.png
+SHA1-Digest: 5WBj+6DnpcLUTpKDr5OPxV18bAg=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/overlays/
+ replaced_conf.gif
+SHA1-Digest: f1V1TzQzvJNdV2m1CBjWRk6rJvE=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport.h
+ tml
+SHA1-Digest: 0N5q8YptIMbAuQK2mD9GgUr4SzE=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/pref_g
+ raph.png
+SHA1-Digest: 168JWRA/iUp2S+5fBFMVI1GdpH8=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/objects/b
+ ranches.gif
+SHA1-Digest: p0z1AbN4VFhOVPXbX9dC1yh6tzk=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/income
+ _change.png
+SHA1-Digest: e0BKmMII0NvfO3yVQQNvUY5X53w=
+
+Name: src/org.eclipse.team.svn.core_0.7.9.I20110724-1700/schema/crashr
+ ecovery.exsd
+SHA1-Digest: v2edHSlyJ8ycCiBC+slyppEvKBQ=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/S
+ VNaction/merge.html
+SHA1-Digest: v8gTh7F8dPSy/wF69KxZm6PfKpE=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/m
+ erge_dialog.html
+SHA1-Digest: EF0sIKiUoN9qovRWFSqLIDRdaPo=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/overlays/
+ switched.gif
+SHA1-Digest: tPVannv8Z01oO6xPyRKAzydvMJc=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/svn_in
+ fo.png
+SHA1-Digest: WCdxjGCow/l43Cgd7nUWq7S2n3o=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/r
+ epos_view.html
+SHA1-Digest: UBzHaBQRQ0h+MlEECJ/CTWxfCp4=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/dialogs/o
+ peration_error.gif
+SHA1-Digest: khgf4O8u68wX7v3vG8x9XAUQUSw=
+
+Name: src/org.eclipse.team.svn_0.7.9.I20110318-1700/Subversive.png
+SHA1-Digest: d4QG5/9nOk4cXZFmnThwgomGwes=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/views/his
+ tory/link_with.gif
+SHA1-Digest: Ghj9SQaJ6vJj8hRCpmwiAfHF1uI=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/new_up
+ date_site.png
+SHA1-Digest: nfp6w48wp8yGvfd2kG7dHtzVkVg=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/faq.html
+SHA1-Digest: BLfbQAJRuQ89k5irCcm0QdH1egE=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/share_
+ repos.png
+SHA1-Digest: gMzYM8w6WOBGRVz3NUVNJ1kXbaI=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/S
+ VNaction/tag.html
+SHA1-Digest: ZUfhCfwfx4o+m/oVqfu1TLdW0uw=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/overlays/
+ problem_underlay.gif
+SHA1-Digest: F3ahfeDuPf0YxbFcqQr9FP8swmI=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/common/ac
+ tions/revert.gif
+SHA1-Digest: mx95nqtE0VXZioKP4Y1ikECcdYM=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/views/rep
+ ositories/new_location.gif
+SHA1-Digest: cETIX4v5LGyaK/schCkNbXhJhO8=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/pref_l
+ abel_decors2.png
+SHA1-Digest: 4d9CeyLWWAGHIIHedwZTeGszkIk=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/collap
+ seall.gif
+SHA1-Digest: lLQ3zHD8+td65WxRKfB1kMRzOqQ=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/unlock
+ .gif
+SHA1-Digest: Fc4iQ6tbh241I9ecWHdeNPQbTRE=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/views/exp
+ andall.gif
+SHA1-Digest: s8M27dkBqoZwlsuYC/q9kXcbvTA=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/repos_
+ view.png
+SHA1-Digest: cBQne+XHIILfPOZnch4tycNxCRM=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/objects/r
+ epository.gif
+SHA1-Digest: rhsDFyk0WoiRK0dZ4L2IeaLP0Ak=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/src.zip
+SHA1-Digest: l9pr9NYa3OsdO225kH8p5gXtd9Q=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/svn_me
+ nu.png
+SHA1-Digest: 1xRvHu6zxD9czeSed9EzBV8ZNdI=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/overlays/
+ needs_lock.gif
+SHA1-Digest: o582hC9Z+dvwjbKBpj8bQP/zsFs=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/common/co
+ llapseall.gif
+SHA1-Digest: lLQ3zHD8+td65WxRKfB1kMRzOqQ=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/pref_c
+ onsole.png
+SHA1-Digest: FzX2ofkouWICV4GXHvhybw0fyQM=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/instal
+ l_verification.png
+SHA1-Digest: zgfrIyBRRExqYUmSMhlFDUE3HDw=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/common/le
+ vel_warning.gif
+SHA1-Digest: EKEjev5kfbWHAWL0glfXATFZJE4=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/objects/r
+ epository-root.gif
+SHA1-Digest: YfWTxXCTFvAgtcs1RCS34HrjOLQ=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/S
+ VNaction/location_ie.html
+SHA1-Digest: OpF+uNa1EZcaw+PfChfpLVrDCKw=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/r
+ efactor.html
+SHA1-Digest: ZREJ7IaHqCq1rwDauHk180MIQ+U=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/income
+ _add.png
+SHA1-Digest: mxF+BRcrhkYlgvxO5KZyypKn23M=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/index.html
+SHA1-Digest: TjdMxpI11PXG+x7RUKCukLJM6t8=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/prop_c
+ hanged.png
+SHA1-Digest: fLhOlXfCs/DjRx+G0ecLWv0bOa8=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/gettingStarte
+ d/subversion/svn_more.html
+SHA1-Digest: efC7IDYmOMJIeiy89kkMtzx/i2E=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/repos_
+ browser_view.png
+SHA1-Digest: pUfTTjfvuSifno/umHwWtHsKOVY=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/teamSupport/h
+ istory_view.html
+SHA1-Digest: QmAOrGy1iGy4mGWV7br/ABmwOns=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/dialogs/b
+ ulb.png
+SHA1-Digest: T1myucal/QxwRjs5GcLjjpFy/bA=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/wizards/s
+ vnshareproject.gif
+SHA1-Digest: LiKRMXCoLolU+foVQ4fFPkq2GH0=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/create
+ _repository.png
+SHA1-Digest: MSDBJFyGudzHl+cr2brIl4PUyLU=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/views/his
+ tory/compare_mode.gif
+SHA1-Digest: fMAU6+y03hsbr4VmfM1Y/1YGDgg=
+
+Name: src/org.eclipse.team.svn.core_0.7.9.I20110724-1700/resources/dif
+ f-odX.vbs
+SHA1-Digest: 6hM60Rlw0Req0iuo/qTCr9bsrNw=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/common/re
+ move.gif
+SHA1-Digest: h0kZkzhUBBwSKCLEH4ItnWNDcLk=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/pref_r
+ epos.png
+SHA1-Digest: 2xUll5DMfNUonD1YPj6hbBm0C3I=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/views/his
+ tory/remote_history_mode.gif
+SHA1-Digest: dSxIxy/Fb1G3k40Cwlk5/z9l9oo=
+
+Name: src/org.eclipse.team.svn.ui_0.7.9.I20110715-1700/icons/overlays/
+ empty.gif
+SHA1-Digest: Z2aUVcu4o15pqtrsA281LANahf0=
+
+Name: src/org.eclipse.team.svn.help_0.7.9.I20110715-1700/images/confli
+ ct_change.png
+SHA1-Digest: IW+IVt/mDpJBXvE3ahfKR6Q9NyQ=
+

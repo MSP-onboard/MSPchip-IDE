@@ -1,0 +1,459 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<title>Subversive architecture</title>
+	<meta name="copyright"  content="Copyright (c) 2005-2011 Polarion Software. All rights reserved. This page is provided under the terms of the Eclipse Public License v1.0 which accompanies this distribution, and is available at http://www.eclipse.org/legal/epl-v10.html Contributors: Alexander Gurov."/>
+	<LINK REL="STYLESHEET" HREF="../../book.css" CHARSET="ISO-8859-1" TYPE="text/css"/>
+</head>
+<body>
+
+	<table cellpadding = "0" cellspacing = "0" border = "0" width = "100%">
+		<tr>
+			<td class="head_picture">
+				<img src="../../images/guide_1.gif"/>
+			</td>
+			<td class="head_picture"  width="100%" align="right">
+				<img src="../../images/guide_2.gif"/>
+			</td>
+		</tr>
+	</table>
+<h3>Subversive architecture</h3>
+	<p>The Subversive project architecture follows to several important requirements for both - UI and Core modules: </p>
+	<ul>
+		
+	</ul>
+	<p>Last benefit allows users create their own UI extensions for the Subversive. Such extensions can be tracker integrations or any other application that require SVN client base. Additionally the Subversive UI has several extension points which allows contribute into:</p>
+	<ul>
+		<li>Precise separating of UI and Core parts</li>
+		<li>Unified error handling</li>
+		<li>Failure tolerance</li>
+		<li>Conceptual integrity of API</li>
+		<li>Strong API levels delimitation</li>
+		<li>Easy API extensibility</li>
+	</ul>
+	</br>
+	<img border="0" src="../../images/arch_diagram.png" alt="Subversive architecture diagram"/>
+	<p>Core plug-in has two API levels - user-level and low-level. First is most frequently used API level and it is based on the low-level API.</p>
+	<p><b>User-level</b> API contains following parts:</p>
+	<ul>
+		<li><b>Command Framework</b> designed correspondingly to "Command Pattern" concept. It allows user to perform any complex interactions with Subversion and Eclipse Platform in performance-optimal and easy way. Command Framework already contains command implementations for all frequently used cases of interaction with Subversion, checked out projects and Eclipse Platform. The Command Framework allows reducing "copy-paste"-technique usage and providing fast development with minimal efforts. All provided commands can be fully reused in external tools without any limitations</li>
+		<li><b>SVN Resource Model</b> allows building of local and repository resource hierarchies and provide command framework with all required information in one standard way</li>
+		<li><b>Execution Framework</b> allows running all commands in the similar way. Its background implementation is responsible for automated resource locking rules calculation and error handling</li>
+		<li><b>Execution Engine API</b> is set of classes and interfaces that hides from user how background implementation serves a Commands execution</li>
+		<li><b>Error Handling</b> mechanism provided by Subversive Core allows user to build applications with high failure tolerance: one failed command does not prevent other commands from execution if it is required. Moreover, commands itself can be recovered from errors, for example: Commit Command commits resources to all repositories that are available and skip all resources that cannot be committed; all information about committed and uncommitted resources is provided to the caller level.</li>
+	</ul>
+	<p><b>Low-level API</b> allows user to build Command Framework extensions in order to handle some rarely used or application-specific cases. </p>
+	<p>The Subversive UI extends Command and Execution Frameworks with UI specific features most of which can be reused by depended projects. Additionally Subversive UI provides powerful and flexible Data Validation Framework for dialogs and wizards. Provided extension points allow reorganizing the Subversive UI functionality in some critical cases. For example "Error Reporting" extension point allows redirect bug reporting into application specific mailing list.</p>
+	<p>UI plug-in extends Core functionality with several UI-specific features:</p>
+	<ul>
+		<li><b>UI Execution Extensions:</b> enhance error handling in order to distinguish errors by severity, show errors to user and propose sending of bug reports to plug-in developers, connect progress monitoring to Eclipse Platform UI.</li>
+		<li><b>UI Command Extensions</b> include commands that required interaction with Eclipse Platform UI.</li>
+	</ul>
+	<p>The Subversive architecture overview shows how the project structure corresponds to requirements. First of all both modules - Core and UI - are strongly separated and Core module is fully functional and allows user to build automated applications. Unified error handling mechanisms provided by Execution Framework allows improving of the Subversive project failure tolerance. API concept allows easy extending without mixing of different API levels in the same code.</p>
+	<b>Sample of Subversive Core API usage </b>
+	<p>On the following picture you can see flow of calls that is required from user in order to update resources to latest revision in background execution thread. And next - Code Sample 1, Code Sample 2 - are samples how it looks in the code.</p>
+	<img border="0" src="../../images/update_diagram.png" alt="Update flow sequence diagram"/>
+	<br/>
+	<i>Code Sample 1 Subversive UpdateAction class implementation</i>
+<pre>
+public class UpdateAction extends AbstractRecursiveTeamAction {
+
+	public UpdateAction() {
+		super();
+	}
+
+	public void run(IAction action) {
+		IResource []resources = UnacceptableOperationNotificator.
+		shrinkResourcesWithNotOnRespositoryParents(
+		this.getShell(), this.getSelectedResources(IStateFilter.SF_ONREPOSITORY));
+		if (resources == null || resources.length == 0) {
+			return;
+			}
+		this.runScheduled(UpdateAction.getUpdateOperation(this.getShell(), resources));
+	}
+
+	protected boolean isEnabled() throws TeamException {
+		return this.getSelectedResources(IStateFilter.SF_ONREPOSITORY).length > 0;
+	}
+
+	public static CompositeOperation getUpdateOperation(Shell shell, IResource []updateSet) {
+		final UpdateOperation mainOp = new UpdateOperation(updateSet, true);
+		IResourceProvider refreshProvider = new IResourceProvider() {
+			public IResource []getResources() {
+				HashSet fullSet = new HashSet(Arrays.asList(mainOp.getResources()));
+				fullSet.addAll(Arrays.asList(detectOp.getDeleted()));
+				return (IResource [])fullSet.toArray(new IResource[fullSet.size()]);
+				}
+			};
+		CompositeOperation op = new CompositeOperation(mainOp.getOperationName());
+		SaveProjectMetaOperation saveOp = new SaveProjectMetaOperation(updateSet);
+		op.add(saveOp);
+		op.add(mainOp);
+		op.add(new RestoreProjectMetaOperation(saveOp));
+		op.add(new ClearUpdateStatusesOperation(refreshProvider));
+		op.add(new RefreshResourcesOperation(refreshProvider));
+		op.add(new NotifyUnresolvedConflictOperation(shell, mainOp));
+		return op;
+	}
+}
+</pre>
+	<p>As you can see the UpdateAction class implementation is more complex in compare with the sequence diagram because it supports more functionality - saving Eclipse IDE meta-information in order to prevent problems when something like ".project" is deleted on repository. </p>
+	<p>In general case it is not required for programmer to implement his own commands and work with SVN Client Library API. Nevertheless programmer can create own commands using SVN Client Library API - it also easy. The command implementation does not requires from programmer any additional actions (like integral resource locking policies calculation for all commands, interfaces that allows data transmitting between commands, error handling and crash recovery support) except of freeing of allocated resources in finally section.</p>
+	<i>Code Sample 2 Command implementation</i>
+<pre>
+public class ExportOperation extends AbstractRepositoryOperation {
+	protected String path;
+
+	public ExportOperation(IRepositoryResource resource, String path) {
+		super("Export", new IRepositoryResource[] {resource});
+		this.path = path;
+	}
+
+	protected void runImpl(IProgressMonitor monitor) throws Exception {
+		IRepositoryResource resource = this.operableData()[0];
+		IRepositoryLocation location = resource.getRepositoryLocation();
+		ISVNConnector proxy = location.acquireSVNProxy();
+		try {
+			String path = this.path + "/" + resource.getName();
+			this.writeToConsole(IConsoleStream.LEVEL_CMD, "svn export \"" + resource.getUrl() + "@" + resource.getPegRevision() + "\" -r " + resource.getSelectedRevision() + " \"" + FileUtility.normalizePath(path) + "\" --force" + FileUtility.getUsernameParam(location.getUsername()) + "\n");
+			proxy.doExport(SVNUtility.getEntryRevisionReference(resource), path, null, Depth.INFINITY, ISVNConnector.Options.FORCE, new SVNProgressMonitor(this, monitor, null));
+		}
+		finally {
+			location.releaseSVNProxy(proxy);
+		}
+	}
+
+	protected String getShortErrorMessage(Throwable t) {
+		return "Export operation for '" + this.operableData()[0].getUrl() + "' failed.";
+	}
+}
+</pre>
+	<b>The Command Framework functionality</b>
+	<p>The Command Framework totally contains 89 commands which are presents in three subsets:</p>
+	<ul>
+		<li>Execution Framework Part (2)</li>
+		<li>Core Command Framework (60)</li>
+		<li>UI Command Extensions (17)</li>
+	</ul>
+	<p>The Core Commands cover all SVN functionality used in Subversive and it can be fully reused without any restrictions. Most UI Commands are designed for interactive cases. So, they cannot be used in automated processing. Execution Framework Commands, like LoggedOperation and CompositeOperation, are responsible for error handling and resource locking rules calculation.</p>
+	<table  border="1" width="100%">
+		<tr>
+			<td class="header">Command</td>
+			<td class="header">Description</td>
+		</tr>
+		<tr>
+			<td class="header" colspan="2">Execution Framework Part (2)</td>
+		</tr>
+		<tr>
+			<td width="50%">LoggedOperation</td>
+			<td>Allows safely write errors to log</td>
+		</tr>
+		<tr>
+			<td width="50%">CompositeOperation</td>
+			<td>Provides the way to combine different operations</td>
+		</tr>
+		<tr>
+			<td class="header" colspan="2">Core Command Framework (60)</td>
+		</tr>
+		<tr>
+			<td width="50%">SaveProjectMetaOperation</td>
+			<td>Saves project meta (.project and .classpath) in order to prevent project refresh problem when meta is deleted</td>
+		</tr>
+		<tr>
+			<td width="50%">RestoreProjectMetaOperation</td>
+			<td>Restores project meta (.project and .classpath) in order to prevent project refresh problem when meta is deleted</td>
+		</tr>
+		<tr>
+			<td width="50%">ShareProjectOperation</td>
+			<td>Shares the project from scratch</td>
+		</tr>
+		<tr>
+			<td width="50%">ReconnectProjectOperation</td>
+			<td>Reconnects the projects with existing SVN meta-information</td>
+		</tr>
+		<tr>
+			<td width="50%">DisconnectOperation</td>
+			<td>Disconnects the projects with or without deletion of SVN meta-information</td>
+		</tr>
+		<tr>
+			<td width="50%">CheckoutOperation</td>
+			<td>Checkout set of projects into workspace</td>
+		</tr>
+		<tr>
+			<td width="50%">CheckoutAsOperation</td>
+			<td>Checkout project into specified location with specified set of options</td>
+		</tr>
+		<tr>
+			<td width="50%">ObtainProjectNameOperation</td>
+			<td>Request real project name for the project in SVN repository</td>
+		</tr>
+		<tr>
+			<td width="50%">CommitOperation</td>
+			<td>Commit resources</td>
+		</tr>
+		<tr>
+			<td width="50%">MergeOperation (experimental)</td>
+			<td>Interactive merge implementation</td>
+		</tr>
+		<tr>
+			<td width="50%">MergeStatusOperation (experimental)</td>
+			<td>Interactive merge implementation</td>
+		</tr>
+		<tr>
+			<td width="50%">UpdateOperation</td>
+			<td>Update resources</td>
+		</tr>
+		<tr>
+			<td width="50%">AddToSVNIgnoreOperation</td>
+			<td>Add resources to svn:ignore</td>
+		</tr>
+		<tr>
+			<td width="50%">AddToSVNOperation</td>
+			<td>Add resources to source control</td>
+		</tr>
+		<tr>
+			<td width="50%">LockOperation</td>
+			<td>Lock resources</td>
+		</tr>
+		<tr>
+			<td width="50%">UnlockOperation</td>
+			<td>Unlock resources</td>
+		</tr>
+		<tr>
+			<td width="50%">RevertOperation</td>
+			<td>Revert modifications</td>
+		</tr>
+		<tr>
+			<td width="50%">MarkAsMergedOperation</td>
+			<td>Mark conflicts as resolved</td>
+		</tr>
+		<tr>
+			<td width="50%">RemoveNonVersionedResourcesOperation</td>
+			<td>Remove any non-versioned resources starting from the level specified</td>
+		</tr>
+		<tr>
+			<td width="50%">SwitchOperation</td>
+			<td>Switch project to new URL</td>
+		</tr>
+		<tr>
+			<td width="50%">GetPropertiesOperation</td>
+			<td>Get all resource properties</td>
+		</tr>
+		<tr>
+			<td width="50%">SetPropertyOperation</td>
+			<td>Set resource property</td>
+		</tr>
+		<tr>
+			<td width="50%">RemovePropertyOperation</td>
+			<td>Remove resource property</td>
+		</tr>
+		<tr>
+			<td width="50%">GetAllResourcesOperation</td>
+			<td>Get all resources for the specified local folder including deleted, missing etc.</td>
+		</tr>
+		<tr>
+			<td width="50%">SaveRepositoryLocationsOperation</td>
+			<td>Save Subversive meta-information changes</td>
+		</tr>
+		<tr>
+			<td width="50%">DiscardRepositoryLocationsOperation</td>
+			<td>Remove specified repository locations from the Subversive meta-information</td>
+		</tr>
+		<tr>
+			<td width="50%">AddRepositoryLocationOperation</td>
+			<td>Add repository location to the Subversive meta-information</td>
+		</tr>
+		<tr>
+			<td width="50%">AddRevisionLinkOperation</td>
+			<td>Create revision links in the Subversive meta-information</td>
+		</tr>
+		<tr>
+			<td width="50%">RemoteStatusOperation</td>
+			<td>Update status for the specified resources</td>
+		</tr>
+		<tr>
+			<td width="50%">InfoOperation</td>
+			<td>Retrieve Info2 structure for the specified resource</td>
+		</tr>
+		<tr>
+			<td width="50%">RelocateWorkingCopyOperation</td>
+			<td>Relocate working copy</td>
+		</tr>
+		<tr>
+			<td width="50%">CreatePatchOperation</td>
+			<td>Create patch based on working copy</td>
+		</tr>
+		<tr>
+			<td width="50%">RefreshResourcesOperation</td>
+			<td>Refresh workspace tree and send internal resource modification events</td>
+		</tr>
+		<tr>
+			<td width="50%">NotifyProjectStatesChangedOperation</td>
+			<td>Send internal Subversive notification when project state is changed (shared, disconnected, opened, closed etc.)</td>
+		</tr>
+		<tr>
+			<td width="50%">GetRemoteContentsOperation</td>
+			<td>Get remote file or folder contents into specified folder overriding existing files</td>
+		</tr>
+		<tr>
+			<td width="50%">GetFileContentOperation</td>
+			<td>Fetch remote file content from SVN</td>
+		</tr>
+		<tr>
+			<td width="50%">GetLocalFileContentOperation</td>
+			<td>Fetch local file content from SVN (BASE or WORKING revisions)</td>
+		</tr>
+		<tr>
+			<td width="50%">CleanupOperation</td>
+			<td>Cleanup working copy after power loss or other failure</td>
+		</tr>
+		<tr>
+			<td width="50%">ClearLocalStatusesOperation</td>
+			<td>Refresh status cache for the specified resources</td>
+		</tr>
+		<tr>
+			<td width="50%">MoveResourceOperation</td>
+			<td>Move resources between folders in one/different working copy/copies saving the history</td>
+		</tr>
+		<tr>
+			<td width="50%">CopyResourceWithHistoryOperation</td>
+			<td>Copy resources between folders in one/different working copy/copies saving the history</td>
+		</tr>
+		<tr>
+			<td width="50%">CopyResourceOperation</td>
+			<td>Copy resources without saving history</td>
+		</tr>
+		<tr>
+			<td width="50%">DeleteResourceOperation</td>
+			<td>Delete versioned resources</td>
+		</tr>
+		<tr>
+			<td width="50%">RenameResourceOperation</td>
+			<td>Move resource from one URL to another</td>
+		</tr>
+		<tr>
+			<td width="50%">LocateProjectsOperation</td>
+			<td>Find Eclipse projects on repository</td>
+		</tr>
+		<tr>
+			<td width="50%">ImportOperation</td>
+			<td>Import specified folder into repository</td>
+		</tr>
+		<tr>
+			<td width="50%">GetResourceAnnotationOperation</td>
+			<td>Get annotation for the specified resource</td>
+		</tr>
+		<tr>
+			<td width="50%">GetRemotePropertiesOperation</td>
+			<td>Get properties for the resource on repository</td>
+		</tr>
+		<tr>
+			<td width="50%">GetLogMessagesOperation</td>
+			<td>Get resource modification history</td>
+		</tr>
+		<tr>
+			<td width="50%">ExportOperation</td>
+			<td>Export repository resource into specified local folder</td>
+		</tr>
+		<tr>
+			<td width="50%">DeleteResourcesOperation</td>
+			<td>Delete resources directly from repository</td>
+		</tr>
+		<tr>
+			<td width="50%">CreatePatchOperation (remote)</td>
+			<td>Create patch bases on difference between revisions</td>
+		</tr>
+		<tr>
+			<td width="50%">CreateFolderOperation</td>
+			<td>Create set of folders at any depth on the repository</td>
+		</tr>
+		<tr>
+			<td width="50%">CreateFileOperation</td>
+			<td>Create file directly on the repository with specified initial content</td>
+		</tr>
+		<tr>
+			<td width="50%">BreakLockOperation</td>
+			<td>Unlock resource directly on the repository</td>
+		</tr>
+		<tr>
+			<td width="50%">BranchTagOperation</td>
+			<td>Create branch or tag</td>
+		</tr>
+		<tr>
+			<td width="50%">CopyResourcesOperation (remote)</td>
+			<td>Copy resources to specified URL</td>
+		</tr>
+		<tr>
+			<td width="50%">MoveResourcesOperation (remote)</td>
+			<td>Move resources to specified URL</td>
+		</tr>
+		<tr>
+			<td class="header" align="center" colspan="2">UI Command Extensions (17)</td>
+		</tr>
+		<tr>
+			<td width="50%">UILoggedOperation</td>
+			<td>UI extension of LoggedOperation, show errors to user and propose to send bug report in case of internal failures</td>
+		</tr>
+		<tr>
+			<td width="50%">ShowUpdateViewOperation</td>
+			<td>Show synchronize view</td>
+		</tr>
+		<tr>
+			<td width="50%">ShowConflictEditorOperation</td>
+			<td>Show conflicted files editor (for resources update by external tools)</td>
+		</tr>
+		<tr>
+			<td width="50%">ClearUpdateStatusesOperation</td>
+			<td>Clear update statuses cached in Synchronize View</td>
+		</tr>
+		<tr>
+			<td width="50%">ClearMergeStatusesOperation (experimental)</td>
+			<td>Clear merge statuses cached in interactive Merge View</td>
+		</tr>
+		<tr>
+			<td width="50%">ShowPropertiesOperation</td>
+			<td>Show property editor</td>
+		</tr>
+		<tr>
+			<td width="50%">RefreshRepositoryLocationsOperation</td>
+			<td>Refresh repository browsing view</td>
+		</tr>
+		<tr>
+			<td width="50%">PrepareRemoteResourcesTransferrableOperation</td>
+			<td>Insert references to repository resources into clipboard</td>
+		</tr>
+		<tr>
+			<td width="50%">PasteRemoteResourcesOperation</td>
+			<td>Paste repository resources from clipboard into selected location</td>
+		</tr>
+		<tr>
+			<td width="50%">OpenRemoteFileOperation</td>
+			<td>Open remote file in its default viewer</td>
+		</tr>
+		<tr>
+			<td width="50%">NotifyUnresolvedConflictOperation</td>
+			<td>Notify user about unresolved conflicts in time of updating/committing resources</td>
+		</tr>
+		<tr>
+			<td width="50%">ShowMergeViewOperation (experimental)</td>
+			<td>Show interactive Merge View</td>
+		</tr>
+		<tr>
+			<td width="50%">FileToClipboardOperation</td>
+			<td>Copy file content into clipboard</td>
+		</tr>
+		<tr>
+			<td width="50%">CompareResourcesOperation</td>
+			<td>Three-way compare of working copy resources with the selected revision and show the result in compare viewer</td>
+		</tr>
+		<tr>
+			<td width="50%">CompareRepositoryResourcesOperation</td>
+			<td>Two-way compare of the repository resources with specified revisions and show the result in compare viewer</td>
+		</tr>
+		<tr>
+			<td width="50%">RefreshRemoteResourcesOperation</td>
+			<td>Refresh repository resources in the repository browsing view</td>
+		</tr>
+	</table>
+</body>
+</html>

@@ -1,0 +1,622 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest: cQjgaIg/b/k4YpMGx/mWwxecOto=
+Created-By: 1.6.0 (IBM Corporation)
+SHA1-Digest-Manifest-Main-Attributes: 6zx5Bx1SzNr3TlMGMHM5prnYIPQ=
+
+Name: ckeditor/plugins/smiley/images/whatchutalkingabout_smile.gif
+SHA1-Digest: CwKaCNu3I7xEr5zAHjc6tMPdG0s=
+
+Name: ckeditor/lang/sr-latn.js
+SHA1-Digest: p97P0a2y+LFvL2J2wYDojXGUvvk=
+
+Name: ckeditor/lang/et.js
+SHA1-Digest: GrzXrhDXXOLDG1pRnOTGJ/fLb5M=
+
+Name: ckeditor/lang/it.js
+SHA1-Digest: 3XQpYvlS9yrAe5hqYPOWjoGp+XM=
+
+Name: ckeditor/lang/gl.js
+SHA1-Digest: UaL6q0UO1wDfNz9M93qqf1tNezg=
+
+Name: ckeditor/lang/sl.js
+SHA1-Digest: AbnaXBN1mEx0QMhp9wMQwE17Uuw=
+
+Name: ckeditor/lang/th.js
+SHA1-Digest: MPFkQZXG1qJuhGAtLGnBWtPodpU=
+
+Name: ckeditor/plugins/scayt/dialogs/toolbar.css
+SHA1-Digest: 6+zCqoML9nEAr151FkuDTchPSrU=
+
+Name: ckeditor/lang/eo.js
+SHA1-Digest: KaFH2n8PyaJy9a8K/SWeiyEsnJ0=
+
+Name: ckeditor/plugins/forms/dialogs/checkbox.js
+SHA1-Digest: 1VDdIbf6Q5yTlQrDpBGxxrcz1/U=
+
+Name: ckeditor/plugins/smiley/images/cry_smile.gif
+SHA1-Digest: KBpvEn3xKzZOjoh0HQdeY2BH3kg=
+
+Name: ckeditor/plugins/forms/dialogs/radio.js
+SHA1-Digest: uMZ9TnyozvxXNwLbfxpGisB1tgc=
+
+Name: ckeditor/plugins/showblocks/images/block_h1.png
+SHA1-Digest: JlKssJjOcSBvfAfyXCwzelTujUI=
+
+Name: ckeditor/plugins/templates/templates/images/template1.gif
+SHA1-Digest: HElp8fKI3qUQCQpkBXzreVfnpFg=
+
+Name: ckeditor/plugins/showblocks/images/block_h5.png
+SHA1-Digest: 8BT/0MduLW3B5toxKJTKPyA7OUs=
+
+Name: ckeditor/plugins/link/dialogs/anchor.js
+SHA1-Digest: PEgZZPJHOnxVD1OvZ4/edegeXeg=
+
+Name: ckeditor/plugins/specialchar/dialogs/specialchar.js
+SHA1-Digest: 3e33dbjtN5AkMTKFANA8TkB6UPk=
+
+Name: ckeditor/skins/office2003/images/dialog_sides.png
+SHA1-Digest: qY6jMDBKndlFuoIX3T1rd0MViaY=
+
+Name: META-INF/maven/org.eclipse.mylyn.docs/org.eclipse.mylyn.htmltext
+ /pom.xml
+SHA1-Digest: QpAcNEls8/2hZqvvm7WtZkSRXKY=
+
+Name: ckeditor/skins/office2003/dialog.css
+SHA1-Digest: SaxbsDba+yqILiejwv/kIO/nQMc=
+
+Name: ckeditor/skins/office2003/images/noimage.png
+SHA1-Digest: lI0CCits32JCZmZLV5XO514vPaE=
+
+Name: ckeditor/plugins/showblocks/images/block_p.png
+SHA1-Digest: NvNNmnoWBfaiuaWVhG/vN/JXzzE=
+
+Name: ckeditor/plugins/uicolor/yui/assets/hue_thumb.png
+SHA1-Digest: kPTSvGXZS0qO0LGs9Aw8Y+gjHU4=
+
+Name: ckeditor/plugins/showblocks/images/block_address.png
+SHA1-Digest: 555k/LbgxrgYpKVjLmuYjz4snQc=
+
+Name: ckeditor/lang/sr.js
+SHA1-Digest: BCWZ0dSqf7oHayNUEQ3qZ6FaC+E=
+
+Name: ckeditor/skins/office2003/images/sprites.png
+SHA1-Digest: BRPXAFM3kUJfHDvndA7gTSyXM1U=
+
+Name: ckeditor/plugins/smiley/images/regular_smile.gif
+SHA1-Digest: MxXoF+/WrBMbCnMIZntI1EXEphY=
+
+Name: ckeditor/plugins/smiley/images/embaressed_smile.gif
+SHA1-Digest: tXInztfepYFqQYk97fYZi0LHBM0=
+
+Name: ckeditor/plugins/dialog/dialogDefinition.js
+SHA1-Digest: cZzlPshV0Z2K4JShvywyCDN6nb8=
+
+Name: ckeditor/lang/eu.js
+SHA1-Digest: 8UwXVJ+LHPWtuN3iMBmja/NKYlE=
+
+Name: ckeditor/plugins/templates/dialogs/templates.js
+SHA1-Digest: WhqqghuOdwhJksvdEwpBxL5V9o0=
+
+Name: ckeditor/plugins/smiley/images/confused_smile.gif
+SHA1-Digest: opDaVY2uDXOTNPEeAIv3u3tiEmo=
+
+Name: ckeditor/plugins/tabletools/dialogs/tableCell.js
+SHA1-Digest: YeA97UIY4iV3EgF3lTucwOMfAn4=
+
+Name: ckeditor/plugins/wsc/dialogs/ciframe.html
+SHA1-Digest: Jqou9v7+fbsXx/jm/Cvq2z7w2Is=
+
+Name: ckeditor/plugins/find/dialogs/find.js
+SHA1-Digest: hr4he1Wx/30vdMRtEYddoaADKl8=
+
+Name: ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js
+SHA1-Digest: qZabzLfo3AzQCVpzK91JwEHvni4=
+
+Name: ckeditor/lang/km.js
+SHA1-Digest: TI535PVWCksRSJV7t4eS304SFO0=
+
+Name: ckeditor/lang/hi.js
+SHA1-Digest: RIgKT1W77koaDYdkO3tsqWNdayU=
+
+Name: ckeditor/plugins/showblocks/images/block_blockquote.png
+SHA1-Digest: ZyUWkDS7SjLcngxnaxTE36qiSHY=
+
+Name: ckeditor/plugins/flash/dialogs/flash.js
+SHA1-Digest: VurVw6L7L67T8q9UTd1jESR/RFE=
+
+Name: ckeditor/lang/fa.js
+SHA1-Digest: 10jyu2gDvmIESG/Njipwd5l+Us0=
+
+Name: ckeditor/plugins/forms/dialogs/textfield.js
+SHA1-Digest: CCcY4SOA6OLob56db3FE9gbTjAc=
+
+Name: ckeditor/plugins/showblocks/images/block_pre.png
+SHA1-Digest: twW3u9AXoP2GqRVdC8FiUX15IqE=
+
+Name: ckeditor/ckeditor_basic.js
+SHA1-Digest: uIK5nHtCbXjiL952FjO67aZh38w=
+
+Name: ckeditor/lang/ja.js
+SHA1-Digest: HcD9cwj4hqNhuIG9XioDJvGBV94=
+
+Name: ckeditor/plugins/uicolor/yui/assets/picker_thumb.png
+SHA1-Digest: xZ9Vg3kXebw/JbZWk9PKICF7WSI=
+
+Name: ckeditor/skins/v2/editor.css
+SHA1-Digest: zxfCoNm6EVmpl2XXwASnTleOttI=
+
+Name: htmltext.jar
+SHA1-Digest: QPEfNwE+cvezQtD+YwDAKiiFfpQ=
+
+Name: ckeditor/plugins/a11yhelp/lang/he.js
+SHA1-Digest: xMtM5KG0G7gJJdoH/9ASJwGXrLw=
+
+Name: ckeditor/plugins/smiley/images/envelope.gif
+SHA1-Digest: S1nT1HyII5vmCRA5xohx2EX9tig=
+
+Name: ckeditor/lang/lt.js
+SHA1-Digest: wsmzUdnjp3Mzn/kVULE4R8MwDJQ=
+
+Name: ckeditor/lang/pt.js
+SHA1-Digest: S9pX+5Ko6kVSzNLtjY7tZVuWAdQ=
+
+Name: ckeditor/skins/kama/images/dialog_sides_rtl.png
+SHA1-Digest: KsmdvaNFVBRs5r2cgqT5WNiDYiU=
+
+Name: ckeditor/lang/nl.js
+SHA1-Digest: 8CSYPOrq7V0pAQk5adv750Ks5I0=
+
+Name: ckeditor/lang/zh-cn.js
+SHA1-Digest: /bzqjAlAUXZPtWzVD8tMa/Bymb4=
+
+Name: ckeditor/plugins/flash/images/placeholder.png
+SHA1-Digest: zUUL/w5heXFTJSFCstelinKhB4o=
+
+Name: ckeditor/lang/cs.js
+SHA1-Digest: bLAZCmC+MUvB/mSbKFV1GM3KCQM=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: QdryQvJlVywlE0MGLuwYCkmkyWk=
+
+Name: ckeditor/lang/bg.js
+SHA1-Digest: gSLQQfsd819t8JXcIMGG2tmTS8o=
+
+Name: ckeditor/plugins/showblocks/images/block_h4.png
+SHA1-Digest: 8QErcm/mW06AjjX7X/AlMpphouY=
+
+Name: ckeditor/skins/kama/images/toolbar_start.gif
+SHA1-Digest: nE76MZeQ2MDJXF+WfBPUkg5zPGQ=
+
+Name: ckeditor/plugins/div/dialogs/div.js
+SHA1-Digest: uRmTngMxV4ToTtowKgMeCQaMd9g=
+
+Name: ckeditor/plugins/forms/dialogs/hiddenfield.js
+SHA1-Digest: mjtltFkibOune/hjLCIG3R/IHbE=
+
+Name: ckeditor/plugins/forms/images/hiddenfield.gif
+SHA1-Digest: C22i/1dB+Pqsbu+JFu3Zu+v5Zl0=
+
+Name: ckeditor/lang/uk.js
+SHA1-Digest: ff8XHMnNV/2vfsOGH1/uCQXxhsg=
+
+Name: ckeditor/plugins/uicolor/plugin.js
+SHA1-Digest: iJl0xYcFv+wbfdUpbFDMHMw+SDE=
+
+Name: ckeditor/lang/fr.js
+SHA1-Digest: Ng/wX6y33Hp2lZhHUEs4og6Q+Ss=
+
+Name: ckeditor/plugins/smiley/images/teeth_smile.gif
+SHA1-Digest: XqATsr75FnCZ1qrFOfRnCYDD5h8=
+
+Name: ckeditor/ckeditor.js
+SHA1-Digest: NZda3UPvgOkCWfBVFcQ4gSBswuA=
+
+Name: ckeditor/lang/af.js
+SHA1-Digest: bDNYiN6ewLnCiIatkHRqJC+Z0Kw=
+
+Name: ckeditor/plugins/link/dialogs/link.js
+SHA1-Digest: bb78yfIO3Kc3eQgOv3lBc4xLn9Y=
+
+Name: ckeditor/skins/v2/images/sprites_ie6.png
+SHA1-Digest: WnRtK6lrkxzteMVB3uoibPdrg/I=
+
+Name: ckeditor/skins/v2/images/dialog_sides.gif
+SHA1-Digest: pQiFN8QWaf/Hk9qo0w3gBfPTLNw=
+
+Name: ckeditor/plugins/smiley/images/lightbulb.gif
+SHA1-Digest: Nyd1OMfHwvZZVHnZFs8wQQs/BMM=
+
+Name: ckeditor/skins/v2/icons.png
+SHA1-Digest: UTsWZR6DzJujKxACIBPe7RCM6V4=
+
+Name: ckeditor/lang/cy.js
+SHA1-Digest: 3QdRRNx5ibFiRj1YFkTpWfPTqZw=
+
+Name: ckeditor/skins/v2/skin.js
+SHA1-Digest: zEAylch82ldgdp4gX6Hnr2DSkPA=
+
+Name: ckeditor/lang/nb.js
+SHA1-Digest: bqC759FD1TZrWwCVR/HYu2LisDY=
+
+Name: ckeditor/skins/v2/dialog.css
+SHA1-Digest: ip+FanQsR+8npYHCP+RAdYHdcQc=
+
+Name: ckeditor/lang/fr-ca.js
+SHA1-Digest: /zG2jkicHPTj5dCaBkDnNGRHi7I=
+
+Name: ckeditor/skins/kama/images/sprites_ie6.png
+SHA1-Digest: 8QwqGXrxqXLcKdblJBO3Br2NNac=
+
+Name: ckeditor/lang/hu.js
+SHA1-Digest: ylppa6dqb6bNTmY4PIfiUuuvySE=
+
+Name: ckeditor/skins/v2/images/mini.gif
+SHA1-Digest: 4RjprjWQJbGRZjzpxWUnlRaTRdk=
+
+Name: ckeditor/skins/office2003/images/mini.gif
+SHA1-Digest: KrgnKiEQi6hhX1f1VUxjl9cwhU4=
+
+Name: ckeditor/lang/pt-br.js
+SHA1-Digest: r/uv/dX9+OrsUUfuxy7F4o+lLYE=
+
+Name: ckeditor/lang/_translationstatus.txt
+SHA1-Digest: Xwl1wmGP3p8B1WpuaGCzW0p+AyU=
+
+Name: ckeditor/lang/de.js
+SHA1-Digest: iCkubZEw1kcuIDLnYNWO72rYOt8=
+
+Name: ckeditor/skins/kama/images/noimage.png
+SHA1-Digest: gpKSYDrArIBEYRi4m9VZdu2fPnE=
+
+Name: ckeditor/plugins/smiley/images/tounge_smile.gif
+SHA1-Digest: uOjP/RGkTzh4qVRGSY3i+19UEqs=
+
+Name: ckeditor/lang/he.js
+SHA1-Digest: zs2x8mkh1cCT0b8Olr0pryLW5sI=
+
+Name: ckeditor/plugins/smiley/images/kiss.gif
+SHA1-Digest: G3v/YnrrPiiobXNAmotudM+BOHM=
+
+Name: ckeditor/plugins/link/images/anchor.gif
+SHA1-Digest: 45EGsyn417r74OYEsjMQ+EEaZoU=
+
+Name: ckeditor/lang/en-ca.js
+SHA1-Digest: AeauvlSsYIoO9wKbTJJldbg07Bw=
+
+Name: ckeditor/skins/kama/templates.css
+SHA1-Digest: 87/UUgtXXdBDmQZtqbBcxL+iayw=
+
+Name: ckeditor/skins/kama/images/dialog_sides.gif
+SHA1-Digest: HYk33xePAS/pyaeC+ddzASyZiok=
+
+Name: eclipsebridge/integration.js
+SHA1-Digest: Xe7sMTlUnhjkx3a9ENe0MmmKpzk=
+
+Name: ckeditor/skins/kama/images/sprites.png
+SHA1-Digest: pfy55g2TdePhmmICwRrkDHY368I=
+
+Name: ckeditor/plugins/forms/dialogs/form.js
+SHA1-Digest: zECTZP5iDecGlcaOdq8WJriSRY8=
+
+Name: ckeditor/themes/default/theme.js
+SHA1-Digest: Ug47pPbbLU8q+F6WdjTXjyA44gE=
+
+Name: ckeditor/skins/kama/skin.js
+SHA1-Digest: WXZaU6FV2Txs7XLVmTNPWMQ23v4=
+
+Name: ckeditor/lang/el.js
+SHA1-Digest: rHQ296/UKZHiXzamVMzITuWh4bo=
+
+Name: ckeditor/plugins/forms/dialogs/select.js
+SHA1-Digest: W1JRGQRcHps0XizugzwbqTxan5E=
+
+Name: ckeditor/plugins/smiley/images/wink_smile.gif
+SHA1-Digest: fGoMLxzwBhfpEPIusDknYX6LKYM=
+
+Name: ckeditor/skins/kama/images/mini.gif
+SHA1-Digest: GZG3X5Es16+C6ql67cm6AVcIZ1A=
+
+Name: ckeditor/plugins/smiley/images/sad_smile.gif
+SHA1-Digest: L2/s2IdoGheySYx0e2ROqPKjqwc=
+
+Name: ckeditor/plugins/smiley/images/broken_heart.gif
+SHA1-Digest: 33C7AYkasgk5yqf3kd6f6bNaM2o=
+
+Name: ckeditor/plugins/about/dialogs/logo_ckeditor.png
+SHA1-Digest: QZaJn5RSJaCqpnHBAebJdN/yWfg=
+
+Name: ckeditor/plugins/forms/dialogs/button.js
+SHA1-Digest: d4rDjEqsavmd8KKT9BFhGRmysx4=
+
+Name: ckeditor/skins/v2/images/toolbar_start.gif
+SHA1-Digest: mnRWlcUj+Oro96kDN2sbayaZNIk=
+
+Name: ckeditor/plugins/image/dialogs/image.js
+SHA1-Digest: pH5ecan5dtC4TAloAulfhILkoVs=
+
+Name: ckeditor/lang/bs.js
+SHA1-Digest: LTdh1SyFmUU3A4RpXR6wJyYmUQ8=
+
+Name: ckeditor/lang/zh.js
+SHA1-Digest: 6zH1Yq4ECgv6hkvRb/881XPzn14=
+
+Name: ckeditor/contents.css
+SHA1-Digest: mDmmQc1k09E7bEdhBYygeCUneXY=
+
+Name: ckeditor/lang/ko.js
+SHA1-Digest: 97eHdSFiWKzEyfoOQ96vlwBXUZQ=
+
+Name: ckeditor/plugins/showblocks/images/block_h3.png
+SHA1-Digest: Iu1/e+7N1EagWn9vcswoKeHffFU=
+
+Name: ckeditor/plugins/templates/templates/images/template3.gif
+SHA1-Digest: t8vCiCI6GuwFofTuZL9+ItHZFbk=
+
+Name: ckeditor/plugins/liststyle/dialogs/liststyle.js
+SHA1-Digest: j11D+ROF98ZNlSuC+880inBLKN8=
+
+Name: ckeditor/skins/office2003/icons.gif
+SHA1-Digest: 4BOILirJa/jYzYpwNyBWzGBtuqE=
+
+Name: ckeditor/plugins/smiley/images/devil_smile.gif
+SHA1-Digest: ANGcBKSxD2lE5WKDYYDJ+kjwF0k=
+
+Name: ckeditor/skins/v2/images/dialog_sides.png
+SHA1-Digest: mKF22XKSt1Z/wIZDuKT2E+6LgMs=
+
+Name: ckeditor/lang/ar.js
+SHA1-Digest: NNePxKoVfxs4Q1J9x8zOcqwwC9U=
+
+Name: ckeditor/images/spacer.gif
+SHA1-Digest: 1wN1+g2YkudodjNyvFd0uWn0HQg=
+
+Name: ckeditor/lang/bn.js
+SHA1-Digest: llcTURmJxmBYjgoWlbqcllFQ9ow=
+
+Name: ckeditor/plugins/wsc/dialogs/wsc.js
+SHA1-Digest: xqLmS8EzGKxygaR7ysQ603YwA/Y=
+
+Name: ckeditor/lang/lv.js
+SHA1-Digest: TZ0TGDrHsGWBRK3XlmQA7YzFJkM=
+
+Name: ckeditor/plugins/iframedialog/plugin.js
+SHA1-Digest: GYNvenW5VrD6wzs9Fuph1HVXsNU=
+
+Name: ckeditor/skins/v2/templates.css
+SHA1-Digest: suxvp6hvQVryk80Ylm1AXcoFBC4=
+
+Name: ckeditor/plugins/forms/dialogs/textarea.js
+SHA1-Digest: /K7L581ieuVmzWesRNumvb71s6w=
+
+Name: ckeditor/LICENSE.html
+SHA1-Digest: MphyEQqCrtNrjTRALXgqKKFTuuc=
+
+Name: ckeditor/plugins/pastetext/dialogs/pastetext.js
+SHA1-Digest: ZobJw6tSwBnMKbXwJ1JP9+SGqDw=
+
+Name: ckeditor/plugins/uicolor/lang/en.js
+SHA1-Digest: Ro6nJAYlSecPJNCN9O6p5voz2gg=
+
+Name: ckeditor/plugins/a11yhelp/lang/en.js
+SHA1-Digest: nHkOHPPozvzPR+X+9m2g64Av6rc=
+
+Name: ckeditor/lang/en-gb.js
+SHA1-Digest: 2JoP89bgkG/kiJ91OayjxOG8YAQ=
+
+Name: ckeditor/plugins/uicolor/yui/assets/yui.css
+SHA1-Digest: G2Fy83R1UnbDHpjGU+rM2S9iFaE=
+
+Name: ckeditor/skins/v2/images/dialog_sides_rtl.png
+SHA1-Digest: LyvBQXhpg4WwO9C6EgwHQ2exQ8Y=
+
+Name: ckeditor/lang/gu.js
+SHA1-Digest: AWuycSJagNBiDJQ6VB+SIkmwT2g=
+
+Name: ckeditor/skins/kama/images/dialog_sides.png
+SHA1-Digest: lCKvhXg4rq7Mc98gsG7CJbOmzjE=
+
+Name: ckeditor/lang/en-au.js
+SHA1-Digest: u4IXZJFrlPIlLUidSrnj6k/myj4=
+
+Name: ckeditor/plugins/showblocks/images/block_div.png
+SHA1-Digest: 0/20oW/VMXfout4EU/37nBOIO4E=
+
+Name: about.html
+SHA1-Digest: mIQXJU/7q3gjxaw2eX8L0vyK4i8=
+
+Name: ckeditor/lang/fi.js
+SHA1-Digest: Z3ZVwslyU8nwYGsyMGMVY0UcWaw=
+
+Name: ckeditor/plugins/smiley/dialogs/smiley.js
+SHA1-Digest: eLfWBro7W5QSIGFGVIpEJ3MfdP8=
+
+Name: ckeditor/plugins/smiley/images/thumbs_up.gif
+SHA1-Digest: I3n1ZrW/kHF0IH6qaj7HBqnZD+4=
+
+Name: ckeditor/lang/da.js
+SHA1-Digest: 10C+6tmNc67wfL+AljqggTvVd9c=
+
+Name: ckeditor/plugins/smiley/images/heart.gif
+SHA1-Digest: x91xIvcSVEooOacDRHOyH9msUdE=
+
+Name: ckeditor/lang/vi.js
+SHA1-Digest: eBJa1ryodo1j74z0JP5YyOnLEms=
+
+Name: ckeditor/plugins/colordialog/dialogs/colordialog.js
+SHA1-Digest: 12uR/Ugk7FzBYDD2J5bk74OvoFo=
+
+Name: ckeditor/skins/kama/icons.png
+SHA1-Digest: gWILAnE73HOIOcq8NeNjbYVfIE4=
+
+Name: ckeditor/plugins/wsc/dialogs/wsc.css
+SHA1-Digest: BEMpULoGfwbaD8182ERrBEGx3Iw=
+
+Name: ckeditor/plugins/scayt/dialogs/options.js
+SHA1-Digest: I/CFhFwPOcPK97+c/buJblirDXE=
+
+Name: ckeditor/plugins/clipboard/dialogs/paste.js
+SHA1-Digest: nkqZa95lb1Vd7C81Vbs6KJQbKok=
+
+Name: ckeditor/plugins/templates/templates/default.js
+SHA1-Digest: /3lqEvMb6jEnasXUbZOlIldICPA=
+
+Name: ckeditor/skins/office2003/templates.css
+SHA1-Digest: vbAMRSIuk2I1qG07vMypKo1N83M=
+
+Name: ckeditor/skins/kama/editor.css
+SHA1-Digest: 6Odm2q6R03MOOezVcg13gZ2FjqI=
+
+Name: ckeditor/lang/pl.js
+SHA1-Digest: qpz/O9cdZRA8OiL31jlNsL5dLFo=
+
+Name: ckeditor/plugins/uicolor/yui/yui.js
+SHA1-Digest: qQoAe8AEwK3AhnyQfWxWHU9S0SI=
+
+Name: ckeditor/skins/office2003/icons.png
+SHA1-Digest: nlDi9F/CO9CKinBbguAAAayalTY=
+
+Name: ckeditor/plugins/pastefromword/filter/default.js
+SHA1-Digest: iQ5rxGxe4XwbZ8j/JsYyX/be3EM=
+
+Name: ckeditor/plugins/smiley/images/angry_smile.gif
+SHA1-Digest: HRmLUz4CEh+0GotN8VqJXYgzIZs=
+
+Name: ckeditor/lang/es.js
+SHA1-Digest: lpk4+McV+79P7/pJY03haTGQd1w=
+
+Name: ckeditor/lang/is.js
+SHA1-Digest: WES1Ei8cjEQQsjXUL3IUPs4l8hQ=
+
+Name: ckeditor/lang/fo.js
+SHA1-Digest: bQdZQ2eD0cFOMwUxktdHuqfwnqI=
+
+Name: ckeditor/plugins/smiley/images/shades_smile.gif
+SHA1-Digest: MA+BPE1mSqZRAQDKEtsIE0KH9MM=
+
+Name: ckeditor/lang/ms.js
+SHA1-Digest: uZr0Itve310XCLVAOHJFbDn9dok=
+
+Name: eclipsebridge/externalconfiguration.js
+SHA1-Digest: tRKEuv91/cqYw+sSu3mqafzk+Fg=
+
+Name: ckeditor/plugins/showblocks/images/block_h2.png
+SHA1-Digest: Di5qJEeulEdXoLsBg2+LZ1JnOKo=
+
+Name: ckeditor/plugins/templates/templates/images/template2.gif
+SHA1-Digest: ARC3WofanFjP2Th8I5rKkhftAcA=
+
+Name: ckeditor/skins/office2003/images/sprites_ie6.png
+SHA1-Digest: 70Oy9KHSOLrXugmXCb6Y2vNwAeY=
+
+Name: ckeditor/lang/no.js
+SHA1-Digest: hjm+qxXuubqudKQiXTdKdU8n6/4=
+
+Name: ckeditor/plugins/showblocks/images/block_h6.png
+SHA1-Digest: y9ZkYSMcR5/r4NnGZxeNH3idjE8=
+
+Name: META-INF/maven/org.eclipse.mylyn.docs/org.eclipse.mylyn.htmltext
+ /pom.properties
+SHA1-Digest: N5MUno380IWAeuCMYyu9nCwcaCg=
+
+Name: ckeditor/lang/ro.js
+SHA1-Digest: H/SWwAlO56SuEwQ0QxJVLVyskDY=
+
+Name: ckeditor/plugins/uicolor/dialogs/uicolor.js
+SHA1-Digest: s1v9gduShPJ6IYOcuobZyJeArkE=
+
+Name: ckeditor/plugins/table/dialogs/table.js
+SHA1-Digest: MRXbRTaCByhWtrYm24Lz31kKpNQ=
+
+Name: ckeditor/plugins/uicolor/yui/assets/picker_mask.png
+SHA1-Digest: IyCCeethnCTVZBDXphv5s9Iz6oo=
+
+Name: ckeditor/lang/sk.js
+SHA1-Digest: 8Y6T4cBO02YCCJZeX3GkVmGKwwQ=
+
+Name: ckeditor/plugins/about/dialogs/about.js
+SHA1-Digest: YCYQa/SKKr1Lwy5Zk34E3I2fyxg=
+
+Name: ckeditor/config.js
+SHA1-Digest: S23lhwTCOQuqqSusyOLFCG93I7k=
+
+Name: ckeditor/plugins/uicolor/uicolor.gif
+SHA1-Digest: 3Mr4x/Q/ViXmASo+6bUk7L33Nc0=
+
+Name: ckeditor/plugins/wsc/dialogs/tmpFrameset.html
+SHA1-Digest: WTzAEtSlInCM5AhACTCg3q64A5A=
+
+Name: ckeditor/lang/hr.js
+SHA1-Digest: eZo/mMsZKaSGjiCTl3auG1RhqLE=
+
+Name: ckeditor/plugins/smiley/images/omg_smile.gif
+SHA1-Digest: 6s8dKA9muoG4s7iK0MZRmraju3k=
+
+Name: ckeditor/lang/en.js
+SHA1-Digest: CGe+j0gfichjy2mlMW8rvjf2CZ0=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA1-Digest: mHfePPMqhsW76aRbDwmIVlHke98=
+
+Name: ckeditor/plugins/uicolor/yui/assets/hue_bg.png
+SHA1-Digest: 8JDdJhCHfWxm8O9iNK4nk8elBg4=
+
+Name: ckeditor/lang/sv.js
+SHA1-Digest: hJ5oGsl7ksspgCnlEPIaXMBMWNU=
+
+Name: ckeditor/lang/mn.js
+SHA1-Digest: cgFQuSjMCY9FljGCVqBbrKHnFOs=
+
+Name: ckeditor/lang/tr.js
+SHA1-Digest: nurnNZhVifcz4dXJjS3GFzJG4qk=
+
+Name: ckeditor/skins/office2003/images/dialog_sides.gif
+SHA1-Digest: Cux5EklmbimSkQs2IePV+pCOYn8=
+
+Name: ckeditor/skins/office2003/skin.js
+SHA1-Digest: A2t8EvuRWIMpsesVnKwORlozCyE=
+
+Name: ckeditor/skins/v2/images/noimage.png
+SHA1-Digest: +bd2KaanSWMVfI3qn25RxHHBaV0=
+
+Name: ckeditor/skins/office2003/editor.css
+SHA1-Digest: iacADobE4meJ+kWuYF6BL48y7CA=
+
+Name: eclipsebridge/format.js
+SHA1-Digest: EOpD2vTS9/jgzPkcOh+6V0IkmM0=
+
+Name: ckeditor/skins/office2003/images/dialog_sides_rtl.png
+SHA1-Digest: BDyJ9LlHUG94E2W5dv/fc6Tlu3c=
+
+Name: ckeditor/.htaccess
+SHA1-Digest: IJlyH6rMzQsWpNthj03gwtZM4K8=
+
+Name: eclipsebridge/base.html
+SHA1-Digest: 9EJd55sabQWQ9DOVUYsSk7tfR7w=
+
+Name: ckeditor/lang/ru.js
+SHA1-Digest: eDYsOfvr+9VCLYP+2u79yGFtGu4=
+
+Name: ckeditor/skins/kama/dialog.css
+SHA1-Digest: K8AK2ViN88xxtSpSZou/brqO8Ho=
+
+Name: ckeditor/lang/ca.js
+SHA1-Digest: a99iLe668yMjjK7rTP25wYEo8IA=
+
+Name: ckeditor/skins/v2/images/sprites.png
+SHA1-Digest: hRo09vl6rTGoyJ05xYeNq9v30Oc=
+
+Name: ckeditor/lang/_languages.js
+SHA1-Digest: JlJFb+gpgATGSZN90BjnfjpsoQ4=
+
+Name: ckeditor/plugins/pagebreak/images/pagebreak.gif
+SHA1-Digest: pIBtrQVfcw9OSQL0/xbWkse6twM=
+
+Name: ckeditor/plugins/smiley/images/thumbs_down.gif
+SHA1-Digest: mfZzd6k6HjgAnaWeaqTcVFn5tCk=
+
+Name: ckeditor/plugins/smiley/images/angel_smile.gif
+SHA1-Digest: CUXIgVID29XsKmwLdowLXEt4eyI=
+
+Name: ckeditor/plugins/styles/styles/default.js
+SHA1-Digest: U38ZDwlnR1trBoY807C6bVMA6UQ=
+

@@ -1,0 +1,5 @@
+#Wed Aug 10 03:48:28 PDT 2011
+systemProxiesEnabled=false
+org.eclipse.core.net.hasMigrated=true
+eclipse.preferences.version=1
+nonProxiedHosts=localhost|127.0.0.1

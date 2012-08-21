@@ -1,0 +1,352 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<title>Subversive extension points</title>
+	<meta name="copyright"  content="Copyright (c) 2005-2011 Polarion Software. All rights reserved. This page is provided under the terms of the Eclipse Public License v1.0 which accompanies this distribution, and is available at http://www.eclipse.org/legal/epl-v10.html Contributors: Alexander Gurov."/>
+	<LINK REL="STYLESHEET" HREF="../../book.css" CHARSET="ISO-8859-1" TYPE="text/css"/>
+</head>
+<body>
+
+	<table cellpadding = "0" cellspacing = "0" border = "0" width = "100%">
+		<tr>
+			<td class="head_picture">
+				<img src="../../images/guide_1.gif"/>
+			</td>
+			<td  class="head_picture" width="100%"  align="right">
+				<img src="../../images/guide_2.gif"/>
+			</td>
+		</tr>
+	</table>
+<h3>Subversive extension points</h3>
+	<p>The Subversive project provides several extension points:</p>
+	<ul>
+		<li>SVN Connector Module</li>
+		<li>Mail Settings Provider</li>
+		<li>Synchronize View Actions Contribution</li>
+		<li>Share Project Wizard</li>
+		<li>Multiline Comments in History</li>
+		<li>Checkout</li>
+		<li>Commit</li>
+	</ul>
+	<p>An interface of the first two extension points is full-featured and enough flexible from our point of view. It covers most possible integration aspects and can be treated as stable. Please note that we plan to move "Mail Settings Provider" to Core plug-in in order to allow mail reporting for the automated applications. </p>
+	<p>Extensions are subjects of further discussions and we will very appreciate to community for any ideas on how to improve them. </p>
+	<b>The Subversive Core extension points</b>
+	<p>Core plug-in provides extension point that allows contributors to implement alternative SVN Connector support module. The extension should implement following interface:</p>
+	<i>Interface 1 "SVN Connector Module" extension point</i>
+<pre>
+/**
+ * Extension point factory for ISVNClientWrapper
+ * 
+ * @author Alexander Gurov
+ */
+public interface ISVNConnectorFactory {
+	public static final String DEFAULT_ID = "org.eclipse.team.svn.connector.svnkit";
+	public static final String CURRENT_COMPATIBILITY_VERSION = "0.7.0.v20080116";
+	
+	/**
+	 * Enumeration of connector API compatibility levels
+	 */
+	public static class APICompatibility {
+		/**
+		 * Compatibility level for the connector library is not specified
+		 */
+		public static final int SVNAPI_NOT_SPECIFIED = -1;
+		/**
+		 * SVN 1.0 compatible API is supported by the connector
+		 */
+		public static final int SVNAPI_1_0_x = 0;
+		/**
+		 * SVN 1.1 compatible API is supported by the connector
+		 */
+		public static final int SVNAPI_1_1_x = 1;
+		/**
+		 * SVN 1.2 compatible API is supported by the connector
+		 */
+		public static final int SVNAPI_1_2_x = 2;
+		/**
+		 * SVN 1.3 compatible API is supported by the connector
+		 */
+		public static final int SVNAPI_1_3_x = 3;
+		/**
+		 * SVN 1.4 compatible API is supported by the connector
+		 */
+		public static final int SVNAPI_1_4_x = 4;
+		/**
+		 * SVN 1.5 compatible API is supported by the connector
+		 */
+		public static final int SVNAPI_1_5_x = 5;
+	}
+	
+	/**
+	 * Enumeration of optional feature masks 
+	 */
+	public static class OptionalFeatures {
+		/**
+		 * No optional features supported
+		 */
+		public static final int NO_OPTIONAL_FEATURES = 0;
+		/**
+		 * All optional features supported
+		 */
+		public static final int ALL_OPTIONAL_FEATURES = ~NO_OPTIONAL_FEATURES;
+		/**
+		 * Direct SSH settings specification is supported by connector
+		 */
+		public static final int SSH_SETTINGS = 0x01;
+		/**
+		 * Direct PROXY settings specification is supported by connector
+		 */
+		public static final int PROXY_SETTINGS = 0x02;
+		/**
+		 * Atomic cross-working copy commit is supported by connector 
+		 */
+		public static final int ATOMIC_X_COMMIT = 0x04;
+		/**
+		 * Compare repository folders is supported by connector 
+		 */
+		public static final int COMPARE_FOLDERS = 0x08;
+		/**
+		 * Only revision change reporting is supported by connector (makes sense for folders and synchronize view)
+		 */
+		public static final int REPORT_REVISION_CHANGE = 0x10;
+	}
+	
+	/**
+	 * Makes new SVN Client Library instance
+	 * @return SVN Client Library instance
+	 */
+	public ISVNConnector newInstance();
+	
+	/**
+	 * Returns unique SVN Client library plug-in id
+	 * @return SVN Client library plug-in id
+	 */
+	public String getId();
+	/**
+	 * Returns user-friendly SVN Client library plug-in name
+	 * @return SVN Client library plug-in name
+	 */
+	public String getName();
+	
+	/**
+	 * Returns SVN Client library plug-in version
+	 * @return plug-in version
+	 */
+	public String getVersion();
+	
+	/**
+	 * Returns SVN Client library plug-in API compatibility version
+	 * @return plug-in version
+	 */
+	public String getCompatibilityVersion();
+	
+	/**
+	 * Returns SVN Client library version
+	 * @return connector version
+	 */
+	public String getClientVersion();
+	
+	/**
+	 * Returns supported optional features set 
+	 * @return supported optional features set
+	 */
+	public int getSupportedFeatures();
+	/**
+	 * Tell which SVN API version supported
+	 * @return API version Id
+	 */
+	public int getSVNAPIVersion();
+}
+</pre>
+	<p>ISVNConnector interface, which instances is returned by ISVNConnectorFactory .newInstace() method, is constructed very similar to the JavaHL interface and allows to hide specific of the concrete SVN client library from the Subversive Core module.</p>
+	<p>The Subversive project uses some specific features provided by SVN Kit (former JavaSVN) library, at the same time the features are unsupported by current implementation of the native JavaHL library. In general case an arbitrary SVN Connector plug-in may provide partial support of extended features. So, we have the compatibility problem with the Subversive-specific features. Subversive architecture allows solving the problem in simple way. All compatibility settings are provided by each SVN Client Library plug-in through ISVNConnectorFactory interface.</p>
+	<p>If a SVN Connector plug-in does not support extended features it reflects on the Subversive functionality like described below:</p>
+	<ul>
+		<li>The "Cross WC atomic commit" feature implementation is completely transparent for end users who are used the Subversive and for programmers who are used the Subversive API. One little difference is non-atomic revision numbers in case when feature is inaccessible</li>
+		<li>Compare folders is inaccessible</li>
+		<li>SSH and Proxy settings is inaccessible</li>
+		<li>Locks decoration for repository resources is inaccessible</li>
+		<li>Interactive merge is inaccessible</li>
+		<li>"Report revision change for folders" option is inaccessible.</li>
+	</ul>
+	<b>The Subversive UI extension points</b>
+	<p>The Subversive UI plug-in provides a set of different extension points:</p>
+	<ul>
+		<li><b>"Mail Settings Provider"</b> extension point allows customizing and redirecting of "Automated Bug-Reporter" Subversive project service.</li>
+	</ul>
+	<i>Interface 2 "Mail Settings Provider" extension point</i>
+<pre>
+public interface IMailSettingsProvider {
+	/**
+	* Returns report addressee
+	* @return report addressee
+	*/
+	public String getEmailTo();
+	/**
+	* Returns report sender
+	* @return report sender
+	*/
+	public String getEmailFrom();
+	/**
+	* Returns plug-in name
+	* @return plug-in name
+	*/
+	public String getPluginName();
+	/**
+	* Returns plug-in version
+	* @return plug-in version
+	*/
+	public String getProductVersion();
+	/**
+	* Returns mail server host
+	* @return mail server host
+	*/
+	public String getHost();
+	/**
+	* Returns mail server port
+	* @return mail server port
+	*/
+	public String getPort();
+}
+</pre>
+	<ul>
+		<li><b>"Synchronize View Action Contributions"</b> extension point allows adding of custom actions into the Subversive project Synchronize View.</li>
+	</ul>
+	<i>Interface 3 "Synchronize View Action Contributions" extension point</i>
+<pre>
+public interface ISynchronizeViewActionContributor {
+	/**
+	* This method returns synchronize view action contributions for update mode
+	* @return collection of AbstractSynchronizeActionGroup
+	*/
+	public Collection getUpdateContributions();
+	/**
+	* This method returns synchronize view action contributions for merge mode
+	* @return collection of AbstractSynchronizeActionGroup
+	*/
+	public Collection getMergeContributions();
+}
+</pre>
+	<ul>
+		<li><b>"Share Project Wizard"</b> extension point allows overriding of the default Subversive project behavior while sharing the project.
+		</li>
+	</ul>
+	<i>Interface 4 "Share Project Wizard" extension point</i>
+<pre>
+public interface IShareProjectFactory {
+	/**
+	* The method provides ShareProjectWizard page with some extended options in compare to default Subversive implementation
+	* @param project the project which will be shared
+	* @return wizard page
+	*/
+	public SelectProjectNamePage getProjectLayoutPage(IProject project);
+	/**
+	* Allows to override default Subversive behavior while sharing the project
+	* @param project the project which will be shared
+	* @param location the repository location which will be used in order to share the project
+	* @param page advanced share project configuration page
+	* @return share project operation implementation which overrides default Subversive behavior
+	*/
+	public ShareProjectOperation getShareProjectOperation(IProject project, IRepositoryLocation location, SelectProjectNamePage page);
+	/**
+	* Force disablement of the finish button on the "Already Connected" page
+	* @return true if should be disallowed
+	*/
+	public boolean disallowFinishOnAlreadyConnected();
+	/**
+	* Force disablement of the finish button on the "Add Repository Location" page
+	* @return true if should be disallowed
+	*/
+	public boolean disallowFinishOnAddRepositoryLocation();
+	/**
+	* Force disablement of the finish button on the "Select Repository Location" page
+	* @return true if should be disallowed
+	*/
+	public boolean disallowFinishOnSelectRepositoryLocation();
+}
+</pre>
+	<ul>
+		<li><b>"Multiline Comments in History"</b> extension point allows replacement of the default Subversive multiline viewer implementation to more powerful which, for example, provides hyperlinks in comments etc.</li>
+	</ul>
+	<i>Interface 5 "Multiline Comments in History" extension point</i>
+<pre>
+public interface IHistoryViewFactory {
+	/**
+	* Returns project-specific multiline comment view implementation
+	* @return project-specific multiline comment view implementation
+	*/
+	public ICommentView getCommentView();
+}
+</pre>
+	<ul>
+		<li><b>"Checkout"</b> extension point allows performing of some non-standard actions with projects which will be checked out by the product that contributes the Subversive project.</li>
+	</ul>
+	<i>Interface 6 "Checkout" extension point</i>
+<pre>
+public interface ICheckoutFactory {
+	/**
+	* The method allows specific decorations for the projects in Checkout As wizard
+	* @param name2resources mapping between proposed project names and repository resources that is referenced
+	* to corresponding projects on repository
+	* @return table decorator
+	*/
+	public ITableLabelProvider getLabelProvider(Map name2resources);
+	/**
+	* The method provides specific filter allowing automated detection of the projects on repository
+	* @return repository resource filter
+	*/
+	public LocateProjectsOperation.ILocateFilter getLocateFilter();
+	/**
+	* The method allows override the default Subversive project Checkout Operation behavior with specific one
+	* @param shell the Shell instance that will be used to interact with user
+	* @param remote resources that will be checked out
+	* @param checkoutMap project names mapping
+	* @param respectHierarchy create locally folder structure that corresponds to repository projects layout
+	* @param location destination folder
+	* @param checkoutRecursively true if recursive checkout is required, false otherwise
+	* @return alternative Checkout Operation instance
+	*/
+	public IActionOperation getCheckoutOperation(Shell shell, IRepositoryResource []remote,
+	Map checkoutMap, boolean respectHierarchy, String location, boolean checkoutRecursively);
+	/**
+	* The method allows correction of the automatically proposed project name mapping
+	* @param name2resources automatically proposed project name mapping
+	* @return corrected project name mapping
+	*/
+	public Map prepareName2resources(Map name2resources);
+	/**
+	* The method allows providing of some additional processing for the projects found on repository
+	* @param op default locate projects operation
+	* @param provider found repository resource provider
+	* @return additional resources provider
+	*/
+	public IRepositoryResourceProvider additionalProcessing(CompositeOperation op, IRepositoryResourceProvider provider);
+}
+</pre>
+	<ul>
+		<li><b>"Commit"</b> extension point allows overriding the standard Subversive Commit Dialog with more powerful and performing additional tasks for the committed resources.</li>
+	</ul>
+	<i>Interface 7 "Commit" extension point</i>
+<pre>
+public interface ICommitActionFactory {
+	/**
+	* The method provide abilities in extending of the standard Subversive Commit Dialog to more powerful
+	* @param shell Shell instance which will be used to interact with user
+	* @param allFilesToCommit full set of files which will be committed
+	* @param panel the default Subversive Commit Panel implementation
+	* @return enhanced Commit Dialog
+	*/
+	public ICommitDialog getCommitDialog(Shell shell, Collection allFilesToCommit, ICommentDialogPanel panel);
+	/**
+	* The method allows customizing of the Commit Operation
+	* @param operation prepared Commit operation
+	* @param revisionProvider committed revision provider
+	* @param dependsOn dependencies which can prevent commit operation execution in case of failure
+	* @param part workbench part which will be used to interact with user
+	*/
+	public void performAfterCommitTasks(CompositeOperation operation, IRevisionProvider revisionProvider,
+	IActionOperation[] dependsOn, IWorkbenchPart part);
+}
+</pre>
+</body>
+</html>

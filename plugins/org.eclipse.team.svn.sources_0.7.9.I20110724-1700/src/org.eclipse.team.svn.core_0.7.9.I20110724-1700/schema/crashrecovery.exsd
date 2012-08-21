@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Schema file written by PDE -->
+<schema targetNamespace="org.eclipse.team.svn.core">
+<annotation>
+      <appInfo>
+         <meta.schema plugin="org.eclipse.team.svn.core" id="crashrecovery" name="SVN Team Core Crash Recovery Extensions"/>
+      </appInfo>
+      <documentation>
+         The extension point allows external tools to safely resolve problems happened in the SVN Team Core module due to external actions which cannot be resolved safelly in core context.
+      </documentation>
+   </annotation>
+
+   <element name="extension">
+      <complexType>
+         <sequence>
+            <element ref="crashrecovery" minOccurs="1" maxOccurs="unbounded"/>
+         </sequence>
+         <attribute name="point" type="string" use="required">
+            <annotation>
+               <documentation>
+                  org.eclipse.team.svn.core.crashrecovery
+               </documentation>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <element name="crashrecovery">
+      <annotation>
+         <documentation>
+            The implementation of the extension point should return true if and only if error is handled by the extension.
+         </documentation>
+      </annotation>
+      <complexType>
+         <attribute name="class" type="string" use="required">
+            <annotation>
+               <documentation>
+                  Must implements org.eclipse.team.svn.core.extension.crashrecovery.IResolutionHelper
+               </documentation>
+               <appInfo>
+                  <meta.attribute kind="java" basedOn=":org.eclipse.team.svn.core.extension.crashrecovery.IResolutionHelper"/>
+               </appInfo>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <annotation>
+      <appInfo>
+         <meta.section type="since"/>
+      </appInfo>
+      <documentation>
+		0.7.0
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appInfo>
+         <meta.section type="examples"/>
+      </appInfo>
+      <documentation>
+         
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appInfo>
+         <meta.section type="apiInfo"/>
+      </appInfo>
+      <documentation>
+/**
+ * Provides ability to solve the problem which is unrecoverable in the core module context
+ * 
+ * @author Alexander Gurov
+ */
+public interface IResolutionHelper {
+	/**
+	 * The method provides resolution for errors about it is known 
+	 * @param description structure which describes the error happened
+	 */
+	public boolean acquireResolution(ErrorDescription description);
+}
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appInfo>
+         <meta.section type="implementation"/>
+      </appInfo>
+      <documentation>
+         
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appInfo>
+         <meta.section type="copyright"/>
+      </appInfo>
+      <documentation>
+         
+      </documentation>
+   </annotation>
+
+</schema>

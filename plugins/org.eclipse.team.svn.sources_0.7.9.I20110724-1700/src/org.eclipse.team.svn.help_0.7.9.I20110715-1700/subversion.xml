@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<?eclipse version="3.0"?>
+
+<toc label="Subversion® (SVN)" href="gettingStarted/subversion/svn_intro.html">
+	<topic label="Main feature differences between SVN® and CVS" href="gettingStarted/subversion/svn_diffs.html"/>
+	<topic label="Trunk, Branches and Tags" href="gettingStarted/subversion/svn_folders.html"/>
+	<topic label="More about SVN®" href="gettingStarted/subversion/svn_more.html"/>
+</toc>

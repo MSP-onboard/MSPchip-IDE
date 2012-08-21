@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<title>SVN History View</title>
+	<meta name="copyright"  content="Copyright (c) 2005-2011 Polarion Software. All rights reserved. This page is provided under the terms of the Eclipse Public License v1.0 which accompanies this distribution, and is available at http://www.eclipse.org/legal/epl-v10.html Contributors: Alexander Gurov."/>
+	<LINK REL="STYLESHEET" HREF="../book.css" CHARSET="ISO-8859-1" TYPE="text/css"/>
+	<script language="JavaScript" src="PLUGINS_ROOT/org.eclipse.help/livehelp.js"></script>
+</head>
+<body>
+
+	<table cellpadding = "0" cellspacing = "0" border = "0" width = "100%">
+		<tr>
+			<td class="head_picture">
+				<img src="../images/guide_1.gif"/>
+			</td>
+			<td class="head_picture" width="100%"  align="right">
+				<img src="../images/guide_2.gif"/>
+			</td>
+		</tr>
+	</table>
+<h2>SVN History View</h2>
+	<p><a class="command-link" href='javascript:executeCommand("org.eclipse.ui.views.showView(org.eclipse.ui.views.showView.viewId=org.eclipse.team.ui.GenericHistoryView)")'><img src="PLUGINS_ROOT/org.eclipse.help/command_link.png"/><i>'SVN History View'</i></a>
+	provides information on a history of resource change. The user can simply watch the change history, open editor on a specified revision, load a revision, revert the workspace to the revision. If the Subversion server and client versions used is 1.5 then the
+	revisions, which took part in the previous merges of this resource are shown as children of the main history nodes. The user can group the log messages by date, select if to show remote history, local history or both.</p>
+	<p>This is how <i>'SVN History View'</i> looks like:</p>
+	<img border = "0" src="../images/history_view.png" alt="SVN History View"/>
+	<p><b><i>Columns</i></b></p>
+	<p><b>Revision</b> - the revision number is shown.</p>
+	<p><b>Date</b> - the date of commit is shown.</p>
+	<p><b>Changes</b> - the number of changes is shown.</p>
+	<p><b>Author</b> - the author of the changes info is shown.</p>
+	<p><b>Comment</b> - the author's commit comment is shown.</p>
+	<p><b><i>Multi line comment view</i></b></p>
+	<p>Shows the multi line comments for selected revision.</p>
+	<p><b><i>Affected Path View</i></b></p>
+	<p>Contains the information about which repository paths were affected while the changes of the resource took place.</p>
+	<p><b><i>Toolbar</i></b></p>
+	<p><b>Refresh</b> - refreshing the view according to a last resource history change info from the server.</p>
+	<p><b>Link with editor and selection</b> - show the history only of opened in an editor or selected resource.</p>
+	<p><b>Pin this history view</b> - pins the view, so every new call for history will open another history view.</p>
+	<p><b>Hide unrelated paths</b> - hides the affected paths or the revision in the Affected Path View unrelated to current resource.</p>
+	<p><b>Stop on copy</b> - hides the resource changes made before its copying from one location to another if some took place.</p>
+	<p><b>Quick filter</b> - allows to filter resource history by author, comment or both.</p>
+	<p><b>Clear filter</b> - clears the filter.</p>
+	<p><b>Show next</b> - shows next 25 revisions info in the history view.</p>
+	<p><b>Show all</b> - shows all revisions info in the history view.</p>
+	<p><b><i>Pop-up menu</i></b></p>
+	<p><b>Open/Open With</b> - opens the resource of current selected revision.</p>
+	<p><b>Compare with Each Other</b> - compares to selected revisions of the resource.</p>
+	<p><b>Compare current with 'selected'</b> - compares the current revision of the resource with the selected one.</p>
+	<p><b>Create Unified Diff</b> - creates a file containing differences between revisions.</p>
+	<p><b>Show Properties</b> - shows SVN&reg; Properties View for a selected revision of resource.</p>
+	<p><b>Show Annotations</b> - shows SVN Annotations View for a selected revision of resource.</p>
+	<p><b>Get Contents</b> - gets the contents of the selected revision of the resource.</p>
+	<p><b>Update To</b> - updates your workspace copy to a selected revision.</p>
+	<p><b>Branch from</b> - creates a branch from a selected revision.</p>
+	<p><b>Tag from</b> - creates a tag from a selected revision.</p>
+	<p><b>Add Revision Link...</b> - creates a revision link and adds it to a revisions folder.</p>
+	<p><b>Quick filter</b> - allows to filter resource history by author, comment or both.</p>
+	<p><b>Clear filter</b> - clears the filter.</p>
+	<p><b>Copy</b> - copies the selected resource revision info.</p>
+	<p><b>Refresh</b> - refreshing the view according to the last resource history change info from the server.</p>
+	<img border="0" src="../images/rel_tops.png" alt="Related topics"/>
+	<br/>
+	<a href="../preferences/pref_svn.html">SVN Preferences (<i>'View Settings'</i> tab)</a>
+</body>
+</html>

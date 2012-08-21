@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<?eclipse version="3.0"?>
+
+<toc label="Actions" href="teamSupport/actions.html">
+	<topic label="Sharing a project" href="teamSupport/SVNaction/share.html"/>
+	<topic label="Checking out" href="teamSupport/SVNaction/check_out.html"/>
+	<topic label="Commiting" href="teamSupport/SVNaction/commit.html"/>
+	<topic label="Updating" href="teamSupport/SVNaction/update.html"/>
+	<topic label="Adding resources to version control" href="teamSupport/SVNaction/add_vc.html"/>
+	<topic label="Ignoring resources from version control" href="teamSupport/SVNaction/ignore_vc.html"/>
+	<topic label="Branching" href="teamSupport/SVNaction/branch.html"/>
+	<topic label="Merging" href="teamSupport/SVNaction/merge.html"/>
+	<topic label="Creating tags" href="teamSupport/SVNaction/tag.html"/>
+	<topic label="Switching project to a new URL" href="teamSupport/SVNaction/switch.html"/>
+	<topic label="Overriding operations" href="teamSupport/SVNaction/override.html"/>
+	<topic label="Locking and unlocking resources" href="teamSupport/SVNaction/locks.html"/>
+	<topic label="Setting properties" href="teamSupport/SVNaction/set_props.html"/>
+	<topic label="Setting keywords" href="teamSupport/SVNaction/set_keys.html"/>
+	<topic label="Setting externals" href="teamSupport/SVNaction/set_externals.html"/>
+	<topic label="Patching" href="teamSupport/SVNaction/patch.html"/>
+	<topic label="Reverting changes" href="teamSupport/SVNaction/revert.html"/>
+	<topic label="Extracting changes" href="teamSupport/SVNaction/extract.html"/>
+	<topic label="Import/Export repository locations" href="teamSupport/SVNaction/location_ie.html"/>
+</toc>

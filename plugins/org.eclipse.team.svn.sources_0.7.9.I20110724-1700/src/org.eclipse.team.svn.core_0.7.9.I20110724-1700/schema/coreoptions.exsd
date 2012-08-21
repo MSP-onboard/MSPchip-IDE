@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Schema file written by PDE -->
+<schema targetNamespace="org.eclipse.team.svn.core">
+<annotation>
+      <appInfo>
+         <meta.schema plugin="org.eclipse.team.svn.core" id="coreoptions" name="SVN Team Core Configuration Options"/>
+      </appInfo>
+      <documentation>
+         The extension point allows external tools to define configuration options in most safe way.
+      </documentation>
+   </annotation>
+
+   <element name="extension">
+      <complexType>
+         <choice>
+            <element ref="coreoptions"/>
+         </choice>
+         <attribute name="point" type="string" use="required">
+            <annotation>
+               <documentation>
+                  org.eclipse.team.svn.core.coreoptions
+               </documentation>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <element name="coreoptions">
+      <annotation>
+         <documentation>
+            At the moment only one global extension will be used.
+         </documentation>
+      </annotation>
+      <complexType>
+         <attribute name="class" type="string" use="required">
+            <annotation>
+               <documentation>
+                  Must implement org.eclipse.team.svn.core.extension.options.IOptionProvider
+               </documentation>
+               <appInfo>
+                  <meta.attribute kind="java" basedOn=":org.eclipse.team.svn.core.extension.options.IOptionProvider"/>
+               </appInfo>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <annotation>
+      <appInfo>
+         <meta.section type="since"/>
+      </appInfo>
+      <documentation>
+		0.7.0
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appInfo>
+         <meta.section type="examples"/>
+      </appInfo>
+      <documentation>
+         
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appInfo>
+         <meta.section type="apiInfo"/>
+      </appInfo>
+      <documentation>
+public interface IOptionProvider {
+	public static final IOptionProvider DEFAULT = new IOptionProvider() {
+		public boolean getReportRevisionChange() {
+			return false;
+		}
+		public ICredentialsPrompt getCredentialsPrompt() {
+			return null;
+		}
+		public ILoggedOperationFactory getLoggedOperationFactory() {
+			return ILoggedOperationFactory.DEFAULT;
+		}
+		public void addProjectSetCapabilityProcessing(CompositeOperation op) {
+		}
+		public boolean isAutomaticProjectShareEnabled() {
+			return false;
+		}
+		public IFileModificationValidator getFileModificationValidator() {
+			return null;
+		}
+		public String getSVNClientId() {
+			return SVNTeamPlugin.instance().getPluginPreferences().getString(SVNTeamPlugin.CORE_SVNCLIENT_NAME);
+		}
+		public String getDefaultBranchesName() {
+			return "trunk";
+		}
+		public String getDefaultTagsName() {
+			return "tags";
+		}
+		public String getDefaultTrunkName() {
+			return "branches";
+		}
+	};
+	
+	public IFileModificationValidator getFileModificationValidator();
+	public ICredentialsPrompt getCredentialsPrompt();
+	public boolean getReportRevisionChange();
+	public ILoggedOperationFactory getLoggedOperationFactory();
+	public void addProjectSetCapabilityProcessing(CompositeOperation op);
+	public boolean isAutomaticProjectShareEnabled();
+	public String getSVNClientId();
+	
+	public String getDefaultTrunkName();
+	public String getDefaultBranchesName();
+	public String getDefaultTagsName();
+}
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appInfo>
+         <meta.section type="implementation"/>
+      </appInfo>
+      <documentation>
+         
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appInfo>
+         <meta.section type="copyright"/>
+      </appInfo>
+      <documentation>
+         
+      </documentation>
+   </annotation>
+
+</schema>

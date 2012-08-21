@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<title>SVN Merge Dialog</title>
+	<meta name="copyright"  content="Copyright (c) 2005-2011 Polarion Software. All rights reserved. This page is provided under the terms of the Eclipse Public License v1.0 which accompanies this distribution, and is available at http://www.eclipse.org/legal/epl-v10.html Contributors: Alexander Gurov."/>
+	<LINK REL="STYLESHEET" HREF="../book.css" CHARSET="ISO-8859-1" TYPE="text/css"/>
+</head>
+<body>
+
+	<table cellpadding = "0" cellspacing = "0" border = "0" width = "100%">
+		<tr>
+			<td class="head_picture">
+				<img src="../images/guide_1.gif"/>
+			</td>
+			<td  class="head_picture" width="100%"   align="right">
+				<img src="../images/guide_2.gif"/>
+			</td>
+		</tr>
+	</table>
+<h2>SVN Merge Dialog</h2>
+	<p>This dialog appears when the user clicks on <i>'Team>Merge...'</i> menu item in the pop-up menu of the resource linked with the repository location, <i>'Merge...'</i> menu item of the <i>'SVN main menu group'</i> or on the <i>'Merge...'</i> button on the <i>'SVN Toolbar'</i>.
+	It's a known fact that the merge functionality differs for SVN 1.4 and SVN 1.5, so the different dialogs are used. The difference is described below.</p>
+	<p><b>Common of SVN 1.4 and SVN 1.5 merges:</b><br/>
+	The common part of the different SVN versions' merge is the '2 URL' merge mode. It allows you to merge the changes between two resources from different URLs simply
+	specifying the appropriate revisions of them. The screen shot of the dialog in '2 URL' mode is shown below:</p>
+	<img border = "0" src="../images/merge_2url.png" alt="'2 URL' merge mode"/>
+	<br/>
+	<br/>
+	<table cellpadding="5" cellspacing="0" border="1" width="100%">
+		<tr>
+			<td class="header" align ="center" valign="center">Option</td>
+			<td class="header" align ="center" valign="center">Description</td>
+			<td class="header" align ="center" valign="center">Default</td>
+		</tr>
+		<tr>
+			<td align ="center" valign="center">URL1</td>
+			<td align ="center" valign="center">Specifies the first remote resource location</td>
+			<td align ="center" valign="center">'blank'</td>
+		</tr>
+		<tr>
+			<td align ="center" valign="center">URL2</td>
+			<td align ="center" valign="center">Specifies the second remote resource location</td>
+			<td align ="center" valign="center">'blank'</td>
+		</tr>
+		<tr>
+			<td align ="center" valign="center">Start revision</td>
+			<td align ="center" valign="center">Specifies the minimum merge range revision number.</td>
+			<td align ="center" valign="center">Head</td>
+		</tr>
+		<tr>
+			<td align ="center" valign="center">Stop revision</td>
+			<td align ="center" valign="center">Specifies the maximum merge range revision number.</td>
+			<td align ="center" valign="center">Head</td>
+		</tr>
+		<tr>
+			<td align ="center" valign="center">Ignore Ancestry</td>
+			<td align ="center" valign="center">Specifies if Subversion&reg; should ignore the ancestry of resources while merging.</td>
+			<td align ="center" valign="center">Disabled</td>
+		</tr>
+		<tr>
+			<td align ="center" valign="center">Depth</td>
+			<td align ="center" valign="center">Specifies the depth to be covered by merge.</td>
+			<td align ="center" valign="center">Working copy</td>
+		</tr>
+	</table>
+	<br/>
+	<p><b>SVN 1.4 specific merge:</b><br/>The 'One URL' merge in SVN 1.4 is performed by blending the differences between two revision of the same resource to the working copy.
+	this is how the dialog looks like then:</p>
+	<img border = "0" src="../images/merge_url_14.png" alt="'One URL' merge in SVN 1.4"/>
+	<br/>
+	<br/>
+	<table cellpadding="5" cellspacing="0" border="1" width="100%">
+		<tr>
+			<td class="header" align ="center" valign="center">Option</td>
+			<td class="header" align ="center" valign="center">Description</td>
+			<td class="header" align ="center" valign="center">Default</td>
+		</tr>
+		<tr>
+			<td align ="center" valign="center">URL</td>
+			<td align ="center" valign="center">Specifies the remote resource location</td>
+			<td align ="center" valign="center">'blank'</td>
+		</tr>
+		<tr>
+			<td align ="center" valign="center">Start revision</td>
+			<td align ="center" valign="center">Specifies the minimum merge range revision number.</td>
+			<td align ="center" valign="center">Head</td>
+		</tr>
+		<tr>
+			<td align ="center" valign="center">Stop revision</td>
+			<td align ="center" valign="center">Specifies the maximum merge range revision number.</td>
+			<td align ="center" valign="center">Head</td>
+		</tr>
+		<tr>
+			<td align ="center" valign="center">Ignore Ancestry</td>
+			<td align ="center" valign="center">Specifies if Subversion&reg; should ignore the ancestry of resources while merging.</td>
+			<td align ="center" valign="center">Disabled</td>
+		</tr>
+		<tr>
+			<td align ="center" valign="center">Depth</td>
+			<td align ="center" valign="center">Specifies the depth to be covered by merge.</td>
+			<td align ="center" valign="center">Working copy</td>
+		</tr>
+	</table>
+	<p><b>SVN 1.5 specific merge:</b><br/>While performing 'One URL' merge in SVN 1.5 the user can not only select start and stop revisions, but
+	exact revision ranges to be used by the merge. The merge can be made for the whole revision range of the resource, from the copy time or the range
+	can be selected manually in the 'Revision Selection' dialog as displayed below:</p>
+	<img border = "0" src="../images/revision_selection.png" alt="'Revision Selection' dialog"/>
+	<br/>
+	<p>Content of all the selected revisions will be merged into the folder you perform merge over. And there is a little difference between selecting revisions in the Revision Selection dialog and entering them manually: when you select revisions - it's intuitive and understandable that all the selected revisions changes will be used while merging, but when you enter revision ranges manually you should take into account that revision range defines a difference between two specified revisions.  What is a difference between revisions means exactly? That is simple, lets say, for example, you need to merge all the changes happened after  the revision 5000 and up to the revision 5005. In that case you should specify revision range 5000-5005. It means that only changes from 5 revisions (5001, 5002, 5003, 5004 and 5005)  will be merged into your code: just like in math when you subtracting two numbers. When you need changes not between a two revisions, but changes starting from a revision and up to a revision, you should descrease a start revision number  of the revision range by 1,  i.e. if you need all the changes from the revisions 5000-5005, you should specify revision range like this: 4999-5005 and that will include revision 5000 too.  Revision Selection dialog automatically decrements lowest selected revision number by 1 in order to make revision selection process intuitively understandable.<br>Also in such mode it's impossible to determine if the merge is reversed, so the checkbox was added to let the user specify this manually. The dialog in 'One URL' mode for SVN 1.5 looks like this:</p>
+	<img border = "0" src="../images/merge_url_15.png" alt="'One URL' merge in SVN 1.5"/>
+	<br/>
+	<br/>
+	<table cellpadding="5" cellspacing="0" border="1" width="100%">
+		<tr>
+			<td class="header" align ="center" valign="center">Option</td>
+			<td class="header" align ="center" valign="center">Description</td>
+			<td class="header" align ="center" valign="center">Default</td>
+		</tr>
+		<tr>
+			<td align ="center" valign="center">URL</td>
+			<td align ="center" valign="center">Specifies the remote resource location</td>
+			<td align ="center" valign="center">'blank'</td>
+		</tr>
+		<tr>
+			<td align ="center" valign="center">Revisions</td>
+			<td align ="center" valign="center">Specifies revision range to be used in merge.</td>
+			<td align ="center" valign="center">Start from copy</td>
+		</tr>
+		<tr>
+			<td align ="center" valign="center">Reverse</td>
+			<td align ="center" valign="center">Specifies if the reverse merge should be performed.</td>
+			<td align ="center" valign="center">Disabled</td>
+		</tr>
+		<tr>
+			<td align ="center" valign="center">Ignore Ancestry</td>
+			<td align ="center" valign="center">Specifies if Subversion&reg; should ignore the ancestry of resources while merging.</td>
+			<td align ="center" valign="center">Disabled</td>
+		</tr>
+		<tr>
+			<td align ="center" valign="center">Depth</td>
+			<td align ="center" valign="center">Specifies the depth to be covered by merge.</td>
+			<td align ="center" valign="center">Working copy</td>
+		</tr>
+	</table>
+	<br/>
+	<p>The 'Reintegrate' mode is used to allow the Subversion to merge from the branch the changes skipping the ones the same for the
+	version you are merging into and the branch you are merging from. This is how the dialog for 'Reintegrate' mode looks like:</p>
+	<img border = "0" src="../images/reintegrate.png" alt="'Reintegrate' merge in SVN 1.5"/>
+	<br/>
+	<br/>
+	<table cellpadding="5" cellspacing="0" border="1" width="100%">
+		<tr>
+			<td class="header" align ="center" valign="center">Option</td>
+			<td class="header" align ="center" valign="center">Description</td>
+			<td class="header" align ="center" valign="center">Default</td>
+		</tr>
+		<tr>
+			<td align ="center" valign="center">URL</td>
+			<td align ="center" valign="center">Specifies the remote resource location</td>
+			<td align ="center" valign="center">'blank'</td>
+		</tr>
+		<tr>
+			<td align ="center" valign="center">Revision</td>
+			<td align ="center" valign="center">Specifies revision to merge to.</td>
+			<td align ="center" valign="center">Head Revision</td>
+		</tr>
+	</table>
+	<p>With the <i>'Preview'</i> button the user can inspect the consequences of the merge operation.</p>
+	<img border="0" src="../images/rel_tops.png" alt="Related topics"/>
+	<br/>
+	<a href="../teamSupport/svn_main_menu.html">SVN main menu group</a>
+	<br/>
+	<a href="../teamSupport/svn_toolbar.html">SVN Toolbar</a>
+	<br/>
+	<a href="../teamSupport/SVNaction/merge.html">Merging</a>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<?eclipse version="3.0"?>
+
+<toc label="About Subversive and Subversive User Guide" href="gettingStarted/subversive.html">
+	<topic label="Subversive unique features" href="gettingStarted/aboutSubversive/features.html"/>
+	<topic label="Requirements" href="gettingStarted/aboutSubversive/requirements.html"/>
+	<topic label="Subversive installation instructions" href="gettingStarted/aboutSubversive/install.html"/>
+	<topic label="Subversive update instructions" href="gettingStarted/aboutSubversive/update_eclipse.html"/>
+	<topic label="Subversive modules" href="gettingStarted/aboutSubversive/modules.html"/>
+	<topic label="Subversive architecture" href="gettingStarted/aboutSubversive/arch.html"/>
+	<topic label="Subversive extension points" href="gettingStarted/aboutSubversive/extensions.html"/>
+	<topic label="Subversive supported protocols" href="gettingStarted/aboutSubversive/protocols.html"/>
+	<topic label="Note for Linux users" href="gettingStarted/aboutSubversive/linux.html"/>
+	<topic label="FastTrack integration" href="gettingStarted/aboutSubversive/fast_track.html"/>
+	<topic label="Buckminster integration" href="gettingStarted/aboutSubversive/buckminster.html"/>
+	<topic label="Mylyn integration" href="gettingStarted/aboutSubversive/mylyn.html"/>
+</toc>

@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<title>Subversive modules</title>
+	<meta name="copyright"  content="Copyright (c) 2005-2011 Polarion Software. All rights reserved. This page is provided under the terms of the Eclipse Public License v1.0 which accompanies this distribution, and is available at http://www.eclipse.org/legal/epl-v10.html Contributors: Alexander Gurov."/>
+	<LINK REL="STYLESHEET" HREF="../../book.css" CHARSET="ISO-8859-1" TYPE="text/css"/>
+</head>
+<body>
+
+	<table cellpadding = "0" cellspacing = "0" border = "0" width = "100%">
+		<tr>
+			<td class="head_picture">
+				<img src="../../images/guide_1.gif"/>
+			</td>
+			<td class="head_picture" width="100%"  align="right">
+				<img src="../../images/guide_2.gif"/>
+			</td>
+		</tr>
+	</table>
+<h3>Subversive modules</h3>
+	<p>There are two main plug-ins in the Subversive project: Core and UI. As you can see from the following picture contributors may implement their own SVN Client Library plug-ins and Subversive will use them automatically after its installation into the Eclipse IDE. Also Subversive provides reuse abilities to the external plug-ins designed for automated or interactive work.</p>
+	<img border="0" src="../../images/modules.png" alt="Subversive modules"/>
+	<p>Subversive Core module provides flexible and easy to use API which allows user to interact with all SVN functionality in simple and similar way. At the same time interface simplicity does not make performance impact and user is able to build powerful and high-performance applications on top of the Subversive Core base. Subversive Core is tested in the headless environment and is a solid ground for creation of automated applications.</p>
+	Subversive UI module is stable and usable. Most significant benefits are:
+	<ul>
+		<li>Usability optimizations (pop-up menu enablement's, controls layout etc.)</li>
+		<li>Detailed description on each UI form</li>
+		<li>"On the fly" data validation in dialogs and wizards</li>
+		<li>Eclipse IDE-like style</li>
+		<li>Extensibility</li>
+	</ul>
+	<p>Last benefit allows users create their own UI extensions for the Subversive. Such extensions can be tracker integrations or any other application that require SVN client base. Additionally the Subversive UI has several extension points which allows contribute into:</p>
+	<ul>
+		<li>Synchronize View actions</li>
+		<li>Checkout action</li>
+		<li>Share Project action</li>
+		<li>Commit action</li>
+		<li>Resources decoration</li>
+		<li>History View multiline comment</li>
+		<li>Error reporting</li>
+	</ul>
+	<p>This list can be extended. Comments and suggestions from community regarding enhancement of the Subversive integration abilities, creation new extension points and APIs, are welcome.</p>
+</body>
+</html>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<?eclipse version="3.0"?>
+
+<toc label="Getting Started">
+	<topic label="Subversion® (SVN)" href="gettingStarted/subversion/svn_intro.html">
+		<link toc="subversion.xml" />
+	</topic>
+	<anchor id="subversive_subversion" />
+	<topic label="About Subversive and Subversive User Guide" href="gettingStarted/subversive.html">
+		<link toc="subversive.xml" />
+	</topic>
+	<anchor id="subversive_preferences" />
+</toc>

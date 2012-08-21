@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<?eclipse version="3.0"?>
+
+<toc label="Team support with SVN®" href="teamSupport.html">
+	<topic label="SVN Repository Exploring Perspective" href="teamSupport/repos_persp.html"/>
+	<topic label="SVN Repository Location Wizard" href="teamSupport/new_location_wiz.html"/>
+	<topic label="SVN Repository Dialog" href="teamSupport/create_repository.html"/>
+	<topic label="SVN Sharing Wizard" href="teamSupport/sharing_wiz.html"/>
+	<topic label="SVN Find/Check Out As Wizard" href="teamSupport/find_check_wiz.html"/>
+	<topic label="SVN Console" href="teamSupport/console.html"/>
+	<topic label="SVN Repository View" href="teamSupport/repos_view.html"/>
+	<topic label="SVN Repository Browser View" href="teamSupport/repos_browser_view.html"/>
+	<topic label="SVN History View" href="teamSupport/history_view.html"/>
+	<topic label="SVN Workspace Synchronization" href="teamSupport/workspace_synch.html"/>
+	<topic label="SVN Merge Dialog" href="teamSupport/merge_dialog.html"/>
+	<topic label="SVN Properties View" href="teamSupport/props_view.html"/>
+	<topic label="SVN Locks View" href="teamSupport/locks_view.html"/>
+	<topic label="SVN Info" href="teamSupport/svn_info.html"/>
+	<topic label="SVN Toolbar" href="teamSupport/svn_toolbar.html"/>
+	<topic label="SVN Label Decorations" href="teamSupport/svn_label_decor.html"/>
+	<topic label="'SVN' main menu group" href="teamSupport/svn_main_menu.html"/>
+	<topic label="SVN Tree Conflicts" href="teamSupport/tree_conflicts.html"/>
+	<topic label="SVN Connectors Discovery" href="teamSupport/connectors_discovery.html"/>
+	<topic label="SVN Revision Graph" href="teamSupport/revision_graph.html"/>
+	<topic label="Actions" href="teamSupport/actions.html">
+		<link toc="svn_actions.xml" />
+	</topic>
+	<anchor id="subversive_actions" />
+	<topic label="Working with Compare Editor" href="teamSupport/compare.html">
+		<link toc="compare_editor.xml" />
+	</topic>
+	<anchor id="subversive_compare_editor" />
+	<topic label="Refactoring" href="teamSupport/refactor.html"/>
+	<topic label="Repository Layouts" href="teamSupport/layouts.html"/>
+	<topic label="Hot Keys" href="teamSupport/keys.html"/>
+</toc>

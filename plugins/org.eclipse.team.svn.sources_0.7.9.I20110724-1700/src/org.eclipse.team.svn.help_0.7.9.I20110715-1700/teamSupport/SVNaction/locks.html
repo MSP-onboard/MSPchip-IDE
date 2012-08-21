@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<title>Locking and unlocking resources</title>
+	<meta name="copyright"  content="Copyright (c) 2005-2011 Polarion Software. All rights reserved. This page is provided under the terms of the Eclipse Public License v1.0 which accompanies this distribution, and is available at http://www.eclipse.org/legal/epl-v10.html Contributors: Alexander Gurov."/>
+	<LINK REL="STYLESHEET" HREF="../../book.css" CHARSET="ISO-8859-1" TYPE="text/css"/>
+</head>
+<body>
+
+	<table cellpadding = "0" cellspacing = "0" border = "0" width = "100%" align = "center" valign = "center">
+		<tr>
+			<td class="head_picture">
+				<img src="../../images/guide_1.gif"/>
+			</td>
+			<td class="head_picture" width="100%"  align="right">
+				<img src="../../images/guide_2.gif"/>
+			</td>
+		</tr>
+	</table>
+<h3>Locking and unlocking resources</h3>
+	<p>Locks are generally used while editing some resources which are hardly merged (<i>ex. picture</i>). When some user locks the resource the others are not permitted to commit it until the lock is broken or stolen. For more information on locks refer to <a href="http://svnbook.red-bean.com/">SVN book</a>.</p>
+	<table cellpadding="1" cellspacing="0" border="0">
+		<tr>
+			<td valign="top" align="left">
+				<p align="left">
+					<i>
+						<b>Note:</b>
+					</i>
+				</p>
+			</td>
+			<td valign="top">
+				<p>
+					<i>
+						This facility is convenient when the developers use the 'Lock-Modify-Unlock Solution' model. If the 'Copy-Modify-Merge Solution' model is used the user has no necessity to utilize this feature.
+					</i>
+				</p>
+			</td>
+		</tr>
+	</table>
+	<p>To lock or unlock resource the user should click on <i>'Team>Lock' ('Team>Unlock')</i> of resource pop-up menu item or <i>'Lock' ('Unlock')</i> items of the <i>'SVN main menu group'</i>. While locking the dialog opens to provide a probability to enter lock comment.</p>
+	<p>This is how the <i>'Lock Dialog'</i> looks like:</p>
+	<img border = "0" src="../../images/lock.png" alt="Lock dialog"/>
+	<br/>
+	<img border="0" src="../../images/rel_tops.png" alt="Related topics"/>
+	<br/>
+	<a href="../../teamSupport/svn_main_menu.html">SVN main menu group</a>
+	<br/>
+	<a href="../../teamSupport/locks_view.html">SVN Locks View</a>	
+</body>
+</html>

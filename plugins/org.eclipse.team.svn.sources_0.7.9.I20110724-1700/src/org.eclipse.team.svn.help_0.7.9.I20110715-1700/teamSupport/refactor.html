@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<title>Refactoring</title>
+	<meta name="copyright"  content="Copyright (c) 2005-2011 Polarion Software. All rights reserved. This page is provided under the terms of the Eclipse Public License v1.0 which accompanies this distribution, and is available at http://www.eclipse.org/legal/epl-v10.html Contributors: Alexander Gurov."/>
+	<LINK REL="STYLESHEET" HREF="../book.css" CHARSET="ISO-8859-1" TYPE="text/css"/>
+</head>
+<body>
+
+	<table cellpadding = "0" cellspacing = "0" border = "0" width = "100%">
+		<tr>
+			<td class="head_picture">
+				<img src="../images/guide_1.gif"/>
+			</td>
+			<td class="head_picture" width="100%"  align="right">
+				<img src="../images/guide_2.gif"/>
+			</td>
+		</tr>
+	</table>
+<h2>Refactoring</h2>
+	<p>One of the main feature of Subversion&reg;  is folder versioning. So it's strongly recommended to use for refactoring functions provided by SVN&reg;  itself. The Subversive plug-in provides the user such probability with its UI. But the user should be very accurate, because there are some facts that he should always remember:</p>
+	<ul>
+		<li>While refactoring the structure of the versioned folder is changed, so if it's not up-to-date the conflict while committing is inevitable. So the user must be sure, that he has updated  the resource being refactored to the repository location revision. Remember that the folder is considered to be not up-to-date even if only its revision number on the repository is changed.</li>
+		<li>Native SVN&reg;  clients have the limitations on the quantity of consecutive refactors of the same resources,  so the user should commit his changes after each renaming of the resource.</li>
+		<li>While working on the Win32 platform the case sensitivity is disabled, so if the user needs to rename his resource for example from "text.txt" to "Text.txt" he should do it on the repository and then update the changes.</li>
+		<li>Eclipse is copying resource's meta-information, so it's strongly recommended to use <i>'Team>Copy to...'</i> instead of standard Eclipse copy/paste operations.</li>
+		<li>When the user deletes the folder it still exists on the file system and its icon is still visible in the package explorer but marked for deletion. It's physically deleted after committing the changes.</li>
+	</ul>
+</body>
+</html>

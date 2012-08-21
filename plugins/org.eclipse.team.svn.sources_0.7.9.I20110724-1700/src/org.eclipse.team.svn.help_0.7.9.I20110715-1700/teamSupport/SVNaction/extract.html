@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<title>Extracting changes</title>
+	<meta name="copyright"  content="Copyright (c) 2005-2011 Polarion Software. All rights reserved. This page is provided under the terms of the Eclipse Public License v1.0 which accompanies this distribution, and is available at http://www.eclipse.org/legal/epl-v10.html Contributors: Alexei Goncharov."/>
+	<LINK REL="STYLESHEET" HREF="../../book.css" CHARSET="ISO-8859-1" TYPE="text/css"/>
+</head>
+<body>
+
+	<table cellpadding = "0" cellspacing = "0" border = "0" width = "100%">
+		<tr>
+			<td class="head_picture">
+				<img src="../../images/guide_1.gif"/>
+			</td>
+			<td class="head_picture" width="100%"  align="right">
+				<img src="../../images/guide_2.gif"/>
+			</td>
+		</tr>
+	</table>
+<h3>Extracting changes</h3>
+	<p>The extract action is provided to help people who want to apply the changes on the resource to some location.
+	The changes are applied with respect to the hierarchical structure of the selection.
+	If the change is the deletion, than the existing resource in the location with the same path will be deleted.
+	Otherwise the existing resources will be replaced and the others will be created.<br/><br/>
+	The usage area of this action is quite wide. For example the team is developing a web site. When all the proper changes
+	are made the web master can apply them to the whole site by just one click. The only thing to do is to select in the history
+	of the site the current state and the newer one. After that by clicking on 'Extract...' in drop-down
+	menu and selecting the site root directory as a location the site becomes up to date.</p>
+	<b>Synchronize View 'Extract...' and 'Extract All...' actions</b>
+	<p>In Synchronize View you have a probability to extract local changes, remote changes or both.
+	<br/>Using local extracting will apply your local changes comparatively to the base revision to the specified location.
+	Using the remote one will apply the incoming changes to the specified location. 'Extract All' action provides a probability
+	to apply both local and incoming changes, but it is disabled if the selection contains conflicting changes. To enable it you
+	should merge the conflicts before extracting.</p>
+	<b>History View 'Extract...' action</b>
+	<p>In History View extracting is possible both when two remote revisions are selected or when one. The changes are gathered between the selected
+	revisions or between the single selected revision and the previous one and then applied to the specified location. Pay special attention to the fact, that while viewing history of the
+	remote resource	the remote container name is used for extract, but not local one.</p>
+</body>
+</html>

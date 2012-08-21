@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<title>SVN Repository Location Wizard</title>
+	<meta name="copyright"  content="Copyright (c) 2005-2011 Polarion Software. All rights reserved. This page is provided under the terms of the Eclipse Public License v1.0 which accompanies this distribution, and is available at http://www.eclipse.org/legal/epl-v10.html Contributors: Alexander Gurov."/>
+	<LINK REL="STYLESHEET" HREF="../book.css" CHARSET="ISO-8859-1" TYPE="text/css"/>
+	<script language="JavaScript" src="PLUGINS_ROOT/org.eclipse.help/livehelp.js"></script>
+</head>
+<body>
+
+	<table cellpadding = "0" cellspacing = "0" border = "0" width = "100%">
+		<tr>
+			<td class="head_picture">
+				<img src="../images/guide_1.gif"/>
+			</td>
+			<td class="head_picture" width="100%"  align="right">
+				<img src="../images/guide_2.gif"/>
+			</td>
+		</tr>
+	</table>
+<h2>SVN Repository Location Wizard</h2>
+	<p>
+		<a class="command-link" href='javascript:executeCommand("org.eclipse.ui.newWizard(newWizardId=org.eclipse.team.svn.ui.wizard.NewRepositoryLocationWizard)")'>
+		<img src="PLUGINS_ROOT/org.eclipse.help/command_link.png">
+		<i>'SVN Repository Location Wizard'</i></a> provides a probability to add a new repository location link to your workspace. Accessible from 'SVN Repository View' (click on 'New Repository Location' button), 'File>New' menu in the 'Repository Exploring Perspective' and from 'New>Other' menu in every other perspective. User should specify all necessary options and click 'Finish' to accept an action or 'Cancel' to discard it.</p>
+	<table cellpadding="5" cellspacing="0" border="1" width="100%">
+		<tr>
+			<td class="header" align ="center" valign="center">Option</td>
+			<td class="header" align ="center" valign="center">Description</td>
+			<td class="header" align ="center" valign="center">Default</td>
+		</tr>
+		<tr>
+			<td align ="center" valign="center">Validate repository location on finish</td>
+			<td align ="center" valign="center">Specifies if the plug-in should check a repository location, offered by user, for existence.</td>
+			<td align ="center" valign="center">Enabled</td>
+		</tr>
+		<tr>
+			<td align ="center" valign="center">Show credentials for:</td>
+			<td align ="center" valign="center">Specifies repository location authentication realm credentials.</td>
+			<td align ="center" valign="center">-</td>
+		</tr>
+	</table>
+	<p><b>General</b></p>
+	<table cellpadding="5" cellspacing="0" border="1" width="100%">
+		<tr>
+			<td class="header" align ="center" valign="center">Option</td>
+			<td class="header" align ="center" valign="center">Description</td>
+			<td class="header" align ="center" valign="center">Default</td>
+		</tr>
+		<tr>
+			<td align ="center" valign="center">URL</td>
+			<td align ="center" valign="center">Specifies an URL for a new repository location.</td>
+			<td align ="center" valign="center">'blank'</td>
+		</tr>
+		<tr>
+			<td align ="center" valign="center">Label</td>
+			<td align ="center" valign="center">Specifies which label will be used in the workspace for the repository. To use custom label choose 'Use custom label' and input the wished name into editable space.</td>
+			<td align ="center" valign="center">'Use repository URL as the label'</td>
+		</tr>
+		<tr>
+			<td align ="center" valign="center">User</td>
+			<td align ="center" valign="center">Input user name (login) here.</td>
+			<td align ="center" valign="center">'blank'</td>
+		</tr>
+		<tr>
+			<td align ="center" valign="center">Password</td>
+			<td align ="center" valign="center">Input password here.</td>
+			<td align ="center" valign="center">'blank'</td>
+		</tr>
+		<tr>
+			<td align ="center" valign="center">Save password</td>
+			<td align ="center" valign="center">Enables/disables saving login/password information in a file on a local machine.</td>
+			<td align ="center" valign="center">Disabled</td>
+		</tr>
+	</table>
+	<p>This is how <i>'General'</i> tab group looks like:</p>
+	<img border = "0" src="../images/new_rl_general.png" alt="General tab group"/>
+	<p><b>Advanced</b></p>
+	<table cellpadding="5" cellspacing="0" border="1" width="100%">
+		<tr>
+			<td class="header" align ="center" valign="center">Option</td>
+			<td class="header" align ="center" valign="center">Description</td>
+			<td class="header" align ="center" valign="center">Default</td>
+		</tr>
+		<tr>
+			<td align ="center" valign="center">Enable Structure Detection</td>
+			<td align ="center" valign="center">Specifies if the Subversion&reg; should detect the structure of repository.</td>
+			<td align ="center" valign="center">Enabled</td>
+		</tr>
+		<tr>
+			<td align ="center" valign="center">Trunk</td>
+			<td align ="center" valign="center">Specifies trunk name to use for structure detection.</td>
+			<td align ="center" valign="center">trunk</td>
+		</tr>
+		<tr>
+			<td align ="center" valign="center">Branches</td>
+			<td align ="center" valign="center">Specifies branches name to use for structure detection.</td>
+			<td align ="center" valign="center">branches</td>
+		</tr>
+		<tr>
+			<td align ="center" valign="center">Tags</td>
+			<td align ="center" valign="center">Specifies tags name to use for structure detection.</td>
+			<td align ="center" valign="center">tags</td>
+		</tr>
+		<tr>
+			<td align ="center" valign="center">Override author name with represented below</td>
+			<td align ="center" valign="center">Specifies if the author name should be overridden for repository affecting operations.</td>
+			<td align ="center" valign="center">Disabled</td>
+		</tr>
+	</table>
+	</br>
+	<table cellpadding="1" cellspacing="0" border="0">
+		<tr>
+			<td valign="top" align="left">
+				<p align="left">
+					<i>
+						<b>Note:</b>
+					</i>
+				</p>
+			</td>
+			<td valign="top">
+				<p>
+					<i>
+						Please pay special attention that <b>pre-revprop-change</b> hook should be implemented for the repository and should allow to change
+						"svn:author" revision property. 
+					</i>
+				</p>
+			</td>
+		</tr>
+	</table>
+	<p>This is how <i>'Advanced'</i> tab group looks like:</p>
+	<img border = "0" src="../images/new_rl_advance.png" alt="Advanced tab group"/>
+	<p>
+		<b>SSH Settings</b>
+	</p>
+	<p>Specifies SSH setting for a repository.</p>
+	<table cellpadding="5" cellspacing="0" border="1" width="100%">
+		<tr>
+			<td class="header" align ="center" valign="center">Option</td>
+			<td class="header" align ="center" valign="center">Description</td>
+			<td class="header" align ="center" valign="center">Default</td>
+		</tr>
+		<tr>
+			<td align ="center" valign="center">Port</td>
+			<td align ="center" valign="center">Specifies port number for SSH.</td>
+			<td align ="center" valign="center">20</td>
+		</tr>
+		<tr>
+			<td align ="center" valign="center">Authentication</td>
+			<td align ="center" valign="center">Selecting of an authentication method: 'Password' or 'Private Key'. For 'Private Key' authentication input file path and password phrase. There is also an option of password phrase saving feature enablement.</td>
+			<td align ="center" valign="center">'Password'</td>
+		</tr>
+	</table>
+	<p>
+		This is how <i>'SSH Settings'</i> tab group looks like:
+	</p>
+	<img border = "0" src="../images/new_rl_ssh.png" alt="SSH Settings tab group"/>
+	<p>
+		<b>SSL Settings</b>
+	</p>
+	<p>Specifies SSL setting for a repository.</p>
+	<table cellpadding="5" cellspacing="0" border="1" width="100%">
+		<tr>
+			<td class="header" align ="center" valign="center">Option</td>
+			<td class="header" align ="center" valign="center">Description</td>
+			<td class="header" align ="center" valign="center">Default</td>
+		</tr>
+		<tr>
+			<td align ="center" valign="center">Enable Client Authentication</td>
+			<td align ="center" valign="center">Specifies if the SSL client authentication is needed.</td>
+			<td align ="center" valign="center">Disabled</td>
+		</tr>
+	</table>
+	<br/>
+	<p>
+		This is how <i>'SSL Settings'</i> tab group looks like:
+	</p>
+	<img border = "0" src="../images/new_rl_ssl.png" alt="SSL Settings tab group"/>
+	<br/>
+	<img border="0" src="../images/rel_tops.png" alt="Related topics"/>
+	<br/>
+	<a href="../teamSupport/repos_view.html">SVN Repository View</a>
+	<br/>
+	<a href="../teamSupport/create_repository.html">SVN Repository Dialog</a>	
+</body>
+</html>

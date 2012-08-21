@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<title>Merging</title>
+	<meta name="copyright"  content="Copyright (c) 2005-2011 Polarion Software. All rights reserved. This page is provided under the terms of the Eclipse Public License v1.0 which accompanies this distribution, and is available at http://www.eclipse.org/legal/epl-v10.html Contributors: Alexander Gurov."/>
+	<LINK REL="STYLESHEET" HREF="../../book.css" CHARSET="ISO-8859-1" TYPE="text/css"/>
+</head>
+<body>
+
+	<table cellpadding = "0" cellspacing = "0" border = "0" width = "100%">
+		<tr>
+			<td class="head_picture">
+				<img src="../../images/guide_1.gif"/>
+			</td>
+			<td class="head_picture" width="100%"  align="right">
+				<img src="../../images/guide_2.gif"/>
+			</td>
+		</tr>
+	</table>
+<h3>Merging</h3>
+	<p>Merging means creating a version by blending different revisions of resources. To start merging click <i>'Team>Merge...'</i> menu item of the resource pop-up menu, <i>'Merge...'</i> menu item of the SVN main menu group or on the <i>'Merge...'</i> button on the <i>'SVN Toolbar'</i>. The Merge Dialog will appear and to perform operation user should follow its instructions and fill needed properties.</p>
+	<table cellpadding="1" cellspacing="0" border="0">
+		<tr>
+			<td valign="top" align="left">
+				<p align="left">
+					<i>
+						<b>Note:</b>
+					</i>
+				</p>
+			</td>
+			<td valign="top">
+				<p>
+					<i>
+						If there were some conflicts during the merge operation cycle SVN&reg; merges what it can and notify the user about the conflict. Then three file are created: 'name'.tmp (copy of the user's local file before update), 'name'.tmp2 (copy of the first revision file) and 'name'.tmp3 (copy of the second revision file). So the edit conflicts action must be run to resolve conflicts.
+					</i>
+				</p>
+			</td>
+		</tr>
+	</table>
+	<p>If the option of interactive merge is enabled then the merge results are shown in the <i>'SVN Merge View'</i>. The changes that can't be done by Subversion while merge are also shown in this view and can be merged or skipped manually.</p>
+	<img border="0" src="../../images/merge_view.png" alt="Related topics"/></br>
+	<img border="0" src="../../images/rel_tops.png" alt="Related topics"/>
+	<br/>
+	<a href="../../teamSupport/merge_dialog.html">SVN Merge Dialog</a>
+	<br/>
+	<a href="../../teamSupport/svn_main_menu.html">SVN main menu group</a>
+	<br/>
+	<a href="../../teamSupport/svn_toolbar.html">SVN Toolbar</a>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<title>FAQ</title>
+	<meta name="copyright"  content="Copyright (c) 2005-2011 Polarion Software. All rights reserved. This page is provided under the terms of the Eclipse Public License v1.0 which accompanies this distribution, and is available at http://www.eclipse.org/legal/epl-v10.html Contributors: Alexander Gurov."/>
+	<LINK REL="STYLESHEET" HREF="book.css" CHARSET="ISO-8859-1" TYPE="text/css"/>
+</head>
+	<body>
+
+		<table cellpadding = "0" cellspacing = "0" border = "0" width = "100%">
+			<tr>
+				<td class="head_picture">
+					<img src="images/guide_1.gif"/>
+				</td>
+				<td  class="head_picture" width="100%" align="right">
+					<img src="images/guide_2.gif"/>
+				</td>
+			</tr>
+		</table>
+		<h1>FAQ</h1>
+		<h2>General</h2>
+		<a class="content"  href="#install">How to install Subversive?</a>
+		<br/>
+		<a class="content"  href="#create">How can I create a repository and fill it with data?</a>
+		<br/>
+		<a class="content"  href="#checked">How to start use Subversive with already checked out projects?</a>
+		<br/>
+		<a class="content"  href="#changes">Subversive doesn't see the file changes.</a>
+		<br/>
+		<a class="content"  href="#linux">How can I use JavaHL Connector on Linux OS?</a>
+		<br/>
+		<h2>Versions and compatibility</h2>
+		<a class="content"  href="#version">Is it right that version 0.7 is newer then versions 1.1.0 and 1.0.0, which I previously used?</a>
+		<br/>
+		<a class="content"  href="#compatibility">I use Eclipse 3.2. Can I use Eclipse Subversive?</a>
+		<br/>
+		<h2>Feedback</h2>
+		<a class="content"  href="#bug">How to send a bug report?</a>
+		<br/>
+		<a class="content"  href="#improve">How can I participate in Subversive improvement?</a>
+		<br/>
+		<hr width="100%"/>
+		<h2>General</h2>
+		<h3>How to install Subversive?</h3>
+		<p align="justify" id="install">The most friendly installation process - point Eclipse update manager to Subversive Update Site and follow instructions of Installation wizard. If for some reason you can't use Update Site you can download so-called Archived Update Site and point Eclipse update manager to this file locally on your computer. Please refer <a href="gettingStarted/aboutSubversive/install.html">Installation instructions</a> topic for details how to install, update and manage Subversive.</p>
+		<br/>
+		<h3>How can I create a repository and fill it with data?</h3>
+		<p id="create">In order to create repository with the Subversive UI you should have either: native JavaHL or SVN Kit 1.3.5 based connector installed, or you'll have to do it manually using 'svnadmin create' command. In the last case you'll also need to create a repository location for the created repository using <a href="teamSupport/new_location_wiz.html">'SVN Repository Location Wizard'</a>, then you can share required project (or projects) using <a href="teamSupport/sharing_wiz.html">'SVN Sharing Wizard'</a> and perform the initial commit.</p>
+		<br/>
+		<h3>How to start use Subversive with already checked out projects?</h3>
+		<p id="checked">
+			<u>If you have project checkouted by another Eclipse SVN plug-in and want to work with it using Subversive</u><br/>
+			<ol>
+				<li>
+					You need to disconnect project first. Select project and execute <i>'Team > Disconnect'</i>. Select "Do not delete SVN meta information" in disconnect dialog and SVN working copy will not be deleted. It gives you possibility to use this working copy later with Subversive and avoid re-checkout process. Note that if disconnect will be skipped it causes problem if you will uninstall Eclipse SVN plug-in which was used for the project checkout.
+				</li>
+				<li>Now you can connect project to repository using Subversive. Select project and execute Team > Share Project. Select Subversive SVN provider in Share Project wizard and at the end you will be prompted to choose the SVN location. You can keep repository settings defined in project or reconnect to another repository.</li>
+			</ol>
+			<u>If you have project checkouted by another SVN client</u>
+			If project has meta-information (.svn folders) you can just import it into the workspace, which cause automatic connection to the Subversive if appropriate SVN location will be found. In order to make import select <i>'File > Import... > General > Existing projects into Workspace'</i>.
+		</p>
+		<br/>
+		<h3>Subversive doesn't see the file changes.</h3>
+		<p id="changes">Have you tried editing outside Eclipse IDE? If so, please hit refresh (F5) button over the project node.</p>
+		<h3>How can I use JavaHL Connector on Linux OS?</h3>
+		<p id="linux">Please refer to <a href="gettingStarted/aboutSubversive/linux.html">'Note for Linux users'</a> documentation page.</p>
+		<hr width="100%"/>
+		<h2 id="versions">Versions and compatibility</h2>
+		<h3>Is it right that version 0.7 is newer then versions 1.1.0 and 1.0.0, which I previously used? </h3>
+		<p id="version">Yes, it's right, that version is most consistent and up-to-date. Why it has 0.7 number? According to Eclipse Foundation requirements, new and migrated projects should go through incubation phase. On incubation phase project should have version less then 1.0 - that's a reason of version change.</p>
+		<br/>
+		<h3>I use Eclipse 3.2. Can I use Eclipse Subversive?</h3>
+		<p id="compatibility">Version, distributed on Eclipse.org requires at least Eclipse IDE version 3.4, so you can't use it. But you can use one of previous Subversive releases still distributed from former project home at <a href="http://www.polarion.com">www.polarion.com</a>.</p>
+		<hr width="100%"/>
+		<h2>Feedback</h2>
+		<h3>How to send a bug report?</h3>
+		<p id="bug">Subversive handles errors and in case of error detection is asked for sending of the automatic error report. This report contains required information such as stack trace and Java environment. You can also provide your comments about a problem, which help developers to find a reason of problem. Note that report doesn't contain any confidential information and you can review what exactly will be sent. All what you need to send such report is just to press a button in dialog.</p>
+		<br/>
+		<h3>How can I participate in Subversive improvement?</h3>
+		<p id="improve">
+			We cordially invite everyone in the Subversive community to get involved with the project newsgroup at <a href ="news://news.eclipse.org/eclipse.technology.subversive">news://news.eclipse.org/eclipse.technology.subversive</a> (more below). This is crucial if we want to reach the eventual goal of inclusion of Subversive in the Eclipse IDE. Synergy of the Subversive team and the Community will lead the way towards defining the expectations of the potential user community, adjusting the project's goals accordingly, and eventually accomplishing those goals.<br/><br/>
+			<u>How to participate in discussion</u><br/>
+			You can send your comments about the Subversive project proposal or share you vision about the Subversive as a whole, to the <a href="news://news.eclipse.org/eclipse.technology.subversive">news://news.eclipse.org/eclipse.technology.subversive</a> newsgroup.<br/><br/>
+			In order to participate in discussions you should request a free password to access the newsgroups by filling the registration form on <a href="http://www.eclipse.org/newsgroups/register.php">http://www.eclipse.org/newsgroups/register.php</a>. You'll receive login credentials by e-mail shortly after registering. You can work with newsgroups using simple web interface or setup your favorite NNTP news reader like Outlook, Thunderbird, etc.<br/><br/>
+			<u>Access through Web interface</u><br/>
+			Eclipse.org provides simple and useful web interface, which allows reading posts and writing answers. Use following link to access the Subversive newsgroup on eclipse.org: <a href="http://www.eclipse.org/newsportal/thread.php?group=eclipse.technology.subversive">http://www.eclipse.org/newsportal/thread.php?group=eclipse.technology.subversive</a><br/><br/>
+			<u>Access through news readers</u><br/>
+			You can use any news reader, which supports NNTP. The most popular mail clients like Outlook and Thunderbird can be used to work with newsgroups. Let's follow MS Outlook Express setup process by example.<br/><br/>
+			<ol>
+				<li>Start MS Outlook Express</li>
+				<li>Click on Tools &gt; Accounts... menu item</li>
+				<li>Switch to the News tab</li>
+				<li>Perform Add &gt; News...</li>
+				<li>On the first page of the wizard enter your name, which will be shown in posts. Click on Next button.</li>
+				<li>On the second page of the wizard enter your e-mail address. Click on Next button.</li>
+				<li>On the third page of wizard enter <i>news.eclipse.org</i> as NNTP server. Set <i>My news server requires me to log on</i> option. Click on Next button.</li>
+				<li>On the fourth page of the wizard enter username and password, which you receive by e-mail during subscription. Click on Next button.</li>
+				<li>Click on Finish button</li>
+				<li>Click on Close button in order to close Internet Accounts window</li>
+				<li>You will be prompted to download the list of available newsgroups. Click on OK button.</li>
+				<li>In the list find <i>eclipse.technology.subversive</i> newsgroup, select it and click on Subscribe button.</li>
+				<li>Click on OK button in order to close Newsgroups Subscriptions dialog</li>
+			</ol>
+			Now you can select <i>eclipse.technology.subversive</i> node in the Folders tree in order to see posts in this newsgroup and make own posts.<br/><br/>
+			In order to setup any news reader use following settings:<br/>
+			News server: <i>news.eclipse.org</i><br/>
+			Port: <i>119, or 80 for firewalled users</i><br/>
+			SSL: <i>no</i></br>
+			UserID and Password are provided during subscription.
+		</p>
+	</body>
+</html>

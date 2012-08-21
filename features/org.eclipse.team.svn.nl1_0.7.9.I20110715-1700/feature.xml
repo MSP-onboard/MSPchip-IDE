@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.team.svn.nl1"
+      label="%featureName"
+      version="0.7.9.I20110715-1700"
+      provider-name="%providerName"
+      plugin="org.eclipse.team.svn.nl1"
+      colocation-affinity="org.eclipse.team.svn">
+   <install-handler/>
+
+   <description>
+      The Eclipse Subversive localization, including Japanese and French translations.
+   </description>
+
+   <license url="license.html">
+      %license
+   </license>
+
+   <url>
+      <update label="%updateSiteName" url="http://download.eclipse.org/technology/subversive/0.7/update-site/"/>
+      <discovery label="%discoverySiteName" url="http://download.eclipse.org/technology/subversive/0.7/update-site/"/>
+   </url>
+
+   <requires>
+      <import plugin="org.eclipse.team.svn.core"/>
+      <import plugin="org.eclipse.team.svn.ui"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.team.svn.nl1"
+         download-size="4"
+         install-size="4"
+         version="0.7.9.I20110318-1700"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.team.svn.core.nl1"
+         download-size="10"
+         install-size="10"
+         version="0.7.9.I20101203-1700"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.team.svn.ui.nl1"
+         download-size="40"
+         install-size="40"
+         version="0.7.9.I20110715-1700"
+         fragment="true"
+         unpack="false"/>
+
+</feature>

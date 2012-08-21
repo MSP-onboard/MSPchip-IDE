@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<title>Updating</title>
+	<meta name="copyright"  content="Copyright (c) 2005-2011 Polarion Software. All rights reserved. This page is provided under the terms of the Eclipse Public License v1.0 which accompanies this distribution, and is available at http://www.eclipse.org/legal/epl-v10.html Contributors: Alexander Gurov."/>
+	<LINK REL="STYLESHEET" HREF="../../book.css" CHARSET="ISO-8859-1" TYPE="text/css"/>
+</head>
+<body>
+
+	<table cellpadding = "0" cellspacing = "0" border = "0" width = "100%">
+		<tr>
+			<td class="head_picture">
+				<img src="../../images/guide_1.gif"/>
+			</td>
+			<td class="head_picture" align="right">
+				<img src="../../images/guide_2.gif"/>
+			</td>
+		</tr>
+	</table>
+<h3>Updating</h3>
+	<p>Updating means changing the state of the local file copying the remote changes to the local copy if possible. To update the local file click on the <i>'Team>Update'</i> menu item, <i>'Update the resource from version control'</i> button on the <i>'SVN toolbar'</i>, <i>'Update...'</i> menu item in the SVN main menu group or clicking the <i>'Update'</i> button in the <i>'Synchronization View'</i> toolbar. There also may be some conflicts while updating and the user should merge them manually.</p>
+	<table cellpadding="1" cellspacing="0" border="0">
+		<tr>
+			<td valign="top" align="left">
+				<p align="left">
+					<i>
+						<b>Note:</b>
+					</i>
+				</p>
+			</td>
+			<td valign="top">
+				<p>
+					<i>
+						If the user has updated all the files of specific directory without updating the directory itself its revision won't change. So as revision number is the SVN&reg; property there might be some conflicts during setting of properties, so it's recommended to update the whole directory. Also there might br conflicts while deleting/adding files with the same names both in the working copy and repository one.<br/><br/>If there were some conflicts during the update operation cycle SVN&reg; updates what it can and notify the user about the conflict. Then three file are created: 'name'.mine (copy of the user's local file before update), 'name'.BASEREV (copy of the base revision file) and 'name'.rNEWREV (copy of the repository revision file). So the edit conflicts action must be run to resolve conflicts.
+					</i>
+				</p>
+			</td>
+		</tr>
+	</table>
+	<img border="0" src="../../images/rel_tops.png" alt="Related topics"/>
+	<br/>
+	<a href="../../teamSupport/svn_main_menu.html">SVN main menu group</a>
+	<br/>
+	<a href="../../teamSupport/svn_toolbar.html">SVN Toolbar</a>
+	<br/>
+	<a href="../../teamSupport/workspace_synch.html">SVN Workspace Synchronization</a>
+	<br/>
+	<a href="../../teamSupport/compareEditor/compare_ac.html">Another user changes</a>
+	<br/>
+	<a href="../../teamSupport/SVNaction/override.html">Overriding operations</a>
+</body>
+</html>

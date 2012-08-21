@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<title>Subversive installation instructions</title>
+	<meta name="copyright"  content="Copyright (c) 2005-2011 Polarion Software. All rights reserved. This page is provided under the terms of the Eclipse Public License v1.0 which accompanies this distribution, and is available at http://www.eclipse.org/legal/epl-v10.html Contributors: Alexander Gurov."/>
+	<LINK REL="STYLESHEET" HREF="../../book.css" CHARSET="ISO-8859-1" TYPE="text/css"/>
+</head>
+<body>
+
+	<table cellpadding = "0" cellspacing = "0" border = "0" width = "100%">
+		<tr>
+			<td class="head_picture">
+				<img src="../../images/guide_1.gif"/>
+			</td>
+			<td class="head_picture" width="100%" align="right">
+				<img src="../../images/guide_2.gif"/>
+			</td>
+		</tr>
+	</table>
+<h3>Subversive installation instructions</h3>
+	<p>Subversive can be simply installed from within Eclipse using update manager. All what the user should do is just point update manager to the remote or local update site. To install Subversive:</p>
+	<ol>
+		<li>
+			Start Eclipse and select menu item <i>'Help > Instal New Software...'</i>
+			<br/><br/><img border="0" src="../../images/find_and_install.png" alt="Software Updates"/><br/><br/>
+		</li>
+		<li>
+			Then selec common software repository or if you need to install Subversive only, you can directly add Subversive update site by pressing <i>'Add'</i> button.
+			<br/><br/><img border="0" src="../../images/add_site.png" alt="Update manager"/><br/><br/>
+		</li>
+		<li>
+			On the <i>'Add Repository'</i> form enter the URL to the Subversive update site. The proper URL can be found on <a href="http://www.eclipse.org/subversive/downloads.php">http://www.eclipse.org/subversive/downloads.php</a>.
+			Also the update-site for Subversive integration plug-ins can be added in the same way.
+			<ul>
+				<li>
+					<u><i>Please note that the use of the software you are about to access may be subject to third party terms and conditions and you are responsible for abiding by such terms and conditions.</i></u>
+				</li>
+			</ul>
+			<br/>Click on the <i>'OK'</i> button to store update site information.
+			<br/><br/><img border="0" src="../../images/new_update_site.png" alt="New update site"/><br/><br/>		
+		</li>
+		<li>
+			The Subversive software can be found in the common software repository in 'Collaboration Tools' section and provides following features list.
+			<ul>
+				Required feature, which should be installed unconditionally:
+				<li>
+					<b>SVN Team Provider</b> - The Eclipse Team Provider for the Subversion version control system.
+				</li>
+				<br/><br/>Optional integrations with other plug-ins, which can be installed if you use these plugins and want to have them integrated with Subversive:
+				<li>
+					<b>Subversive Integration for the Mylyn Project</b> - Integration with Mylyn (<a href="http://www.eclipse.org/mylyn/">http://www.eclipse.org/mylyn/</a>).
+				</li>
+				<br/><br/>Other optional features:
+				<li>
+					<b>JDT Ignore Extensions</b> - The feature is useful for Java development because it allows to interpret output folders as ignored resources automatically.
+				</li>
+				<li>
+					<b>Revision Graph</b> - The feature is useful for visual browsing of the SVN revisions tree.
+				</li>
+				<li>
+					<b>SVN Team Provider Sources</b> - The sources of the Eclipse Team Provider for Subversion.
+				</li>
+			</ul>
+			<br/>Select Subversive SVN Team Provider and other features if required and then follow through installation wizard steps.
+			<br/><br/><img border="0" src="../../images/install_search_res.png" alt="Feature Search Result"/><br/><br/>
+		</li>
+		<li>
+			The update manager calculates dependencies and offers you a list of features to install. Select the needed ones and click the <i>'Next >'</i> button.
+			<br/><br/><img border="0" src="../../images/install.png" alt="Features to Install"/><br/><br/>
+		</li>
+		<li>
+			Accept terms of license agreement and click the <i>'Finish'</i> button in order to start the download of selected features.
+			<br/><br/><img border="0" src="../../images/install_license.png" alt="Feature License"/><br/><br/>
+		</li>
+		<li>
+			To apply installation changes and restart Eclipse click on the <i>'Yes'</i> button.
+			<br/><br/><img border="0" src="../../images/restart_dialog.png" alt="Restart dialog"/><br/><br/>
+		</li>
+		<li>
+			After Eclipse restart you'll see connectors discovery dialog which will allow you to install Subversive Connectors without registering connectors update site manually.
+			<br/><br/><img border="0" src="../../images/discovery_connectors.png" alt="Connectors discovery dialog"/><br/><br/>
+		</li>
+		<li> You can find Subversive perspective and views in correspondent dialogs, activated by menu items <i>'Window > Open Perspective > Other...'</i> and <i>'Window > Show View > Other...'</i>.
+			<br/><br/>
+			<table border="0" cellpadding="5" cellspacing="0">
+				<tr>
+					<td valign="center">
+						<img border="0" src="../../images/open_perspective.png" alt="Open Perspective"/>
+					</td>
+					<td valign="center">
+						<img border="0" src="../../images/show_view.png" alt="Show View"/>
+					</td>
+				</tr>
+			</table>
+		</li>
+	</ol>
+</body>
+</html>

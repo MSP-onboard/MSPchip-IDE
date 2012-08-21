@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<title>Note for Linux users</title>
+	<meta name="copyright"  content="Copyright (c) 2005-2011 Polarion Software. All rights reserved. This page is provided under the terms of the Eclipse Public License v1.0 which accompanies this distribution, and is available at http://www.eclipse.org/legal/epl-v10.html Contributors: Alexander Gurov."/>
+	<LINK REL="STYLESHEET" HREF="../../book.css" CHARSET="ISO-8859-1" TYPE="text/css"/>
+</head>
+<body>
+
+	<table cellpadding = "0" cellspacing = "0" border = "0" width = "100%">
+		<tr>
+			<td class="head_picture">
+				<img src="../../images/guide_1.gif"/>
+			</td>
+			<td class="head_picture" width="100%"  align="right">
+				<img src="../../images/guide_2.gif"/>
+			</td>
+		</tr>
+	</table>
+<h3>Note for Linux users</h3>
+	<p>The SVN Connectors' plug-in doesn't contain binaries of JavaHL library for Linux OS.
+	So if you want to use JavaHL connector to access the repository, you should build the
+	library by yourself or use already built for Linux OS one.</p>
+	<p>Also you should pay special attention, that JVM uses the value of LD_LIBRARY_PATH to look for used libraries,
+	so the JavaHL library must be there also. But if you want to have it in another place you should let the JVM know about this.</br>
+	The easiest way is to add a following line to eclipse.ini as any line after -vmargs: "-Djava.library.path=<i>input
+	here the path to the library</i>".</br>
+	Also you can use any other appropriable to do this.</p>
+</body>
+</html>

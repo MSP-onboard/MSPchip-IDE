@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<title>Diff Viewer</title>
+	<meta name="copyright"  content="Copyright (c) 2005-2011 Polarion Software. All rights reserved. This page is provided under the terms of the Eclipse Public License v1.0 which accompanies this distribution, and is available at http://www.eclipse.org/legal/epl-v10.html Contributors: Alexander Gurov."/>
+	<LINK REL="STYLESHEET" HREF="../book.css" CHARSET="ISO-8859-1" TYPE="text/css"/>
+	<script language="JavaScript" src="PLUGINS_ROOT/org.eclipse.help/livehelp.js"></script>
+</head>
+<body>
+
+	<table cellpadding = "0" cellspacing = "0" border = "0" width = "100%">
+		<tr>
+			<td class="head_picture">
+				<img cellpadding = "0" width="510" cellspacing= "0" src="../images/guide_1.gif"/>
+			</td>
+			<td class="head_picture" width="100%"  align="right">
+				<img cellpadding = "0" width="74" cellspacing= "0" src="../images/guide_2.gif"/>
+			</td>
+		</tr>
+	</table>
+
+	<h2>Diff Viewer</h2>
+	<p>
+		These preferences can be changed on <a class="command-link" href='javascript:executeCommand("org.eclipse.ui.window.preferences(preferencePageId=org.eclipse.team.svn.ui.SVNTeamDiffViewerPage)")'>
+			<img src="PLUGINS_ROOT/org.eclipse.help/command_link.png"/>
+			<i>'Team>SVN>Diff Viewer'</i>
+		</a> properties page.
+		On this page user can configure external diff/merge programs used for comparing different revisions of files.
+		User can associate an external diff program to specific file extension or mime type. For example, in order to specify file extension for doc files use .doc. Example of mime-type usage: text/plain.
+		Also user can specify external diff program which will be applied for all files by using an asterisk(*) in extension/mime-type field.		
+	</p>
+	
+	<p>
+		For each file extension/mime-type user can specify following parameters: diff program path, diff program arguments, merge program path, merge program parameters.
+		Diff program settings are applied for compare actions. Merge program settings are applied for Edit Conflicts action.
+		The external program will need to obtain the filenames from the command line, along with any other command line options.
+		<br/>
+		Subversive uses substitution parameters in a form %{param-name}. When it encounters one of these it will substitute the appropriate value.
+		<ul>
+			<li>base: <i>The original file without your changes.</i></li>
+			<li>mine: <i>Your own file, with your changes.</i></li>
+			<li>theirs: <i>The file as it is in the repository.</i></li>
+			<li>merged: <i>The conflicted file, where to save.</i></li>
+			<li>etc.</li>
+		</ul>
+	</p>
+	
+	<!-- Default config -->
+	<p>
+		Subversive is supplied with default configuration for file extension associations, default configuration includes paths to script files
+		which allow to run external programs. It includes configuration for following file extensions: doc, docx, xls, xlsx, ppt, pptx, odt, ods.
+	</p>	
+	
+	<table cellpadding="1" cellspacing="0" border="0">
+		<tr>
+			<td valign="top" align="left">
+				<p align="left">
+					<i>
+						<b>Tip:</b>
+					</i>
+				</p>
+			</td>
+			<td valign="top">
+				<p>
+					<i>
+						Default diff handlers provided by Subversive are loaded and can be used only on Microsoft Windows. 
+						For other operating systems users can configure their own handlers.
+					</i>
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	This is how <i>'Diff Viewer'</i> properties page looks like:
+	<br/><br/><img border="0" src="../images/pref_diff_viewer.png" alt="Diff Viewer properties page"/>
+	<br/>
+	<br/>
+	
+	Here's a list of actions which can call external compare editor:
+	<ul> 
+		<li>Compare With Base from Working Copy</li>
+		<li>Compare With Latest from Repository</li>
+		<li>Compare With Revision or Url...</li>
+		<li>Compare With Branch...</li>
+		<li>Compare With Tag...</li>	
+		<li>'Compare In External Compare Editor' action in Synchronize View</li>
+		<li>'Edit Conflicts' action in Synchronize View</li>
+		<li>Compare actions available from History View, e.g. Compare With Previous State</li>			
+		<li>'Compare In External Compare Editor' action available for files when performing comparing for directories</li>
+		<li>etc.</li>
+	</ul>
+	 
+	
+</body>
+</html>
